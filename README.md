@@ -13,6 +13,8 @@ Alt som nå blir ferdigstilt etter høring i basisprofiler-r3 (Patient, Practiti
 
 Workshop oktober 2018 på Gardermoen. 
 
+OBS: Disse vil i første omgang utviklet for R3, da verktøy for R4 (som Forge) trolig ikke foreligger før etter desember 2018. 
+
 ### Kortliste andre ressurser
 
 * (MedicationDispense)
