@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" >
   <id value="tba-organizationcoverage" />
   <url value="http://hl7.no/fhir/StructureDefinition/tba-organizationcoverage" />
   <version value="0.1" />
   <name value="tba-organizationcoverage" />
   <status value="draft" />
-  <date value="2019-01-22" />
+  <date value="2019-05-15" />
   <description value="The coverage of a service hosted by one of the organizations. Specifically used by norwegian Municipalities" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Organization" />
+  <context>
+		<type value="element"/>
+		<expression value="Organization"/>
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

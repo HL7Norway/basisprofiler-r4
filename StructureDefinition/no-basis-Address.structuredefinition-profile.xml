@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-Address" />
+<StructureDefinition xmlns="http://hl7.org/fhir" >
+  <id value="nobasisAddress" />
   <meta>
     <versionId value="3" />
-    <lastUpdated value="2018-06-15T13:38:12.872+00:00" />
+    <lastUpdated value="2019-05-15T13:38:12.872+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
   <version value="1.0" />
-  <name value="no-basis-Address" />
-  <title value="no-basis-Address" />
+  <name value="NobasisAddress" />
   <status value="active" />
-  <date value="2018-10-26" />
+  <date value="2019-05-15" />
   <description value="Basisprofil for Norwegian Address information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
   <purpose value="Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="Address" />
@@ -257,9 +256,7 @@
         </extension>
         <strength value="required" />
         <description value="The use of an address" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/address-use" />
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/address-use"/>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -312,9 +309,7 @@
         </extension>
         <strength value="required" />
         <description value="The type of an address (physical / postal)" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/address-type" />
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/address-type"/>
       </binding>
       <mapping>
         <identity value="rim" />

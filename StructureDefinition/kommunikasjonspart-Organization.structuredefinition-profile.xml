@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="kommunikasjonspart-Organization" />
   <url value="http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization" />
-  <version value="0.1" />
+  <version value="0.2" />
   <name value="kommunikasjonspart-Organization" />
   <status value="draft" />
-  <date value="2019-01-22" />
+  <date value="2019-05-15" />
   <description value="Use case specific profile for Norwegian services defined in the Norwegian address register, kommunikasjonspart-Organization. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare services as defined in the Norwegian adress register. The use-case profile is specific for the use case of identifying relevant services defined in the address register for electronic communication." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
@@ -82,9 +82,7 @@
         </extension>
         <strength value="required" />
         <description value="Tjenestetype CodeSystems" />
-        <valueSetReference>
-          <reference value="http://hl7.no/fhir/ValueSet/no-basis-service-type" />
-        </valueSetReference>
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-service-type"/>
       </binding>
     </element>
     <element id="Organization.partOf">

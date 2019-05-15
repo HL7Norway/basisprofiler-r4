@@ -3,11 +3,11 @@
   <id value="no-basis-Endpoint" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint" />
   <version value="0.5" />
-  <name value="no-basis-Endpoint" />
+  <name value="NobasisEndpoint" />
   <status value="draft" />
-  <date value="2019-03-08" />
+  <date value="2019-05-15" />
   <description value="Basisprofil for Norwegian Endpoint information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Endpoing. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;Resource profile for definition of electronic endpoints used by healthcare organizations to communicate using different protocols. The norwegian profile use-case is to represent endpoints for electronic communication. Fallback solutions using mail or fax has to be indexed in the norwegian master index for healthcare organizations and are not described using this profile." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Endpoint" />
@@ -45,9 +45,7 @@
           <valueString value="endpoint-contype" />
         </extension>
         <strength value="extensible" />
-        <valueSetReference>
-          <reference value="http://hl7.no/fhir/ValueSet/no-basis-connection-type" />
-        </valueSetReference>
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-connection-type" />
       </binding>
     </element>
     <element id="Endpoint.managingOrganization">
@@ -56,52 +54,8 @@
       <alias value="dataansvarlig" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
       </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
-      </type>
-    </element>
-    <element id="Endpoint.managingOrganization.identifier">
-      <path value="Endpoint.managingOrganization.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type.coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Endpoint.managingOrganization.identifier:ENH">
-      <path value="Endpoint.managingOrganization.identifier" />
-      <sliceName value="ENH" />
-      <short value="Organisasjonsnummer from Enhetsregisteret" />
-      <alias value="organisasjonsnummer" />
-      <alias value="organization number" />
-    </element>
-    <element id="Endpoint.managingOrganization.identifier:ENH.system">
-      <path value="Endpoint.managingOrganization.identifier.system" />
-      <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.101" />
-    </element>
-    <element id="Endpoint.managingOrganization.identifier:ENH.value">
-      <path value="Endpoint.managingOrganization.identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="Endpoint.managingOrganization.identifier:RSH">
-      <path value="Endpoint.managingOrganization.identifier" />
-      <sliceName value="RSH" />
-      <short value="Nasjonalt register over enheter i spesialisthelsetjenesten (RESH-ID)" />
-    </element>
-    <element id="Endpoint.managingOrganization.identifier:RSH.system">
-      <path value="Endpoint.managingOrganization.identifier.system" />
-      <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.102" />
-    </element>
-    <element id="Endpoint.managingOrganization.identifier:RSH.value">
-      <path value="Endpoint.managingOrganization.identifier.value" />
-      <min value="1" />
     </element>
     <element id="Endpoint.payloadType">
       <path value="Endpoint.payloadType" />
@@ -123,7 +77,7 @@
           <valueString value="PayloadType" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="urn:oid:2.16.578.1.12.4.1.1.8279" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8279" />
       </binding>
     </element>
     <element id="Endpoint.payloadType:formatCode">
@@ -136,7 +90,7 @@
           <valueString value="PayloadType" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="urn:oid:2.16.578.1.12.4.1.1.0000" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.0000" />
       </binding>
     </element>
     <element id="Endpoint.payloadMimeType">
@@ -150,9 +104,7 @@
           <valueBoolean value="true" />
         </extension>
         <strength value="required" />
-        <valueSetReference>
-          <reference value="http://www.rfc-editor.org/bcp/bcp13.txt" />
-        </valueSetReference>
+        <valueSet value="http://www.rfc-editor.org/bcp/bcp13.txt" />
       </binding>
     </element>
     <element id="Endpoint.address">
@@ -160,15 +112,15 @@
       <definition value="The uri that describes the actual end-point to connect to.&#xD;&#xA;&#xD;&#xA;no-basis: for ebXML messages in Norway one is expected to use mailto: prefix for the endpoint. &#xD;&#xA;For AMQP messages in Norway one is expected to use &quot;ampq://&quot; or &quot;amqps://&quot; prefix.&#xD;&#xA;REST endpoints will have &quot;http://&quot; or &quot;https://&quot; prefix." />
       <example>
         <label value="amqp endpoint" />
-        <valueUri value="amqp://sb.test.nhn.no/NHNTESTServiceBus/8129886_sync" />
+        <valueUrl value="amqp_endpoint" />
       </example>
       <example>
         <label value="ebxml endpoint" />
-        <valueUri value="mailto:mottak-qass@test-es.nav.no" />
+        <valueUrl value="ebxml_endpoint" />
       </example>
       <example>
         <label value="REST endpoint" />
-        <valueUri value="https://vkp-dev.portal.azure-api.net" />
+        <valueUrl value="REST_endpoint" />
       </example>
     </element>
   </differential>

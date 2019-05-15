@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitRepo/FHIR/STU3/fhir-all-xsd/fhir-single.xsd">
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitRepo/R4/fhir-all-xsd/fhir-single.xsd">
 	<id value="no-basis-parental-responsibility.codesystem" />
     <meta>
         <versionId value="1" />
         <lastUpdated value="2019-05-07T00:00:00+00:00" />
     </meta>
     <url value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility" />
-    <version value="0.5" />
+    <version value="0.6" />
     <name value="no-basis-parental-responsibility.codesystem" />
     <status value="draft" /> 
-    <date value="2019-05-07T00:00:00+00:00" />
+    <date value="2019-05-15T00:00:00+00:00" />
     <publisher value="Copy of Codes from Foreldreansvar defined by Skatteetaten" />
     <content value="complete" />
     <concept>
