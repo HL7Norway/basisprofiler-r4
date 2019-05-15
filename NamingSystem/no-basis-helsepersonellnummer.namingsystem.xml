@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../STU3/fhir-all-xsd/fhir-single.xsd">
+    <meta>
+        <versionId value="1.0" />
+    </meta>
+    <name value="Helsepersonellregisteret-nummer (HPR-nummer)" />
+    <status value="active" />
+    <kind value="identifier" />
+    <date value="2018-10-26"/>
+    <publisher value="Direktoratet for e-helse" />
+    <responsible value="Helsedirektoratet"/>
+    <description value="In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification." />
+    <uniqueId>
+        <type value="uri" />
+        <value value="http://hl7.no/fhir/NamingSystem/HPR" />
+        <preferred value="false" />
+        <!-- Espen: Skal vi ta med denne når den ikke er anbefalt? -->
+    </uniqueId>
+    <uniqueId>
+        <type value="oid" />
+        <value value="2.16.578.1.12.4.1.4.4" />
+        <preferred value="true" />
+    </uniqueId>
+</NamingSystem>

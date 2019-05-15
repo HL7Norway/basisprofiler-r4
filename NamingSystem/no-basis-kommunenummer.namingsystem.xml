@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../STU3/fhir-all-xsd/fhir-single.xsd">
+    <meta>
+        <versionId value="1.0" />
+    </meta>
+    <name value="Kommunenummer" />
+    <status value="active" />
+    <kind value="identifier" />
+    <date value="2018-10-26"/>
+    <publisher value="Direktoratet for e-helse" />
+    <responsible value="Statistisk sentralbyrå"/>
+    <description value="Nummerering av kommuner i henhold til SSB sin offisielle liste. Inneholder fremtidige, gyldige og utgåtte kommunenummer." />
+    <uniqueId>
+        <type value="uri" />
+        <value value="http://hl7.no/fhir/NamingSystem/kommunenummer" />
+        <preferred value="false" />
+    </uniqueId>
+    <uniqueId>
+        <type value="uri" />
+        <value value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle" />
+        <preferred value="true" />
+    </uniqueId>
+</NamingSystem>

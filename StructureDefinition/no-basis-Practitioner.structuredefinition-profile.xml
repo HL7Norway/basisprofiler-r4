@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Practitioner" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2018-06-06T06:11:16.19+00:00" />
+  </meta>
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+  <version value="1.1" />
+  <name value="no-basis-Practitioner" />
+  <status value="active" />
+  <date value="2018-10-26" />
+  <description value="Basisprofil for Norwegian Practitioner information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;2019-03 - The no-basis-Practitioner resource main use-case is to represent the actual Practitioner, e.g. a person. The resource can include information about how to identify the practitioner in addition to the practitioner's education, qualifications and speciality. The resource can also include approvals and other centrally registered capabilities recorded for the practitioner." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="An identifier that applies to this person in this role.&#xD;&#xA;&#xD;&#xA;In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification." />
+    </element>
+    <element id="Practitioner.identifier:HPR">
+      <path value="Practitioner.identifier" />
+      <sliceName value="HPR" />
+      <short value="HPR number" />
+      <definition value="In Norway all registered health care personnel is registered in the Helsepersonellregister (HPR) and is assigned a HPR-number that is used to identify the health care practitioner. Health care personnel not registered in HPR can use FNR for identification.&#xD;&#xA;&#xD;&#xA;The norwegian helsepersonellnummer for the practitioner. HPR as one of the possible practitioner identification numbers, should at least be sent unless there is a reason not to. Reasons for not sending the HPR number include but are not limited to, research and apps without a contract for processing data." />
+    </element>
+    <element id="Practitioner.identifier:HPR.system">
+      <path value="Practitioner.identifier.system" />
+      <short value="The identifier for HPR number" />
+      <definition value="The identifier for HPR number" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.4" />
+    </element>
+    <element id="Practitioner.identifier:HPR.value">
+      <path value="Practitioner.identifier.value" />
+      <short value="The acttual HPR-number" />
+      <definition value="The acttual HPR-number" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.identifier:FNR">
+      <path value="Practitioner.identifier" />
+      <sliceName value="FNR" />
+      <short value="Norwegian FNR" />
+      <definition value="Fødselsnummer for the practitioner. Fødselsnummer as one of the possible practitioner identification numbers. Reasons for not sending the Fødselsnummer include but are not limited to, research and apps without a contract for processing data." />
+    </element>
+    <element id="Practitioner.identifier:FNR.system">
+      <path value="Practitioner.identifier.system" />
+      <short value="The identification of FNR" />
+      <definition value="The identification of FNR" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.1" />
+    </element>
+    <element id="Practitioner.identifier:FNR.value">
+      <path value="Practitioner.identifier.value" />
+      <short value="The actual FNR" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.identifier:DNR">
+      <path value="Practitioner.identifier" />
+      <sliceName value="DNR" />
+      <short value="The D-nummer of the practitioner" />
+      <definition value="The D-nummer of the practitioner. (assigned by the norwegian Skatteetaten)" />
+    </element>
+    <element id="Practitioner.identifier:DNR.system">
+      <path value="Practitioner.identifier.system" />
+      <short value="The identification of the D-nummer" />
+      <definition value="The identification of the Norwegian D-nummer" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.2" />
+    </element>
+    <element id="Practitioner.identifier:DNR.value">
+      <path value="Practitioner.identifier.value" />
+      <short value="The actual D-nummer" />
+      <definition value="The actual Norwegian D-nummer" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.name">
+      <path value="Practitioner.name" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-HumanName" />
+      </type>
+    </element>
+    <element id="Practitioner.address">
+      <path value="Practitioner.address" />
+      <short value="Norwegian address" />
+      <definition value="http://hl7.no/fhir/StructureDefinition/no-basis-Address&#xD;&#xA;&#xD;&#xA;Address(es) of the practitioner that are not role specific (typically home address). &#xD;Work addresses are not typically entered in this property as they are usually role dependent." />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+      </type>
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification" />
+      <definition value="Coded representation of the qualification of the health care practitioner. Usually contains healthPersonnellCategory according to Kategori helsepersonell (OID=9060) and approvalType according to Godkjenningstype HPR (OID=7704)" />
+    </element>
+    <element id="Practitioner.qualification.code">
+      <path value="Practitioner.qualification.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="Coded representation of the qualification of the health care practitioner. Usually contains healthPersonnellCategory according to Kategori helsepersonell (OID=9060) and approvalType according to Godkjenningstype HPR (OID=7704)" />
+    </element>
+    <element id="Practitioner.qualification.code:healthPersonnellCategory">
+      <path value="Practitioner.qualification.code" />
+      <sliceName value="healthPersonnellCategory" />
+      <short value="The health care personnel category" />
+      <definition value="Category of health care personnel authorization according to Helsepersonnelloven §48" />
+    </element>
+    <element id="Practitioner.qualification.code:healthPersonnellCategory.coding.system">
+      <path value="Practitioner.qualification.code.coding.system" />
+      <short value="Identification of the CodeSystem 9060 on Volven" />
+      <definition value="Identification of the CodeSystem Kategori helsepersonell (OID=9060) used to describe the category of authorized health care personnel" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9060" />
+    </element>
+    <element id="Practitioner.qualification.code:healthPersonnellCategory.coding.code">
+      <path value="Practitioner.qualification.code.coding.code" />
+      <short value="The actual value according to 9060" />
+      <definition value="The actual value according to the CodeSystem Kategori helsepersonell (OID=9060)" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.qualification.code:approvalType">
+      <path value="Practitioner.qualification.code" />
+      <sliceName value="approvalType" />
+      <short value="The approval type of the practitioner" />
+      <definition value="The approval type of the practitioner (if applicable) according to the  CodeSystem Godkjenningstype HPR (OID=7704)" />
+    </element>
+    <element id="Practitioner.qualification.code:approvalType.coding.system">
+      <path value="Practitioner.qualification.code.coding.system" />
+      <short value="Identification of the CodeSystem 7704 on Volven" />
+      <definition value="Identification of the CodeSystem Godkjenningstype HPR (OID=7704)&#xD;&#xA;used to describe type of autohorization registered in HPR." />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7704" />
+    </element>
+    <element id="Practitioner.qualification.code:approvalType.coding.code">
+      <path value="Practitioner.qualification.code.coding.code" />
+      <short value="The actual value according to 7704" />
+      <definition value="The actual value according to the CodeSystem Godkjenningstype HPR (OID=7704)" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

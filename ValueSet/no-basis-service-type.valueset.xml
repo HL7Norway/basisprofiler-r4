@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-basis-service-type.valueset" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2018-10-16T10:48:46.366+00:00" />
+  </meta>
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-service-type" />
+  <version value="1.0" />
+  <name value="no-basis-service-type.valueset" />
+  <status value="active" />
+  <experimental value="true" />
+  <date value="2018-10-26T10:48:45.936+00:00" />
+  <publisher value="Direktoratet for e-helse" />
+  <description value="ValueSet including all codes for service type (tjenestetype) allowed in the Adressergister"/>
+  <immutable value="false" />
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8660" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8668" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8669" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8658" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8659" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8663" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8664" />
+    </include>
+    <include>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8666" />
+    </include>
+  </compose>
+</ValueSet>

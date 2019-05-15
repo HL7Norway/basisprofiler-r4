@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitRepo/FHIR/STU3/fhir-all-xsd/fhir-single.xsd">
+	<id value="no-basis-marital-status.codesystem" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2019-05-07T00:00:00+00:00" />
+    </meta>
+    <url value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status" />
+    <version value="0.5" />
+    <name value="no-basis-marital-status.codesystem" />
+    <status value="draft" /> 
+    <date value="2019-05-07T00:00:00+00:00" />
+    <publisher value="Copy of Codes from Sivilstandstype defined by Skatteetaten" />
+    <content value="complete" />
+    <concept>
+        <code value="uoppgitt" />
+        <display value="Uoppgitt" />
+        <definition value="sivilstand er ikke stadfestet med godkjent grunnlag"/>
+    </concept>
+    <concept>
+        <code value="ugift" />
+        <display value="Ugift" />
+        <definition value="person som aldri har inngått ekteskap"/>
+    </concept>
+    <concept>
+        <code value="gift" />
+        <display value="Gift" />
+        <definition value="person som er i et ekteskap"/>
+    </concept>
+    <concept>
+        <code value="enkeEllerEnkemann" />
+        <display value=">Enke eller enkemann" />
+        <definition value="gjenlevende person fra et ekteskap"/>
+    </concept>
+    <concept>
+        <code value="skilt" />
+        <display value="Skilt" />
+        <definition value="person som er lovlig skilt fra tidligere ektefelle"/>
+    </concept>
+    <concept>
+        <code value="separert" />
+        <display value="Separert" />
+        <definition value="person som er i en separasjonsperiode fra sin ektefelle"/>
+    </concept>
+    <concept>
+        <code value="registrertPartner" />
+        <display value="Registert partner" />
+        <definition value="person som er i et partnerskap iht partnerskapsloven"/>
+    </concept>
+    <concept>
+        <code value="separertPartner" />
+        <display value="Separert partner" />
+        <definition value="person som er i en separasjonsperiode fra sin partner"/>
+    </concept>
+    <concept>
+        <code value="skiltPartner" />
+        <display value="Skilt partner" />
+        <definition value="person som er lovlig skilt fra tidligere partner"/>
+    </concept>
+    <concept>
+        <code value="gjenlevende_partner" />
+        <display value="Gjenlevende partner" />
+        <definition value="gjenlevende person fra et partnerskap"/>
+    </concept>
+</CodeSystem>

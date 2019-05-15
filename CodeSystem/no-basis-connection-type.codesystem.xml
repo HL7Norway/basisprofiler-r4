@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitRepo/FHIR/STU3/fhir-all-xsd/fhir-single.xsd">
+	<id value="no-basis-connection-type.codesystem" />
+    <url value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type" />
+    <version value="0.1" />
+    <name value="no-basis-connection-type.codesystem" />
+    <status value="draft" /> 
+    <date value="2019-03-12T00:00:00+00:00" />
+    <publisher value="Direktoratet for e-helse, HL7 Norway" />
+    <description value="Codes to describe Norwegian message based communication protocols."/>
+    <content value="complete" />
+    <concept>
+        <code value="no-ebxml-2" />
+        <display value="ebXML 2.0" />
+        <definition value="ebXML messaging as described in the Norwegian profile HIS 1037:2011 based on OASIS ebMS 2.0 specification"/>
+    </concept>
+    <concept>
+        <code value="no-amqp" />
+        <display value="AMQP" />
+        <definition value="AMQP based synchronuous and asynchronus message delivery"/>
+    </concept>
+</CodeSystem>

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2016sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="17" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="454" lty="526" rbx="520" rby="544"/>
+					<data>
+						<constant value="&lt;div&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="453" lty="559" rbx="532" rby="577"/>
+					<data>
+						<constant value="&lt;/body&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="16" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="454" lty="615" rbx="528" rby="633"/>
+					<data>
+						<constant value="&lt;/html&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="24"/>
+					</targets>
+					<view ltx="370" lty="273" rbx="446" rby="291"/>
+					<data>
+						<constant value="&lt;head&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="10" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="370" lty="131" rbx="528" rby="149"/>
+					<data>
+						<constant value="&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="11" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="26"/>
+					</targets>
+					<view ltx="370" lty="164" rbx="512" rby="182"/>
+					<data>
+						<constant value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="22" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="399" lty="27" rbx="467" rby="45"/>
+					<data>
+						<constant value="&lt;title&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="26" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="29"/>
+						<datapoint pos="1" key="30"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="31"/>
+					</targets>
+					<view ltx="632" lty="53" rbx="707" rby="111"/>
+				</component>
+				<component name="concat" library="core" uid="28" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="32"/>
+						<datapoint pos="1" key="33"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="34"/>
+					</targets>
+					<view ltx="747" lty="103" rbx="822" rby="161"/>
+				</component>
+				<component name="constant" library="core" uid="23" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="632" lty="143" rbx="703" rby="161"/>
+					<data>
+						<constant value="&lt;/title&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="36"/>
+					</targets>
+					<view ltx="424" lty="349" rbx="503" rby="367"/>
+					<data>
+						<constant value="&lt;/head&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="37"/>
+					</targets>
+					<view ltx="430" lty="385" rbx="506" rby="403"/>
+					<data>
+						<constant value="&lt;body&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="PackageList" library="text" uid="8" kind="16">
+					<properties/>
+					<view ltx="996" lty="38" rbx="1231" rby="462"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" expanded="1">
+										<entry name="Field13" inpkey="38"/>
+										<entry name="Field12" inpkey="39"/>
+									</entry>
+									<entry name="Rows" expanded="1" clone="1">
+										<entry name="Field13" inpkey="40"/>
+										<entry name="Field12" inpkey="41"/>
+										<entry name="Field1" inpkey="42"/>
+									</entry>
+									<entry name="Rows" expanded="1" clone="1">
+										<entry name="Field13" inpkey="43"/>
+									</entry>
+									<entry name="Rows" inpkey="6" expanded="1" clone="1">
+										<entry name="Field13" inpkey="44"/>
+										<entry name="Field12" inpkey="45"/>
+										<entry name="Field1" inpkey="7"/>
+									</entry>
+									<entry name="Rows" inpkey="10" expanded="1" clone="1">
+										<entry name="Field13" inpkey="46"/>
+										<entry name="Field12" inpkey="47"/>
+										<entry name="Field1" inpkey="11"/>
+									</entry>
+									<entry name="Rows" expanded="1" clone="1">
+										<entry name="Field13" inpkey="48"/>
+										<entry name="Field12" inpkey="49"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" outputinstance="..\..\..\GitRepo\utvikling-FHIR\vkp\REST-kall\Packagelist.xml" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator=" " quote="" firstrownames="false" removeempty="true">
+								<names root="Text file" block="Rows">
+									<field0 name="Field13" type="string"/>
+									<field1 name="Field12" type="string"/>
+									<field2 name="Field1" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="18" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view ltx="479" lty="482" rbx="548" rby="500"/>
+					<data>
+						<constant value="&lt;/div&gt;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="31" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="69"/>
+					</targets>
+					<view ltx="457" lty="721" rbx="553" rby="739"/>
+					<data>
+						<constant value="package uri" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="33" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="70"/>
+					</targets>
+					<view ltx="457" lty="755" rbx="505" rby="773"/>
+					<data>
+						<constant value="|-|" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="32" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="71"/>
+					</targets>
+					<view ltx="474" lty="693" rbx="516" rby="711"/>
+					<data>
+						<constant value="|" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Packagelist.md" library="text" uid="29" kind="16">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="996" lty="526" rbx="1212" rby="960"/>
+					<data>
+						<root>
+							<header>
+								<namespaces/>
+							</header>
+							<entry name="FileInstance" expanded="1">
+								<entry name="document" expanded="1">
+									<entry name="Rows" expanded="1">
+										<entry name="Field13" inpkey="72"/>
+										<entry name="Field12" inpkey="73"/>
+									</entry>
+									<entry name="Rows" expanded="1" clone="1">
+										<entry name="Field13" inpkey="101"/>
+									</entry>
+									<entry name="Rows" expanded="1" clone="1">
+										<entry name="Field13" inpkey="74"/>
+										<entry name="Field12" inpkey="75"/>
+										<entry name="Field1" inpkey="76"/>
+									</entry>
+									<entry name="Rows" expanded="1" clone="1">
+										<entry name="Field13" inpkey="77"/>
+									</entry>
+									<entry name="Rows" inpkey="78" expanded="1" clone="1">
+										<entry name="Field13" inpkey="79"/>
+										<entry name="Field12" inpkey="80"/>
+										<entry name="Field1" inpkey="81"/>
+									</entry>
+									<entry name="Rows" inpkey="82" expanded="1" clone="1">
+										<entry name="Field13" inpkey="83"/>
+										<entry name="Field12" inpkey="84"/>
+										<entry name="Field1" inpkey="85"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<wsdl/>
+						<text type="csv" outputinstance="..\..\..\GitRepo\utvikling-FHIR\vkp\REST-kall\Packagelist.md" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator=" " quote="" firstrownames="false" removeempty="true">
+								<names root="Text file" block="Rows">
+									<field0 name="Field13" type="string"/>
+									<field1 name="Field12" type="string"/>
+									<field2 name="Field1" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="30" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="86"/>
+					</targets>
+					<view ltx="451" lty="656" rbx="534" rby="674"/>
+					<data>
+						<constant value="## IG uri:" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="34" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="102"/>
+					</targets>
+					<view ltx="727" lty="597" rbx="770" rby="615"/>
+					<data>
+						<constant value=" " datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="o-basis-ImplementationGuide-v1.0" library="xml" uid="7" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="29" lty="103" rbx="335" rby="495"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://hl7.org/fhir"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ImplementationGuide" ns="1" expanded="1">
+										<entry name="url" ns="1" expanded="1">
+											<entry name="value" type="attribute" outkey="28"/>
+										</entry>
+										<entry name="version" ns="1" expanded="1"/>
+										<entry name="package" ns="1" expanded="1">
+											<entry name="resource" ns="1" expanded="1">
+												<entry name="sourceUri" ns="1" outkey="12" expanded="1">
+													<entry name="value" type="attribute" outkey="13"/>
+												</entry>
+												<entry name="sourceReference" ns="1" outkey="4" expanded="1">
+													<entry name="reference" ns="1" expanded="1">
+														<entry name="value" type="attribute" outkey="5"/>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\GitRepo\utvikling-FHIR\vkp\StructureDefinition\vkp-ImplementationGuide-v06.xsd" inputinstance="..\ImplementationGuide\no-basis-ImplementationGuide-v1.0.xml" outputinstance="..\ImplementationGuide\no-basis-ImplementationGuide-v1.0.xml" instanceroot="{http://hl7.org/fhir}ImplementationGuide"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="6" edgekey="50"/>
+							<edge vertexkey="78" edgekey="87"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="45" edgekey="51"/>
+							<edge vertexkey="80" edgekey="88"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="10" edgekey="14"/>
+							<edge vertexkey="82" edgekey="89"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="47" edgekey="52"/>
+							<edge vertexkey="84" edgekey="90"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="44" edgekey="53"/>
+							<edge vertexkey="46" edgekey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="48" edgekey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="49" edgekey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="7" edgekey="57"/>
+							<edge vertexkey="11" edgekey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="40" edgekey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="38" edgekey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="26">
+						<edges>
+							<edge vertexkey="39" edgekey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="29" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="30" edgekey="63"/>
+							<edge vertexkey="73" edgekey="91"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32" edgekey="64"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="41" edgekey="65"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="33" edgekey="66"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="42" edgekey="67"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="43" edgekey="68"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="75" edgekey="92"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="70">
+						<edges>
+							<edge vertexkey="77" edgekey="93"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="71">
+						<edges>
+							<edge vertexkey="74" edgekey="94"/>
+							<edge vertexkey="76" edgekey="95"/>
+							<edge vertexkey="79" edgekey="96"/>
+							<edge vertexkey="81" edgekey="97"/>
+							<edge vertexkey="83" edgekey="98"/>
+							<edge vertexkey="85" edgekey="99"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="86">
+						<edges>
+							<edge vertexkey="72" edgekey="100"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="102">
+						<edges>
+							<edge vertexkey="101" edgekey="103"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

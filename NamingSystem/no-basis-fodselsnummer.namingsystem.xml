@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../STU3/fhir-all-xsd/fhir-single.xsd">
+    <meta>
+        <versionId value="1.0" />
+    </meta>
+    <name value="Norsk Fødselsnummer" />
+    <status value="active" />
+    <kind value="identifier" />
+    <date value="2018-08-13"/>
+    <publisher value="Direktoratet for e-helse" />
+    <responsible value="Skatteetaten"/>
+    <description value="Fødselsnummer is the official identification of a Norwegian citizen and is registered in the repository called folkeregisteret. Fødselsnummer is a 11-digit number containing 2 control digits." />
+    <uniqueId>
+        <type value="uri" />
+        <value value="http://hl7.no/fhir/NamingSystem/FNR" />
+        <preferred value="false" />
+    </uniqueId>
+    <uniqueId>
+        <type value="oid" />
+        <value value="2.16.578.1.12.4.1.4.1" />
+        <preferred value="true" />
+    </uniqueId>
+</NamingSystem>

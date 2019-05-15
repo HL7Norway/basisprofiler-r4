@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Person" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Person" />
+  <version value="0.2" />
+  <name value="no-basis-Person" />
+  <status value="draft" />
+  <date value="2019-02-19" />
+  <description value="Basisprofil for Norwegian Person information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;The no-basis-Person resource main use-case is with regards to information describing persons that are living in Norway. The information is typically available from the Norwegian &quot;folkeregister&quot; and contains information describing all Norweigan citizens and individuals working and living in Norway." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Person" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Person" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Person.identifier">
+      <path value="Person.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="An identifier for this person. Should be at Fødselsnummer or D-nummer&#xD;&#xA;&#xD;&#xA;Identifier for a person within a particular scope." />
+    </element>
+    <element id="Person.identifier:FNR">
+      <path value="Person.identifier" />
+      <sliceName value="FNR" />
+      <short value="Norwegian FNR" />
+      <definition value="Fødselsnummer for the patient. Fødselsnummer as one of the possible patient identifier, should at least be sent unless there is a reason not to. Reasons for not sending the Fødselsnummer include but are not limited to, research and apps without a contract for processing data.&#xD;&#xA;&#xD;&#xA;Multiple FNR can exist for a person. If several FNR is provided the time period that each identifier is valid should be provided. No information about period is required when only one FNR is provided." />
+      <alias value="fødselsnummer" />
+    </element>
+    <element id="Person.identifier:FNR.system">
+      <path value="Person.identifier.system" />
+      <short value="Identification of the Norwegian FNR" />
+      <definition value="Identifies that this is a Norwegian Fødselsnummer" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.1" />
+    </element>
+    <element id="Person.identifier:FNR.value">
+      <path value="Person.identifier.value" />
+      <definition value="The Norwegian Fødselsnummer" />
+      <alias value="fødselsnummer" />
+      <min value="1" />
+      <fixedString value="The actual Fødselsnummer" />
+      <example>
+        <label value="Fødselsnummer" />
+        <valueString value="15076500565" />
+      </example>
+    </element>
+    <element id="Person.identifier:DNR">
+      <path value="Person.identifier" />
+      <sliceName value="DNR" />
+      <short value="The D-nummer of the patient" />
+      <definition value="The D-nummer of the patient. (assigned by the norwegian Skatteetaten)" />
+      <alias value="D-nummer" />
+    </element>
+    <element id="Person.identifier:DNR.system">
+      <path value="Person.identifier.system" />
+      <short value="The identification of the D-nummer" />
+      <definition value="The identification of the Norwegian D-nummer" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.2" />
+    </element>
+    <element id="Person.identifier:DNR.value">
+      <path value="Person.identifier.value" />
+      <definition value="The actual Norwegian D-nummer" />
+      <min value="1" />
+      <fixedString value="The actual D-nummer" />
+      <example>
+        <label value="D-nummer" />
+        <valueString value="700199 50032" />
+      </example>
+    </element>
+    <element id="Person.name">
+      <path value="Person.name" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-HumanName" />
+      </type>
+    </element>
+    <element id="Person.address">
+      <path value="Person.address" />
+      <short value="Norwegian address" />
+      <definition value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+      </type>
+    </element>
+    <element id="Person.managingOrganization">
+      <path value="Person.managingOrganization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

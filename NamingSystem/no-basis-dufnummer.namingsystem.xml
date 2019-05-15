@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../STU3/fhir-all-xsd/fhir-single.xsd">
+    <meta>
+        <versionId value="1.0" />
+    </meta>
+    <name value="DUF-nummer" />
+    <status value="active" />
+    <kind value="identifier" />
+    <date value="2018-10-26"/>
+    <publisher value="Direktoratet for e-helse" />
+    <responsible value="Utlendingsdirektoratet"/>
+    <description value="Et DUF-nummer er et tolvsifret nummer som blir gitt til alle som søker om opphold i Norge. " />
+    <uniqueId>
+        <type value="uri" />
+        <value value="http://hl7.no/fhir/NamingSystem/DUFN" />
+        <preferred value="false" />
+    </uniqueId>
+    <uniqueId>
+        <type value="oid" />
+        <value value="2.16.578.1.12.4.1.4.5" />
+        <preferred value="true" />
+    </uniqueId>
+</NamingSystem>

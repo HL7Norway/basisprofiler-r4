@@ -1,0 +1,35 @@
+<Organization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../FHIR/STU3/fhir-all-xsd/fhir-single.xsd">
+	<meta>
+		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization"/>
+	</meta>
+	<identifier>
+	<!-- Organization number from the norwegian enhetsregisteret -->
+		<system value="urn:oid:2.16.578.1.12.4.1.2.101"/>
+		<value value="915933149"/>
+	</identifier>
+	<name value="Direktoratet for e-Helse"/> <!-- The name of the organization -->
+	<address>
+	<!-- Postal address for the organization -->
+	<!-- Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. -->
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-address-official">
+		<!-- Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations. -->
+			<valueBoolean value="true"/>
+		</extension>
+		<type value="postal"/>
+		<line value="Postboks 221 Skøyen"/>
+		<city value="OSLO"/> <!-- Poststed -->
+		<postalCode value="0213"/> <!-- postnummer -->
+	</address>
+	<address>
+	<!-- Organizational address for the organization -->
+	<!-- Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. -->
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-address-official">
+		<!-- Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations. -->
+			<valueBoolean value="true"/>
+		</extension>
+		<type value="physical"/>
+		<line value="Verkstedveien 1"/>
+		<city value="OSLO"/> <!-- Poststed -->
+		<postalCode value="0277"/> <!-- postnummer -->
+	</address>
+</Organization>

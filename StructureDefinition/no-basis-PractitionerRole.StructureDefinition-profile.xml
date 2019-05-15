@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-PractitionerRole" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole" />
+  <version value="0.5" />
+  <name value="no-basis-PractitionerRole" />
+  <status value="draft" />
+  <date value="2019-01-18" />
+  <description value="Basisprofil for Norwegian PractitionerRole information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific role information is available. The basis profile is open, but derived profiles should close down the information elements according to specifications relevant to the use-case.&#xD;&#xA;&#xD;&#xA;The main use-case of no-basis-PractitionerRole is to represent the role or function of a Practitioner wihtin an organization. The resource can include information about services performed by a Practitioner, a location where the practitioner performes the functions as well as information about the nature of the employment at an organization." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PractitionerRole" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PractitionerRole.practitioner">
+      <path value="PractitionerRole.practitioner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+      </type>
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+      </type>
+    </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="no-basis: Codes related to what function the Practitioner may perform&#xD;&#xA;&#xD;&#xA;Roles which this practitioner is authorized to perform for the organization." />
+    </element>
+    <element id="PractitionerRole.code:functions">
+      <path value="PractitionerRole.code" />
+      <sliceName value="functions" />
+      <definition value="no-basis: Codes from urn:oid:2.16.578.1.12.4.1.1.9034 Helsepersonells funksjoner mv. (OID=9034)&#xD;&#xA;&#xD;&#xA;Roles which this practitioner is authorized to perform for the organization." />
+      <alias value="helsepersonells funksjoner" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PractitionerRole" />
+        </extension>
+        <strength value="preferred" />
+        <valueSetUri value="urn:oid:2.16.578.1.12.4.1.1.9034" />
+      </binding>
+    </element>
+    <element id="PractitionerRole.code:functions.coding.system">
+      <path value="PractitionerRole.code.coding.system" />
+      <short value="Identity of the Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=9034)" />
+      <definition value="The identification of the code system Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=9034)" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9034" />
+    </element>
+    <element id="PractitionerRole.code:functions.coding.code">
+      <path value="PractitionerRole.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.specialty">
+      <path value="PractitionerRole.specialty" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="no-basis: code related to a speciality that the Practitioner can perform in the role within an organization&#xD;&#xA;&#xD;&#xA;Specific specialty of the practitioner." />
+    </element>
+    <element id="PractitionerRole.specialty:discipline">
+      <path value="PractitionerRole.specialty" />
+      <sliceName value="discipline" />
+      <short value="Specific discipline of practitioner" />
+      <definition value="The Discipline the practitioner operates within the organization." />
+      <alias value="fagområde" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PractitionerSpecialty" />
+        </extension>
+        <strength value="preferred" />
+        <description value="Specific discipline" />
+        <valueSetUri value="urn:oid:2.16.578.1.12.4.1.1.8451" />
+      </binding>
+    </element>
+    <element id="PractitionerRole.specialty:discipline.coding.system">
+      <path value="PractitionerRole.specialty.coding.system" />
+      <short value="The identification of the code system" />
+      <definition value="The identification of the code system Fagområde (OID=8451)" />
+      <alias value="Fagområde" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8451" />
+    </element>
+    <element id="PractitionerRole.specialty:discipline.coding.code">
+      <path value="PractitionerRole.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="PractitionerRole.healthcareService">
+      <path value="PractitionerRole.healthcareService" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService" />
+      </type>
+    </element>
+    <element id="PractitionerRole.endpoint">
+      <path value="PractitionerRole.endpoint" />
+      <definition value="no-basis: don't use this element to reference endpoints registered in the Norwegian Address register (endpoints connected to a kommunikasjonspart in tjenestebasert adressering). Endpoints registered in the Norwegian Address register should only be referenced through a kommunikasjonspart-Organization resource.&#xD;&#xA;&#xD;&#xA;Technical endpoints providing access to services operated for the practitioner with this role." />
+    </element>
+  </differential>
+</StructureDefinition>

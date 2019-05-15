@@ -1,0 +1,71 @@
+<Practitioner xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../FHIR/STU3/fhir-all-xsd/fhir-single.xsd">
+	<meta>
+		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
+	</meta>
+	<identifier>
+	<!-- HPR number for the Practitioner -->
+		<system value="urn:oid:2.16.578.1.12.4.1.4.4"/>
+		<value value="9144889"/>
+	</identifier>
+	<name >
+		<family value="Koman"/>
+		<given value="Magnar"/>
+	</name>
+	<telecom>
+		<system value="phone"/>
+		<value value="75589889"/>
+		<use value="work"/>
+	</telecom>
+		<telecom>
+		<system value="fax"/>
+		<value value="75589899"/>
+	</telecom>
+	<telecom>
+		<system value="phone"/>
+		<value value="98128921"/>
+		<use value="mobile"/>
+	</telecom>
+	<telecom>
+		<system value="email"/>
+		<value value="mako@bottomline.no"/>
+		<use value="work"/>
+	</telecom>
+	<address>
+	<!-- Postal address for the practitioner -->
+	<!-- Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. -->
+		<use value="work"/>
+		<line value="Dreyfushammarn 23"/>
+		<city value="BODØ"/> <!-- Poststed -->
+		<postalCode value="8012"/> <!-- postnummer -->
+	</address>
+	<!-- Kvalififikasjon Kategori helsepersonell (OID=9060) -->
+	<qualification>
+		<code>
+			<coding>
+				<system value="urn:oid:2.16.578.1.12.4.1.1.9060"/>
+				<code value="LE"/>
+				<display value="Lege"/>
+			</coding>
+		</code>
+	</qualification>
+	<!-- Kvalififikasjon autorisasjonskode Godkjenningstype HPR (OID=7704) -->
+	<qualification>
+		<code>
+			<coding>
+				<system value="urn:oid:2.16.578.1.12.4.1.1.7704"/>
+				<code value="1"/>
+				<display value="Autorisasjon"/>
+			</coding>
+		</code>
+	</qualification>
+	<!-- Kvalififikasjon Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)-->
+	<qualification>
+		<code>
+			<coding>
+				<system value="urn:oid:2.16.578.1.12.4.1.1.7426"/>
+				<code value="152"/>
+				<display value="Ortopedisk kirurgi"/>
+			</coding>
+		</code>
+	</qualification>
+</Practitioner>

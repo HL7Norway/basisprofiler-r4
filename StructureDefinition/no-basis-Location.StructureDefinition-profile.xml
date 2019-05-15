@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Location" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Location" />
+  <version value="0.1" />
+  <name value="no-basis-Location" />
+  <status value="draft" />
+  <date value="2019-01-31" />
+  <description value="Basisprofil for Norwegian Location information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific location information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Location" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Location">
+      <path value="Location" />
+      <definition value="Details and position information for a physical place where services are provided  and resources and participants may be stored, found, contained or &#xD;&#xA;accommodated.&#xD;&#xA;&#xD;&#xA;no-basis: The use-case for no-basis-Location is representation of organization structure to describe where a specific department or healthcare service is offered." />
+    </element>
+    <element id="Location.address">
+      <path value="Location.address" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+      </type>
+    </element>
+    <element id="Location.managingOrganization">
+      <path value="Location.managingOrganization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+      </type>
+    </element>
+    <element id="Location.partOf">
+      <path value="Location.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
+      </type>
+    </element>
+    <element id="Location.endpoint">
+      <path value="Location.endpoint" />
+      <definition value="no-basis don't use this element to reference endpoints registered in the Norwegian Address register (endpoints connected to a kommunikasjonspart in tjenestebasert adressering). Endpoints registered in the Norwegian Address register should only be referenced through a kommunikasjonspart-Organization resource.&#xD;&#xA;&#xD;&#xA;Technical endpoints providing access to services operated for the location." />
+    </element>
+  </differential>
+</StructureDefinition>
