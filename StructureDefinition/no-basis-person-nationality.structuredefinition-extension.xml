@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" >
   <id value="no-basis-person-nationality" />
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pa" />
@@ -14,7 +14,7 @@
   <date value="2017-04-19T07:44:43+10:00" />
   <publisher value="HL7" />
   <description value="The nationality of the person." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -22,10 +22,18 @@
   </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Patient" />
-  <context value="Person" />
-  <context value="RelatedPerson" />
+  <context>
+			<type value="element"/>
+			<expression value="Patient"/>
+  </context>
+  <context>
+			<type value="element"/>
+			<expression value="Person"/>
+  </context>
+  <context>
+		<type value="element"/>
+		<expression value="RelatedPerson"/>
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
