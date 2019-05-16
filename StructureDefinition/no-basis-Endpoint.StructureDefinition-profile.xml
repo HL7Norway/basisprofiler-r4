@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Endpoint" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint" />
-  <version value="0.5" />
+  <version value="4.0.0.1" />
   <name value="NobasisEndpoint" />
   <status value="draft" />
   <date value="2019-05-15" />
