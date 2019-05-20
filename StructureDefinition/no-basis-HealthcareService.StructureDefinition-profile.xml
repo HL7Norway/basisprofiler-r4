@@ -145,6 +145,78 @@
       <path value="HealthcareService.specialty.coding.code" />
       <min value="1" />
     </element>
+    <element id="HealthcareService.specialty.coding:8452">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="8452" />
+      <definition value=" Aktivitetstype (OID=8452)" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Aktivitetstype" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8452" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:8452.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8452.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8454">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="8454" />
+      <definition value=" Indirekte aktiviteter (OID=8454)" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Indirekte aktiviteter " />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8454" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:8454.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8454.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:9151">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="9151" />
+      <definition value="IPLOS tjenestetype (OID=9151)" />
+      <binding>
+        <strength value="preferred" />
+        <description value="IPLOS tjenestetype " />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.9151" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:9151.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:9151.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8453">
+      <path value="HealthcareService.specialty.coding" />
+      <sliceName value="8453" />
+      <definition value="Type dagbehandling (OID=8453)" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Type dagbehandling" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8453" />
+      </binding>
+    </element>
+    <element id="HealthcareService.specialty.coding:8453.system">
+      <path value="HealthcareService.specialty.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="HealthcareService.specialty.coding:8453.code">
+      <path value="HealthcareService.specialty.coding.code" />
+      <min value="1" />
+    </element>
     <element id="HealthcareService.location">
       <path value="HealthcareService.location" />
       <type>

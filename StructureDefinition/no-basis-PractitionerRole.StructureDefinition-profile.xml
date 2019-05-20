@@ -103,6 +103,14 @@
       <path value="PractitionerRole.specialty.coding.code" />
       <min value="1" />
     </element>
+    <element id="PractitionerRole.location">
+      <path value="PractitionerRole.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Location" />
+      </type>
+    </element>
     <element id="PractitionerRole.healthcareService">
       <path value="PractitionerRole.healthcareService" />
       <type>
