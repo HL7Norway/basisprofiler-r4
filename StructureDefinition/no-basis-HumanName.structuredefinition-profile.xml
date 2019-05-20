@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitRepo/R4/fhir-all-xsd/fhir-single.xsd">
   <id value="no-basis-HumanName" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2018-06-13T12:22:47.269+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-HumanName" />
-  <version value="1.0" />
-  <name value="no-basis-HumanName" />
+  <version value="2.0" />
+  <name value="NoBasisHumanName" />
   <status value="active" />
-  <date value="2018-10-26" />
+  <date value="2019-05-20" />
   <description value="Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="HumanName" />
@@ -355,9 +355,7 @@
         </extension>
         <strength value="required" />
         <description value="The use of a human name" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/name-use" />
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/ValueSet/name-use"/>
       </binding>
       <mapping>
         <identity value="rim" />

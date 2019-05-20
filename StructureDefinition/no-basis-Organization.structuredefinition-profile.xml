@@ -6,12 +6,12 @@
     <lastUpdated value="2018-06-07T10:49:58.004+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
-  <version value="1.0" />
-  <name value="no-basis-Organization" />
+  <version value="2.0" />
+  <name value="NoBasisOrganization" />
   <status value="active" />
-  <date value="2018-10-26" />
+  <date value="2019-05-20" />
   <description value="Basisprofil for Norwegian Organization information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The basis profile describes information structures typically used for identifying norwegian organizations. Should be used as a basis for further profiling in use-cases where other specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Organization" />
@@ -68,11 +68,11 @@
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
       <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
+          <valueBoolean value="true" />
+        </extension>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
       </type>
     </element>

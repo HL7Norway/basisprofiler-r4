@@ -3,7 +3,7 @@
   <id value="no-basis-Endpoint" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint" />
   <version value="4.0.0.1" />
-  <name value="NobasisEndpoint" />
+  <name value="NoBasisEndpoint" />
   <status value="draft" />
   <date value="2019-05-15" />
   <description value="Basisprofil for Norwegian Endpoint information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Endpoing. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;Resource profile for definition of electronic endpoints used by healthcare organizations to communicate using different protocols. The norwegian profile use-case is to represent endpoints for electronic communication. Fallback solutions using mail or fax has to be indexed in the norwegian master index for healthcare organizations and are not described using this profile." />

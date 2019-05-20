@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
-  <id value="nobasisAddress" />
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Address" />
   <meta>
     <versionId value="3" />
     <lastUpdated value="2019-05-15T13:38:12.872+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
   <version value="1.0" />
-  <name value="NobasisAddress" />
+  <name value="NoBasisAddress" />
   <status value="active" />
   <date value="2019-05-15" />
   <description value="Basisprofil for Norwegian Address information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
@@ -51,7 +51,7 @@
       <path value="Address.use" />
       <definition value="The purpose of this address.&#xD;&#xA;&#xD;&#xA;Mapping of values to other Norwegian CodeSystems is documented in the implementation guide. In general the address used for visiting the person should have use &quot;home&quot; and type &quot;physical&quot; or &quot;both&quot;. The &quot;official&quot; flag can be either true or false." />
     </element>
-     <element id="Address.type">
+    <element id="Address.type">
       <path value="Address.type" />
       <definition value="Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.&#xD;&#xA;&#xD;&#xA;Mapping of values to other Norwegian CodeSystems is documented in the implementation guide. In general the address used for visiting the person should have use &quot;home&quot; and type &quot;physical&quot; or &quot;both&quot;. The &quot;official&quot; flag can be either true or false." />
     </element>
