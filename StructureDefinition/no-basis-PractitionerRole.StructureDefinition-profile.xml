@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-PractitionerRole" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole" />
-  <version value="0.5" />
-  <name value="no-basis-PractitionerRole" />
+  <version value="2.0" />
+  <name value="NoBasisPractitionerRole" />
   <status value="draft" />
-  <date value="2019-01-18" />
+  <date value="2019-05-20" />
   <description value="Basisprofil for Norwegian PractitionerRole information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific role information is available. The basis profile is open, but derived profiles should close down the information elements according to specifications relevant to the use-case.&#xD;&#xA;&#xD;&#xA;The main use-case of no-basis-PractitionerRole is to represent the role or function of a Practitioner wihtin an organization. The resource can include information about services performed by a Practitioner, a location where the practitioner performes the functions as well as information about the nature of the employment at an organization." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="PractitionerRole" />
@@ -19,9 +19,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
       </type>
     </element>
@@ -30,9 +27,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
       </type>
     </element>
@@ -57,7 +51,7 @@
           <valueString value="PractitionerRole" />
         </extension>
         <strength value="preferred" />
-        <valueSetUri value="urn:oid:2.16.578.1.12.4.1.1.9034" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.9034" />
       </binding>
     </element>
     <element id="PractitionerRole.code:functions.coding.system">
@@ -94,7 +88,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Specific discipline" />
-        <valueSetUri value="urn:oid:2.16.578.1.12.4.1.1.8451" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8451" />
       </binding>
     </element>
     <element id="PractitionerRole.specialty:discipline.coding.system">
@@ -114,9 +108,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService" />
       </type>
     </element>
