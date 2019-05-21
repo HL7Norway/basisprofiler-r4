@@ -791,5 +791,31 @@
       <definition value="A postal code designating a region defined by the postal service.&#xD;&#xA;&#xD;&#xA;In Norway this is af four digit number defined by the norwegian postal service." />
       <alias value="postnummer" />
     </element>
+     <element id="Address.extension:urbanDistrict">
+      <path value="Address.extension" />
+      <sliceName value="urbanDistrict" />
+      <short value="The urban district" />
+      <definition value="The name and number of the of the urban district where the patient has registered home address." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district" />
+      </type>
+    </element>
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.system">
+      <path value="Address.extension.valueCoding.system" />
+      <definition value="If coded this information should be coded according to CodeSystem urn:oid:2.16.578.1.12.4.1.1.3403.&#xD;&#xA;The official urban district CodeSystem is maintained by Statistisk sentralbyrå" />
+    </element>
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.code">
+      <path value="Address.extension.valueCoding.code" />
+      <short value="Urban district code" />
+      <alias value="bydelskode" />
+    </element>
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Address.extension.valueCoding.display" />
+      <alias value="bydelsnavn" />
+    </element>
   </differential>
 </StructureDefinition>
