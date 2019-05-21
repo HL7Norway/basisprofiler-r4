@@ -599,7 +599,7 @@
       <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)." />
       <alias value="surname" />
       <alias value="etternavn" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="HumanName.family" />
@@ -643,7 +643,7 @@
       <alias value="first name" />
       <alias value="middle name" />
       <alias value="fornavn" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="HumanName.given" />
@@ -855,14 +855,12 @@
       <path value="HumanName.family" />
       <definition value="Ref. &quot;lov om personnavn&quot; for further details about Norwegian HumanNames.&#xD;&#xA;&#xD;&#xA;The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." />
       <alias value="etternavn" />
-      <min value="1" />
     </element>
     <element id="HumanName.given">
       <path value="HumanName.given" />
       <short value="Given names (not always 'first')" />
       <definition value="Given name. In Norway Given name does not include middlenames according to the regulation for norwegian names. Multiple given names are however legal. Ref. &quot;Lov om personnavn&quot; for further details about Norwegian HumanNames." />
       <alias value="fornavn" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="HumanName.prefix">
