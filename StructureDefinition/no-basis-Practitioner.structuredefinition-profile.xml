@@ -3467,7 +3467,7 @@
       <path value="Practitioner.qualification.code" />
       <sliceName value="healthPersonnelSpecialization" />
       <short value="Godkjent spesialitet for helsepersonell registrert i HPR." />
-      <definition value="Godkjent spesialitet for helsepersonell registrert i HPR.&#xD;&#xA;Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)&#xD;&#xA;" />
+      <definition value="Godkjent spesialitet for helsepersonell registrert i HPR.&#xD;&#xA;Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)" />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
       <max value="1" />
@@ -3492,8 +3492,8 @@
           <valueString value="Qualification" />
         </extension>
         <strength value="preferred" />
-        <description value="klassifikasjon av spesialiteter " />
-        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.7704" />
+        <description value="klassifikasjon av spesialiteter" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.7426" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3748,6 +3748,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7426" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4288,19 +4289,20 @@
       <path value="Practitioner.qualification.code" />
       <sliceName value="healthPersonnelSpecialization" />
       <short value="Godkjent spesialitet for helsepersonell registrert i HPR." />
-      <definition value="Godkjent spesialitet for helsepersonell registrert i HPR.&#xD;&#xA;Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)&#xD;&#xA;" />
+      <definition value="Godkjent spesialitet for helsepersonell registrert i HPR.&#xD;&#xA;Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Qualification" />
         </extension>
         <strength value="preferred" />
-        <description value="klassifikasjon av spesialiteter " />
-        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.7704" />
+        <description value="klassifikasjon av spesialiteter" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.7426" />
       </binding>
     </element>
     <element id="Practitioner.qualification.code:healthPersonnelSpecialization.coding.system">
       <path value="Practitioner.qualification.code.coding.system" />
       <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7426" />
     </element>
     <element id="Practitioner.qualification.code:healthPersonnelSpecialization.coding.code">
       <path value="Practitioner.qualification.code.coding.code" />
