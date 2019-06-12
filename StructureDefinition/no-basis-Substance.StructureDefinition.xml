@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-Substance" />
+  <name value="NoBasisSubstance" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Substance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Substance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Substance">
+      <path value="Substance" />
+      <definition value="A homogeneous material with a definite composition.&#xD;&#xA;&#xD;&#xA;The profile is adapted to use FEST information for coding the substance." />
+    </element>
+    <element id="Substance.code.coding">
+      <path value="Substance.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element id="Substance.code.coding:FEST-Substance">
+      <path value="Substance.code.coding" />
+      <sliceName value="FEST-Substance" />
+      <short value="Substance defined in FEST" />
+      <definition value="A reference to a substance defined in FEST. Using the Substance-id in FEST as code and the Substance name as display. When communicating with other systems in Norway FEST Id shouuld be provided." />
+      <max value="1" />
+    </element>
+    <element id="Substance.code.coding:FEST-Substance.system">
+      <path value="Substance.code.coding.system" />
+      <short value="FEST" />
+      <definition value="FEST is the national DB" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    </element>
+    <element id="Substance.code.coding:FEST-Substance.code">
+      <path value="Substance.code.coding.code" />
+      <short value="Substance Id in FEST" />
+      <definition value="The FEST Id is unique across versions of FEST." />
+      <min value="1" />
+    </element>
+    <element id="Substance.code.coding:FEST-Substance.display">
+      <path value="Substance.code.coding.display" />
+      <short value="Substance name from FEST" />
+      <definition value="The name of the substance as defiend in FEST." />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

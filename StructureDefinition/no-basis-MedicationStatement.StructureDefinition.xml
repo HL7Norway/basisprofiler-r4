@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://example.org/fhir/StructureDefinition/NoBasisMedicationStatement" />
+  <name value="NoBasisMedicationStatement" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationStatement" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationStatement">
+      <path value="MedicationStatement" />
+      <definition value="A record of a medication that is being consumed by a patient.   A MedicationStatement may indicate that the patient may be taking the medication now, or has taken the medication in the past or will be taking the medication in the future.  The source of this information can be the patient, significant other (such as a family member or spouse), or a clinician.  A common scenario where this information is captured is during the history taking process during a patient visit or stay.   The medication information may come from sources such as the patient's memory, from a prescription bottle,  or from a list of medications the patient, clinician or other party maintains &#xD;&#xA;&#xD;&#xA;Norwegian profile: &#xD;&#xA;no-basis-Medication statement is the basic profile for communicating what the patient is using, has been using og plan to use. To be used in PLL and similar resources that communicate information about medication use. The profile has the following changes from MedicationStatement:&#xD;&#xA;- PLL-id is added as an identifier&#xD;&#xA;- reference to no-basis-medication is added and should be used as prefered reference. &#xD;&#xA;- reference to no-basis-patient is added (subject) and should be used as prefered reference.&#xD;&#xA;- ICPC2 and ICD10 is added as prefered reasonCode." />
+    </element>
+    <element id="MedicationStatement.identifier">
+      <path value="MedicationStatement.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type.text" />
+        </discriminator>
+        <ordered value="true" />
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id">
+      <path value="MedicationStatement.identifier" />
+      <sliceName value="PLL-id" />
+      <max value="1" />
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id.use">
+      <path value="MedicationStatement.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id.type">
+      <path value="MedicationStatement.identifier.type" />
+      <min value="1" />
+      <fixedCodeableConcept>
+        <text value="PLL" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicationStatement.identifier.type.text" />
+      <min value="1" />
+      <fixedString value="PLL" />
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id.system">
+      <path value="MedicationStatement.identifier.system" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id.value">
+      <path value="MedicationStatement.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id.period">
+      <path value="MedicationStatement.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.identifier:PLL-id.assigner">
+      <path value="MedicationStatement.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.status">
+      <path value="MedicationStatement.status" />
+      <definition value="A code representing the patient or other source's judgment about the state of the medication used that this statement is about.  Generally this will be active or completed.&#xD;&#xA;&#xD;&#xA;active = start date has passed and end date is not reached&#xD;&#xA;completed = end date is passed (for treatement that had an initial stop date)&#xD;&#xA;entered-in-error = deleted (ref Norwegian laws)&#xD;&#xA;intended = start date is not reached&#xD;&#xA;stopped = end date is passed and it was an active desition to stop the treatment&#xD;&#xA;on-hold = the treatment is paused" />
+    </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medicationReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/NoBasisMedication" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <profile value="NoBasisPatient" />
+        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/NoBasisPatient" />
+      </type>
+    </element>
+    <element id="MedicationStatement.reasonCode">
+      <path value="MedicationStatement.reasonCode" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.reasonCode:ICPC2">
+      <path value="MedicationStatement.reasonCode" />
+      <sliceName value="ICPC2" />
+      <max value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICPC2.coding.system">
+      <path value="MedicationStatement.reasonCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/volven/7170" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICPC2.coding.code">
+      <path value="MedicationStatement.reasonCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICPC2.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicationStatement.reasonCode.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICD10">
+      <path value="MedicationStatement.reasonCode" />
+      <sliceName value="ICD10" />
+      <max value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICD10.coding.system">
+      <path value="MedicationStatement.reasonCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/volven/7110" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICD10.coding.code">
+      <path value="MedicationStatement.reasonCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode:ICD10.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicationStatement.reasonCode.coding.display" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

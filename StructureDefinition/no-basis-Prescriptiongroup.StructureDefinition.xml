@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-Prescriptiongroup" />
+  <name value="NoBasisPrescriptiongroup" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Medication" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Describes the group the medication is within" />
+      <definition value="Prescription group" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:prescriptiongroup">
+      <path value="Extension.extension" />
+      <sliceName value="prescriptiongroup" />
+    </element>
+    <element id="Extension.extension:prescriptiongroup.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+      </type>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

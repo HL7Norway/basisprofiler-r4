@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-Medication" />
+  <name value="NoBasisMedication" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication">
+      <path value="Medication" />
+      <definition value="This resource is primarily used for the identification and definition of a medication. It covers the ingredients and the packaging for a medication.&#xD;&#xA;&#xD;&#xA;The resource has been changed to support norwegian FEST. The following changes are done:&#xD;&#xA;- it is required to use a code identifying the medication in FEST. Special use when medication not present in FEST.&#xD;&#xA;- ATC is a prefered code and should allways be identied if medication is present in FEST.&#xD;&#xA;- isBrand is a required filed. &#xD;&#xA;- form is required and will follow norwegian codingsystem&#xD;&#xA;- the profile is extended with no-basis-Prescriptiongroup" />
+    </element>
+    <element id="Medication.extension">
+      <path value="Medication.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.extension:prescriptiongroup">
+      <path value="Medication.extension" />
+      <sliceName value="prescriptiongroup" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehelse.no/fhir/StructureDefinition/no-basis-Prescriptiongroup" />
+      </type>
+    </element>
+    <element id="Medication.extension:prescriptiongroup.extension:prescriptiongroup.value[x].coding.system">
+      <path value="Medication.extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
+    </element>
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <min value="1" />
+    </element>
+    <element id="Medication.code.coding">
+      <path value="Medication.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.code.coding:FEST-Medication">
+      <path value="Medication.code.coding" />
+      <sliceName value="FEST-Medication" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:FEST-Medication.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://ehelse.no/fhir/CodeSystem/FEST" />
+    </element>
+    <element id="Medication.code.coding:FEST-Medication.display">
+      <path value="Medication.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Medication.code.coding:ATC">
+      <path value="Medication.code.coding" />
+      <sliceName value="ATC" />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:ATC.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://www.whocc.no/atc" />
+    </element>
+    <element id="Medication.code.coding:ATC.code">
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Medication.code.coding:ATC.display">
+      <path value="Medication.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <short value="Code from volven 7448" />
+      <definition value="Code as defined in" />
+      <min value="1" />
+    </element>
+    <element id="Medication.form.coding">
+      <path value="Medication.form.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Medication.form.coding:FEST-Form">
+      <path value="Medication.form.coding" />
+      <sliceName value="FEST-Form" />
+      <max value="1" />
+    </element>
+    <element id="Medication.form.coding:FEST-Form.system">
+      <path value="Medication.form.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7448" />
+    </element>
+    <element id="Medication.form.coding:FEST-Form.code">
+      <path value="Medication.form.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Medication.form.coding:FEST-Form.display">
+      <path value="Medication.form.coding.display" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
