@@ -32,10 +32,6 @@
         <profile value="http://ehelse.no/fhir/StructureDefinition/no-basis-Prescriptiongroup" />
       </type>
     </element>
-    <element id="Medication.extension:prescriptiongroup.extension:prescriptiongroup.value[x].coding.system">
-      <path value="Medication.extension.extension.value[x].coding.system" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
-    </element>
     <element id="Medication.code">
       <path value="Medication.code" />
       <min value="1" />

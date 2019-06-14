@@ -37,8 +37,11 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="urn:oid:2.16.578.1.12.4.1.1.7421" />
       </type>
+    </element>
+    <element id="Extension.extension:prescriptiongroup.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7421" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

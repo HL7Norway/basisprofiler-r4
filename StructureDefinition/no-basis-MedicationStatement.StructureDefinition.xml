@@ -42,9 +42,6 @@
       </fixedCodeableConcept>
     </element>
     <element id="MedicationStatement.identifier:PLL-id.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="MedicationStatement.identifier.type.text" />
       <min value="1" />
       <fixedString value="PLL" />
@@ -69,8 +66,9 @@
       <path value="MedicationStatement.status" />
       <definition value="A code representing the patient or other source's judgment about the state of the medication used that this statement is about.  Generally this will be active or completed.&#xD;&#xA;&#xD;&#xA;active = start date has passed and end date is not reached&#xD;&#xA;completed = end date is passed (for treatement that had an initial stop date)&#xD;&#xA;entered-in-error = deleted (ref Norwegian laws)&#xD;&#xA;intended = start date is not reached&#xD;&#xA;stopped = end date is passed and it was an active desition to stop the treatment&#xD;&#xA;on-hold = the treatment is paused" />
     </element>
-    <element id="MedicationStatement.medication[x]">
+    <element id="MedicationStatement.medication[x]:medicationReference">
       <path value="MedicationStatement.medicationReference" />
+      <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehelse.no/fhir/StructureDefinition/NoBasisMedication" />
@@ -103,16 +101,13 @@
     <element id="MedicationStatement.reasonCode:ICPC2.coding.system">
       <path value="MedicationStatement.reasonCode.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehelse.no/volven/7170" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7170" />
     </element>
     <element id="MedicationStatement.reasonCode:ICPC2.coding.code">
       <path value="MedicationStatement.reasonCode.coding.code" />
       <min value="1" />
     </element>
     <element id="MedicationStatement.reasonCode:ICPC2.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="MedicationStatement.reasonCode.coding.display" />
       <min value="1" />
     </element>
@@ -124,16 +119,13 @@
     <element id="MedicationStatement.reasonCode:ICD10.coding.system">
       <path value="MedicationStatement.reasonCode.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehelse.no/volven/7110" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7110" />
     </element>
     <element id="MedicationStatement.reasonCode:ICD10.coding.code">
       <path value="MedicationStatement.reasonCode.coding.code" />
       <min value="1" />
     </element>
     <element id="MedicationStatement.reasonCode:ICD10.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="MedicationStatement.reasonCode.coding.display" />
       <min value="1" />
     </element>
