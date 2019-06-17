@@ -38,5 +38,12 @@
         <code value="boolean" />
       </type>
     </element>
+	 <element id="Extension.url">
+      <path value="Extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-address-official"/> 
+    </element> 
   </differential>
 </StructureDefinition>
