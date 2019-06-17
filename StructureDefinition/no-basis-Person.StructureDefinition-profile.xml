@@ -192,15 +192,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Language" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="preferred" />
         <description value="A human language." />
         <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
@@ -598,9 +589,6 @@
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one." />
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierUse" />
-        </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
@@ -644,12 +632,6 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
@@ -742,7 +724,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="The actual Fødselsnummer" />
       <example>
         <label value="General" />
         <valueString value="123456" />
@@ -1047,9 +1028,6 @@
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary id for a permanent one." />
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierUse" />
-        </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use|4.0.0" />
@@ -1093,12 +1071,6 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentifierType" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
@@ -1190,7 +1162,6 @@
       <type>
         <code value="string" />
       </type>
-      <fixedString value="The actual D-nummer" />
       <example>
         <label value="General" />
         <valueString value="123456" />
@@ -1468,12 +1439,6 @@
       </constraint>
       <isSummary value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="AdministrativeGender" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="required" />
         <description value="The gender of a person used for administrative purposes." />
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.0" />
@@ -1943,9 +1908,6 @@
         <xpath value="@value|f:*|h:div" />
       </constraint>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="IdentityAssuranceLevel" />
-        </extension>
         <strength value="required" />
         <description value="The level of confidence that this link represents the same actual person, based on NIST Authentication Levels." />
         <valueSet value="http://hl7.org/fhir/ValueSet/identity-assuranceLevel|4.0.0" />
@@ -1991,7 +1953,6 @@
       <definition value="The Norwegian Fødselsnummer" />
       <alias value="fødselsnummer" />
       <min value="1" />
-      <fixedString value="The actual Fødselsnummer" />
       <example>
         <label value="Fødselsnummer" />
         <valueString value="15076500565" />
@@ -2015,7 +1976,6 @@
       <path value="Person.identifier.value" />
       <definition value="The actual Norwegian D-nummer" />
       <min value="1" />
-      <fixedString value="The actual D-nummer" />
       <example>
         <label value="D-nummer" />
         <valueString value="700199 50032" />
