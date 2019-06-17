@@ -86,5 +86,12 @@
       <path value="Extension.value[x]" />
       <max value="0" />
     </element>
+	 <element id="Extension.url">
+      <path value="Extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-person-nationality"/> 
+    </element> 
   </differential>
 </StructureDefinition>

@@ -73,5 +73,12 @@
       <definition value="The official name of the urban district as defined in urn:oid:2.16.578.1.12.4.1.1.3403" />
       <min value="1" />
     </element>
+	 <element id="Extension.url">
+      <path value="Extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district"/> 
+    </element> 
   </differential>
 </StructureDefinition>

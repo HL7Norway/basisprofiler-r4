@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-15T13:55:18.157+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
-  <version value="2.0" />
+  <version value="2.0.0" />
   <name value="NoBasisPatient" />
   <title value="no-basis-Patient" />
   <status value="active" />
@@ -39,8 +39,6 @@
       <short value="The citizenship of the patient" />
       <definition value="The citizenship of the patient. should be a country code from ISO 3166 code system" />
       <alias value="statsborgerskap" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/patient-citizenship" />
@@ -54,14 +52,6 @@
         <strength value="example" />
         <valueSet value="urn:iso:std:iso:3166" />
       </binding>
-    </element>
-    <element id="Patient.extension:citizenship.extension:code.value[x]:valueCodeableConcept">
-      <path value="Patient.extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="Patient.extension:citizenship.extension:period.value[x]:valuePeriod">
-      <path value="Patient.extension.extension.valuePeriod" />
-      <sliceName value="valuePeriod" />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />

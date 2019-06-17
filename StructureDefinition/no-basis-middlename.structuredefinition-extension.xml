@@ -42,5 +42,12 @@
         <code value="string" />
       </type>
     </element>
+	<element id="Extension.url">
+      <path value="Extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename"/> 
+    </element> 
   </differential>
 </StructureDefinition>

@@ -6,7 +6,7 @@
     <lastUpdated value="2019-05-15T08:03:50.475+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-address-official" />
-  <version value="1.0" />
+  <version value="2.0.0" />
   <name value="NoBasisAddressOfficial" />
   <title value="no-basis-address-official" />
   <status value="active" />
@@ -30,20 +30,21 @@
       <definition value="Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in &quot;Folkeregisteret&quot; for persons or &quot;Enhetsregisteret&quot; for organizations." />
       <max value="1" />
     </element>
-    <element id="Extension.valueBoolean">
+    <element id="Extension.value[x]:valueBoolean">
       <path value="Extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
       <short value="True or false" />
       <definition value="True for officially registered addresses, false for other addresses" />
       <type>
         <code value="boolean" />
       </type>
     </element>
-	 <element id="Extension.url">
-      <path value="Extension.url"/> 
-      <type> 
-        <code value="uri"/> 
-      </type> 
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-address-official"/> 
-    </element> 
+    <element id="Extension.uri">
+      <path value="Extension.url" />
+      <type>
+        <code value="uri" />
+      </type>
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-address-official" />
+    </element>
   </differential>
 </StructureDefinition>

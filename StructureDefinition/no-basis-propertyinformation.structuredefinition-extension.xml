@@ -146,6 +146,13 @@
       <alias value="Municipality" />
       <min value="1" />
     </element>
+	 <element id="Extension.url">
+      <path value="Extension.url"/> 
+      <type> 
+        <code value="uri"/> 
+      </type> 
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation"/> 
+    </element> 
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <max value="0" />
