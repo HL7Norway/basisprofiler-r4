@@ -3,7 +3,8 @@
   <id value="kommunikasjonspart-Organization" />
   <url value="http://hl7.no/fhir/StructureDefinition/kommunikasjonspart-Organization" />
   <version value="0.2" />
-  <name value="kommunikasjonspart-Organization" />
+  <name value="KommunikasjonspartOrganization" />
+  <title value="kommunikasjonspart-Organization" />
   <status value="draft" />
   <date value="2019-05-15" />
   <description value="Use case specific profile for Norwegian services defined in the Norwegian address register, kommunikasjonspart-Organization. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare services as defined in the Norwegian adress register. The use-case profile is specific for the use case of identifying relevant services defined in the address register for electronic communication." />
@@ -16,7 +17,7 @@
   <differential>
     <element id="Organization">
       <path value="Organization" />
-      <definition value="The details of a kommunikasjonspart (communication party) defined in the Norwegian Address Registry for Health care. &#xD;&#xA;&#xD;&#xA;Other kinds of healthcare services not registered in Adresseregisteret (clinical services) shold not use this profile. The standard HL7 Resource or the no-basis-HealthcareService can be used.&#xD;&#xA;&#xD;&#xA;" />
+      <definition value="The details of a kommunikasjonspart (communication party) defined in the Norwegian Address Registry for Health care. &#xD;&#xA;&#xD;&#xA;Other kinds of healthcare services not registered in Adresseregisteret (clinical services) shold not use this profile. The standard HL7 Resource or the no-basis-HealthcareService can be used." />
       <comment value="Definition of &quot;kommunikasjonspart&quot; from the Standard HIS 1153-1:2016 (Norwegian text only):&#xD;&#xA;Logisk avgrenset del av en virksomhet i helse- og omsorgstjenesten, som sender og/eller mottar elektroniske meldinger.&#xD;&#xA;Merk 1: En kommunikasjonspart har alltid en HER-id.&#xD;&#xA;Merk 2: En kommunikasjonspart vil som hovedregel være knyttet til en tjenestetype." />
       <alias value="kommunikasjonspart" />
     </element>
@@ -43,10 +44,6 @@
       <path value="Organization.identifier" />
       <min value="1" />
       <max value="1" />
-    </element>
-    <element id="Organization.identifier:RSH">
-      <path value="Organization.identifier" />
-      <sliceName value="RSH" />
     </element>
     <element id="Organization.identifier:RSH.system">
       <path value="Organization.identifier.system" />
@@ -77,12 +74,9 @@
       <min value="1" />
       <max value="1" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="OrganizationType" />
-        </extension>
         <strength value="required" />
         <description value="Tjenestetype CodeSystems" />
-        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-service-type"/>
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-service-type" />
       </binding>
     </element>
     <element id="Organization.partOf">
