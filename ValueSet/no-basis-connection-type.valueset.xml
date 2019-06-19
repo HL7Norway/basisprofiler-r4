@@ -8,7 +8,7 @@
   <url value="http://hl7.no/fhir/ValueSet/no-basis-connection-type" />
   <version value="0.5" />
   <name value="no-basis-connection-type.valueset" />
-  <status value="draft" />
+  <status value="active" />
   <experimental value="true" />
   <date value="2019-03-13T10:48:45.936+00:00" />
   <publisher value="Direktoratet for e-helse" />
