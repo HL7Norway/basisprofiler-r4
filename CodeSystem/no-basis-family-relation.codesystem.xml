@@ -8,7 +8,7 @@
     <url value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation.codesystem" />
     <version value="0.6" />
     <name value="no-basis-family-relation.codesystem" />
-    <status value="draft" /> 
+    <status value="active" /> 
     <date value="2019-05-15T00:00:00+00:00" />
     <publisher value="Copy of Codes from Familierelasjon defined by Skatteetaten" />
     <content value="complete" />
