@@ -5,7 +5,7 @@
   <version value="2.0.0" />
   <name value="NoBasisRelatedPerson" />
   <title value="no-basis-RelatedPerson" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2019-05-20" />
   <description value="Basisprofil for Norwegian RelatedPerson information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific identity information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;Typical use-case for no-basis-RelatedPerson involves information about relations person-patient.&#xD;&#xA;- Relations registered in norwegian Master Person Information Index (aka Folkeregisteret)&#xD;&#xA;- Other relationship information registered on a patient or person neccessary for patient treatment&#xD;&#xA;- Should not be used for contact persons for the patient with a predefined role in the patient care, as information as this is registered separately in the Patient resource" />
   <fhirVersion value="4.0.0" />

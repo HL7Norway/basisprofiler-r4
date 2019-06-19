@@ -5,7 +5,7 @@
   <version value="2.0.0" />
   <name value="NoBasisLocation" />
   <title value="no-basis-Location" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2019-01-31" />
   <description value="Basisprofil for Norwegian Location information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. Should be used as a basis for further profiling in use-cases where specific location information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
   <fhirVersion value="4.0.0" />

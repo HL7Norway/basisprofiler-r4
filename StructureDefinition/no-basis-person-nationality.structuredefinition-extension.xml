@@ -11,9 +11,9 @@
   <version value="2.0.0" />
   <name value="NoBasisPersonNationality" />
   <title value="no-basis-person-nationality" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2019-05-20" />
-  <publisher value="HL7" />
+  <publisher value="HL7 Norway" />
   <description value="The nationality of the person. (Standard extension from HL7 only covers Patient)" />
   <fhirVersion value="4.0.0" />
   <mapping>

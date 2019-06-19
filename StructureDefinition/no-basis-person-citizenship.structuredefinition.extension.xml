@@ -11,9 +11,9 @@
   <version value="2.0.0" />
   <name value="NoBasisPersonCitizenship" />
   <title value="no-basis-person-citizenship" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2018-12-27T22:37:54+11:00" />
-  <publisher value="HL7" />
+  <publisher value="HL7 Norway" />
   <description value="The Person's legal status as citizen of a country." />
   <fhirVersion value="4.0.0" />
   <mapping>

@@ -5,7 +5,7 @@
   <version value="2.0.0" />
   <name value="NoBasisHealthcareService" />
   <title value="no-basis-HealthcareService" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2019-05-20" />
   <description value="Basisprofil for Norwegian Healthcare Service information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific identification of Healthcare Services. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;The typical use-case is to include information regarding what Healthcare related services, support functions or activities provided by an Organization or awailable at a Location." />
   <fhirVersion value="4.0.0" />
