@@ -25,10 +25,6 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Patient" />
-  </context>
-  <context>
-    <type value="element" />
     <expression value="Person" />
   </context>
   <context>
