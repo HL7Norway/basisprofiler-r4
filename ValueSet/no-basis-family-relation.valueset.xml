@@ -16,7 +16,7 @@
   <immutable value="false" />
   <compose>
     <include>
-      <system value="no-basis-family-relation.codesystem" />
+      <system value="http://hl7.no/fhir/Codesystem/no-basis-family-relation" />
     </include>
   </compose>
 </ValueSet>

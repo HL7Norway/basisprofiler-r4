@@ -16,7 +16,7 @@
   <immutable value="false" />
   <compose>
     <include>
-      <system value="no-basis-parental-responsibility.codesystem" />
+      <system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility" />
     </include>
   </compose>
 </ValueSet>
