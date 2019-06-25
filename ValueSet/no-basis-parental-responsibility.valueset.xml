@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///E:/GitRepo/R4/fhir-all-xsd/fhir-single.xsd">
-  <id value="no-basis-maritalstatus.valueset" />
+  <id value="no-basis-parental-responsibility.valueset" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2018-10-16T10:48:46.366+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/ValueSet/no-basis-maritalstatus.valueset" />
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-parental-responsibility" />
   <version value="1.0" />
-  <name value="no-basis-maritalstatus.valueset" />
+  <name value="no-basis-parental-responsibility.valueset" />
   <status value="active" />
   <experimental value="true" />
   <date value="2018-10-26T10:48:45.936+00:00" />
   <publisher value="Direktoratet for e-helse" />
-  <description value="Copy of Codes from Sivilstandstype defined by Skatteetaten"/>
+  <description value="Copy of Codes from Foreldreansvar defined by Skatteetaten"/>
   <immutable value="false" />
   <compose>
     <include>
-      <system value="no-basis-maritalstatus.codesystem" />
+      <system value="no-basis-parental-responsibility.codesystem" />
     </include>
   </compose>
 </ValueSet>
