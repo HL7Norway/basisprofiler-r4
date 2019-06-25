@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2018-10-16T10:48:46.366+00:00" />
   </meta>
-  <url value="http://hl7.no/fhir/ValueSet/no-basis-family-relation.valueset" />
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-family-relation" />
   <version value="1.0" />
   <name value="no-basis-family-relation.valueset" />
   <status value="active" />
