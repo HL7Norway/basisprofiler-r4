@@ -5033,6 +5033,9 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5554,6 +5557,18 @@
       <type>
         <code value="Address" />
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
+      </type>
+    </element>
+    <element id="Patient.generalPractitioner">
+      <path value="Patient.generalPractitioner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
       </type>
     </element>
   </differential>

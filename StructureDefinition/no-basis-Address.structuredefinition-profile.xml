@@ -145,7 +145,7 @@
       <alias value="extensions" />
       <alias value="user content" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -226,14 +226,14 @@
       <path value="Address.extension" />
       <sliceName value="urbanDistrict" />
       <short value="The urban district" />
-      <definition value="The name and number of the of the urban district where the patient has registered home address." />
+      <definition value="The name and number of the of the urban district of this address." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
       <alias value="bydel" />
       <alias value="urban district" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Element.extension" />
         <min value="0" />
@@ -381,11 +381,14 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Address.extension:urbanDistrict.value[x]">
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding">
       <path value="Address.extension.value[x]" />
-      <short value="Value of extension" />
-      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
+      <sliceName value="valueCoding" />
+      <short value="Urban District information" />
+      <definition value="The name and number of the bydel (part of the city). If coded this information should be coded according to CodeSystem urn:oid:2.16.578.1.12.4.1.1.3403" />
       <comment value="A stream of bytes, base64 encoded" />
+      <alias value="Bydel" />
+      <alias value="Urban District" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -394,151 +397,7 @@
         <max value="*" />
       </base>
       <type>
-        <code value="base64Binary" />
-      </type>
-      <type>
-        <code value="boolean" />
-      </type>
-      <type>
-        <code value="canonical" />
-      </type>
-      <type>
-        <code value="code" />
-      </type>
-      <type>
-        <code value="date" />
-      </type>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="decimal" />
-      </type>
-      <type>
-        <code value="id" />
-      </type>
-      <type>
-        <code value="instant" />
-      </type>
-      <type>
-        <code value="integer" />
-      </type>
-      <type>
-        <code value="markdown" />
-      </type>
-      <type>
-        <code value="oid" />
-      </type>
-      <type>
-        <code value="positiveInt" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="time" />
-      </type>
-      <type>
-        <code value="unsignedInt" />
-      </type>
-      <type>
-        <code value="uri" />
-      </type>
-      <type>
-        <code value="url" />
-      </type>
-      <type>
-        <code value="uuid" />
-      </type>
-      <type>
-        <code value="Address" />
-      </type>
-      <type>
-        <code value="Age" />
-      </type>
-      <type>
-        <code value="Annotation" />
-      </type>
-      <type>
-        <code value="Attachment" />
-      </type>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
         <code value="Coding" />
-      </type>
-      <type>
-        <code value="ContactPoint" />
-      </type>
-      <type>
-        <code value="Count" />
-      </type>
-      <type>
-        <code value="Distance" />
-      </type>
-      <type>
-        <code value="Duration" />
-      </type>
-      <type>
-        <code value="HumanName" />
-      </type>
-      <type>
-        <code value="Identifier" />
-      </type>
-      <type>
-        <code value="Money" />
-      </type>
-      <type>
-        <code value="Period" />
-      </type>
-      <type>
-        <code value="Quantity" />
-      </type>
-      <type>
-        <code value="Range" />
-      </type>
-      <type>
-        <code value="Ratio" />
-      </type>
-      <type>
-        <code value="Reference" />
-      </type>
-      <type>
-        <code value="SampledData" />
-      </type>
-      <type>
-        <code value="Signature" />
-      </type>
-      <type>
-        <code value="Timing" />
-      </type>
-      <type>
-        <code value="ContactDetail" />
-      </type>
-      <type>
-        <code value="Contributor" />
-      </type>
-      <type>
-        <code value="DataRequirement" />
-      </type>
-      <type>
-        <code value="Expression" />
-      </type>
-      <type>
-        <code value="ParameterDefinition" />
-      </type>
-      <type>
-        <code value="RelatedArtifact" />
-      </type>
-      <type>
-        <code value="TriggerDefinition" />
-      </type>
-      <type>
-        <code value="UsageContext" />
-      </type>
-      <type>
-        <code value="Dosage" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -548,6 +407,11 @@
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <binding>
+        <strength value="required" />
+        <description value="Bydel" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.3403" />
+      </binding>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -563,8 +427,8 @@
       <short value="Urban District information" />
       <definition value="The name and number of the bydel (part of the city). If coded this information should be coded according to CodeSystem urn:oid:2.16.578.1.12.4.1.1.3403" />
       <comment value="A stream of bytes, base64 encoded" />
+      <alias value="Bydel" />
       <alias value="Urban District" />
-      <alias value="bydel" />
       <min value="0" />
       <max value="1" />
       <base>
@@ -676,9 +540,9 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.system">
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding:valueCoding.system">
       <path value="Address.extension.valueCoding.system" />
-      <short value="Identity of the terminology system for urban district" />
+      <short value="Identity of the terminology system" />
       <definition value="If coded this information should be coded according to CodeSystem urn:oid:2.16.578.1.12.4.1.1.3403.&#xD;&#xA;The official urban district CodeSystem is maintained by Statistisk sentralbyrå" />
       <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
@@ -692,7 +556,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.3403" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -760,10 +623,10 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.code">
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding:valueCoding.code">
       <path value="Address.extension.valueCoding.code" />
       <short value="Urban district code" />
-      <definition value="Predefined code for urban district as defined in urn:oid:2.16.578.1.12.4.1.1.3403" />
+      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
       <alias value="bydelskode" />
@@ -803,14 +666,14 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.display">
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding:valueCoding.display">
       <path value="Address.extension.valueCoding.display" />
-      <short value="The name of the urban district" />
-      <definition value="The official name of the urban district as defined in urn:oid:2.16.578.1.12.4.1.1.3403" />
+      <short value="Representation defined by the system" />
+      <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comment value="Note that FHIR strings SHALL NOT exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
       <alias value="bydelsnavn" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -1436,6 +1299,7 @@
       <sliceName value="propertyinformation" />
       <definition value="Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer." />
       <comment value="real property identification" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation" />
@@ -1453,22 +1317,23 @@
       <path value="Address.extension" />
       <sliceName value="urbanDistrict" />
       <short value="The urban district" />
-      <definition value="The name and number of the of the urban district where the patient has registered home address." />
+      <definition value="The name and number of the of the urban district of this address." />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district" />
       </type>
     </element>
-    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.system">
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding:valueCoding.system">
       <path value="Address.extension.valueCoding.system" />
       <definition value="If coded this information should be coded according to CodeSystem urn:oid:2.16.578.1.12.4.1.1.3403.&#xD;&#xA;The official urban district CodeSystem is maintained by Statistisk sentralbyrå" />
     </element>
-    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.code">
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding:valueCoding.code">
       <path value="Address.extension.valueCoding.code" />
       <short value="Urban district code" />
       <alias value="bydelskode" />
     </element>
-    <element id="Address.extension:urbanDistrict.value[x]:valueCoding.display">
+    <element id="Address.extension:urbanDistrict.value[x]:valueCoding:valueCoding.display">
       <path value="Address.extension.valueCoding.display" />
       <alias value="bydelsnavn" />
     </element>
