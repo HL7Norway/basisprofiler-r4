@@ -43,14 +43,6 @@
       <min value="1" />
       <fixedString value="PLL" />
     </element>
-    <element id="MedicationStatement.identifier:PLL-id.system">
-      <path value="MedicationStatement.identifier.system" />
-      <min value="1" />
-    </element>
-    <element id="MedicationStatement.identifier:PLL-id.value">
-      <path value="MedicationStatement.identifier.value" />
-      <min value="1" />
-    </element>
     <element id="MedicationStatement.status">
       <path value="MedicationStatement.status" />
       <definition value="A code representing the patient or other source's judgment about the state of the medication used that this statement is about.  Generally this will be active or completed.&#xD;&#xA;&#xD;&#xA;active = start date has passed and end date is not reached&#xD;&#xA;completed = end date is passed (for treatement that had an initial stop date)&#xD;&#xA;entered-in-error = deleted (ref Norwegian laws)&#xD;&#xA;intended = start date is not reached&#xD;&#xA;stopped = end date is passed and it was an active desition to stop the treatment&#xD;&#xA;on-hold = the treatment is paused" />
