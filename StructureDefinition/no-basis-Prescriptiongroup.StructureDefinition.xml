@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-Prescriptiongroup" />
+  <id value="no-basis-prescriptiongroup" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-prescriptiongroup" />
   <name value="NoBasisPrescriptiongroup" />
+  <title value="no-basis-prescriptiongroup" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />

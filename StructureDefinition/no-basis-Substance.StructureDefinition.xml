@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-Substance" />
+  <id value="no-basis-Substance" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Substance" />
   <name value="NoBasisSubstance" />
+  <title value="no-basis-Substance" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

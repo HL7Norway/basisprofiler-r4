@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
+  <id value="no-basis-AllergyIntolerance" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
   <name value="NoBasisAllergyIntolerance" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -24,12 +25,12 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="AllergyIntolerance.extension:sourceOfInformation">
+    <element id="AllergyIntolerance.extension:sourceofinformation">
       <path value="AllergyIntolerance.extension" />
-      <sliceName value="sourceOfInformation" />
+      <sliceName value="sourceofinformation" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/no-basis-SourceOfInformation" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-sourcesfinformation" />
       </type>
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
@@ -83,7 +84,7 @@
       <path value="AllergyIntolerance.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/no-basis-Patient" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
       </type>
     </element>
     <element id="AllergyIntolerance.reaction">

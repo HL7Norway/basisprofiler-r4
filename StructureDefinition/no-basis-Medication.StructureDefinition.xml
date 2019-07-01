@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-Medication" />
+  <id value="no-basis-Medication" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
   <name value="NoBasisMedication" />
+  <title value="no-basis-Medication" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -29,7 +31,7 @@
       <sliceName value="prescriptiongroup" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehelse.no/fhir/StructureDefinition/no-basis-Prescriptiongroup" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-prescriptiongroup" />
       </type>
     </element>
     <element id="Medication.code">

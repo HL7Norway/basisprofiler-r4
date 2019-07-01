@@ -73,7 +73,7 @@
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/NoBasisMedication" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Medication" />
         <aggregation value="bundled" />
       </type>
     </element>
