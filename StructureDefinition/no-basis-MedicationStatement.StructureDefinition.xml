@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/NoBasisMedicationStatement" />
+  <id value="no-basis-MedicationStatement" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-MedicationStatement" />
   <name value="NoBasisMedicationStatement" />
+  <title value="no-basis-MedicationStatement" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -79,8 +81,7 @@
       <path value="MedicationStatement.subject" />
       <type>
         <code value="Reference" />
-        <profile value="NoBasisPatient" />
-        <targetProfile value="http://ehelse.no/fhir/StructureDefinition/NoBasisPatient" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
       </type>
     </element>
     <element id="MedicationStatement.reasonCode">
