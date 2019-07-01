@@ -2,9 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-AllergyIntolerance" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
+  <version value="1.0" />
   <name value="NoBasisAllergyIntolerance" />
   <title value="no-basis-AllergyIntolerance" />
   <status value="draft" />
+  <description value="Basis profile for allergy intolerance, to be used in Norway. The profile is adapted to support the norwegian standard for critical information (KI standard). " />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
