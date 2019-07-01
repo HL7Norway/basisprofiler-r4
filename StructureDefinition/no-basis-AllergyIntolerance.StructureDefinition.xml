@@ -3,6 +3,7 @@
   <id value="no-basis-AllergyIntolerance" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
   <name value="NoBasisAllergyIntolerance" />
+  <title value="no-basis-AllergyIntolerance" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
