@@ -21,7 +21,7 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="type.text" />
+          <path value="system" />
         </discriminator>
         <ordered value="true" />
         <rules value="openAtEnd" />
@@ -32,13 +32,8 @@
       <sliceName value="PLL-id" />
       <max value="1" />
     </element>
-    <element id="MedicationStatement.identifier:PLL-id.use">
-      <path value="MedicationStatement.identifier.use" />
-      <max value="0" />
-    </element>
     <element id="MedicationStatement.identifier:PLL-id.type">
       <path value="MedicationStatement.identifier.type" />
-      <min value="1" />
       <fixedCodeableConcept>
         <text value="PLL" />
       </fixedCodeableConcept>
@@ -50,19 +45,11 @@
     </element>
     <element id="MedicationStatement.identifier:PLL-id.system">
       <path value="MedicationStatement.identifier.system" />
-      <max value="0" />
+      <min value="1" />
     </element>
     <element id="MedicationStatement.identifier:PLL-id.value">
       <path value="MedicationStatement.identifier.value" />
       <min value="1" />
-    </element>
-    <element id="MedicationStatement.identifier:PLL-id.period">
-      <path value="MedicationStatement.identifier.period" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.identifier:PLL-id.assigner">
-      <path value="MedicationStatement.identifier.assigner" />
-      <max value="0" />
     </element>
     <element id="MedicationStatement.status">
       <path value="MedicationStatement.status" />
