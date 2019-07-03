@@ -2,9 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-prescriptiongroup" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-prescriptiongroup" />
+  <version value="1.0" />
   <name value="NoBasisPrescriptiongroup" />
   <title value="no-basis-prescriptiongroup" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2019-07-03" />
+  <description value="Part of norwegian standard for describing a prescription. " />
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />

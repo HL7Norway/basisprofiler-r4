@@ -6,6 +6,7 @@
   <name value="NoBasisAllergyIntolerance" />
   <title value="no-basis-AllergyIntolerance" />
   <status value="active" />
+  <date value="2019-07-03" />
   <description value="Basis profile for allergy intolerance, to be used in Norway. The profile is adapted to support the norwegian standard for critical information (KI standard)." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

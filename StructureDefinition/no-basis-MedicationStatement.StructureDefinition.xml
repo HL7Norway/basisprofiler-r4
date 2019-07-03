@@ -6,6 +6,7 @@
   <name value="NoBasisMedicationStatement" />
   <title value="no-basis-MedicationStatement" />
   <status value="active" />
+  <date value="2019-07-03" />
   <description value="Basis profile for medication statement, to be used in Norway. The profile is adapted to include norwegian specific features and constraints." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
