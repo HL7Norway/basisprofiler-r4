@@ -5,8 +5,8 @@
   <version value="1.0" />
   <name value="NoBasisSubstance" />
   <title value="no-basis-Substance" />
-  <status value="draft" />
-  <description value="Basis profile for Substances to be used in Norway. The profile is adapted to use FEST as source of information. " />
+  <status value="active" />
+  <description value="Basis profile for Substances to be used in Norway. The profile is adapted to use FEST as source of information." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
