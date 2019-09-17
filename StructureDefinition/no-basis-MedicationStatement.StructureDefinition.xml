@@ -33,6 +33,8 @@
     <element id="MedicationStatement.identifier:PLL-id">
       <path value="MedicationStatement.identifier" />
       <sliceName value="PLL-id" />
+      <short value="Identifier of norwegian PLL registration" />
+      <definition value="If the medicationstatement is part of PLL, then PLL-id shall be registered. " />
       <max value="1" />
     </element>
     <element id="MedicationStatement.identifier:PLL-id.type">
@@ -50,8 +52,17 @@
       <path value="MedicationStatement.status" />
       <definition value="A code representing the patient or other source's judgment about the state of the medication used that this statement is about.  Generally this will be active or completed.&#xD;&#xA;&#xD;&#xA;active = start date has passed and end date is not reached&#xD;&#xA;completed = end date is passed (for treatement that had an initial stop date)&#xD;&#xA;entered-in-error = deleted (ref Norwegian laws)&#xD;&#xA;intended = start date is not reached&#xD;&#xA;stopped = end date is passed and it was an active desition to stop the treatment&#xD;&#xA;on-hold = the treatment is paused" />
     </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <type>
         <code value="Reference" />

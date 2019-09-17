@@ -32,6 +32,7 @@
     <element id="Medication.extension:prescriptiongroup">
       <path value="Medication.extension" />
       <sliceName value="prescriptiongroup" />
+      <definition value="Prescription group is refered in IDMP as Legal status of supply." />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-prescriptiongroup" />
@@ -54,6 +55,8 @@
     <element id="Medication.code.coding:FEST-Medication">
       <path value="Medication.code.coding" />
       <sliceName value="FEST-Medication" />
+      <short value="Medication defined in FEST" />
+      <definition value="Medication is one of the following types: LegemiddelVirkestoff, LegemiddelMerkevare, Legemiddelpakning, Legemiddeldose. " />
       <min value="1" />
       <max value="1" />
     </element>
@@ -69,6 +72,8 @@
     <element id="Medication.code.coding:ATC">
       <path value="Medication.code.coding" />
       <sliceName value="ATC" />
+      <short value="ATC" />
+      <definition value="Medications ATC code if present. " />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:ATC.system">
@@ -104,6 +109,8 @@
     <element id="Medication.form.coding:FEST-Form">
       <path value="Medication.form.coding" />
       <sliceName value="FEST-Form" />
+      <short value="Form given by norwegian codingsystem" />
+      <definition value="Norwegian coding of the medication form, as given in FEST and based on codingsystem 7448." />
       <max value="1" />
     </element>
     <element id="Medication.form.coding:FEST-Form.system">
