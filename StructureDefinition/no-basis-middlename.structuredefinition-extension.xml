@@ -44,6 +44,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -51,6 +52,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -123,6 +125,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -130,6 +133,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -169,6 +173,7 @@
           </extension>
         </code>
       </type>
+      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -176,6 +181,12 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
       <comment value="A stream of bytes, base64 encoded" />
@@ -184,7 +195,7 @@
       <base>
         <path value="Extension.value[x]" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="base64Binary" />
@@ -340,6 +351,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -351,7 +363,7 @@
       </mapping>
     </element>
     <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueString" />
       <short value="The middlename" />
       <definition value="The middle name of the person.&#xD;&#xA;The middlename should be a norwegian middlename as defined by norwegian legislation (Lov om personnavn)." />
@@ -362,7 +374,7 @@
       <base>
         <path value="Extension.value[x]" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="string" />
@@ -374,6 +386,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -384,7 +397,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.uri">
+    <element id="Extension.url">
       <path value="Extension.url" />
       <short value="Primitive Type uri" />
       <definition value="String of characters used to identify a name or a resource" />
@@ -393,8 +406,6 @@
       <max value="*" />
       <base>
         <path value="Extension.url" />
-        <min value="0" />
-        <max value="*" />
       </base>
       <type>
         <code value="uri" />
@@ -407,6 +418,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -422,8 +434,21 @@
       <alias value="mellomnavn" />
       <max value="1" />
     </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueString" />
       <short value="The middlename" />
       <definition value="The middle name of the person.&#xD;&#xA;The middlename should be a norwegian middlename as defined by norwegian legislation (Lov om personnavn)." />
