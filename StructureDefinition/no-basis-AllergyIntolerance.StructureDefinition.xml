@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-AllergyIntolerance" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
-  <version value="1.0" />
+  <version value="2.0.3" />
   <name value="NoBasisAllergyIntolerance" />
   <title value="no-basis-AllergyIntolerance" />
   <status value="active" />
@@ -18,7 +18,7 @@
     <element id="AllergyIntolerance">
       <path value="AllergyIntolerance" />
       <short value="Allergy or Intolerance (generally: Risk of adverse reaction to a substance)" />
-      <definition value="Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.&#xD;&#xA;&#xD;&#xA;Norwegian profile: &#xD;&#xA;no-basis-AllergyIntolerance is the basic profile for communicating Allergy intoleeance identifed for a patient. It is adapted to be used in Norway. The profile has the following changes from AllergyIntolerance:&#xD;&#xA;- There are restrictions to use verificationStatus since KI is using Certainty that has similar use&#xD;&#xA;- Reference to patient is changes. no-basis-patient should be used.&#xD;&#xA;- Substance is required and should include one of: ATC, FestSubstance, FestMedication&#xD;&#xA;- manifestation is changed to use codingsystem 7497&#xD;&#xA;- the profile is extended with certanity and sourceOfInformation to support national KI standard" />
+      <definition value="Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.&#xD;&#xA;&#xD;&#xA;Norwegian profile:  &#xD;&#xA;no-basis-AllergyIntolerance is the basic profile for communicating Allergy intoleeance identifed for a patient. It is adapted to be used in Norway. The profile has the following changes from AllergyIntolerance:&#xD;&#xA;- There are restrictions to use verificationStatus since KI is using Certainty that has similar use&#xD;&#xA;- Reference to patient is changes. no-basis-patient should be used.&#xD;&#xA;- Substance is required and should include one of: ATC, FestSubstance, FestMedication&#xD;&#xA;- manifestation is changed to use codingsystem 7497&#xD;&#xA;- the profile is extended with certanity and sourceOfInformation to support national KI standard" />
       <comment value="Substances include, but are not limited to: a therapeutic substance administered correctly at an appropriate dosage for the individual; food; material derived from plants or animals; or venom from insect stings." />
       <alias value="Allergy" />
       <alias value="Intolerance" />
@@ -366,7 +366,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-sourcesfinformation" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1352,7 +1352,7 @@
           </extension>
         </code>
       </type>
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-sourcesfinformation" />
+      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -5403,7 +5403,7 @@
   <differential>
     <element id="AllergyIntolerance">
       <path value="AllergyIntolerance" />
-      <definition value="Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.&#xD;&#xA;&#xD;&#xA;Norwegian profile: &#xD;&#xA;no-basis-AllergyIntolerance is the basic profile for communicating Allergy intoleeance identifed for a patient. It is adapted to be used in Norway. The profile has the following changes from AllergyIntolerance:&#xD;&#xA;- There are restrictions to use verificationStatus since KI is using Certainty that has similar use&#xD;&#xA;- Reference to patient is changes. no-basis-patient should be used.&#xD;&#xA;- Substance is required and should include one of: ATC, FestSubstance, FestMedication&#xD;&#xA;- manifestation is changed to use codingsystem 7497&#xD;&#xA;- the profile is extended with certanity and sourceOfInformation to support national KI standard" />
+      <definition value="Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.&#xD;&#xA;&#xD;&#xA;Norwegian profile:  &#xD;&#xA;no-basis-AllergyIntolerance is the basic profile for communicating Allergy intoleeance identifed for a patient. It is adapted to be used in Norway. The profile has the following changes from AllergyIntolerance:&#xD;&#xA;- There are restrictions to use verificationStatus since KI is using Certainty that has similar use&#xD;&#xA;- Reference to patient is changes. no-basis-patient should be used.&#xD;&#xA;- Substance is required and should include one of: ATC, FestSubstance, FestMedication&#xD;&#xA;- manifestation is changed to use codingsystem 7497&#xD;&#xA;- the profile is extended with certanity and sourceOfInformation to support national KI standard" />
     </element>
     <element id="AllergyIntolerance.extension">
       <path value="AllergyIntolerance.extension" />
@@ -5420,7 +5420,7 @@
       <sliceName value="sourceofinformation" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-sourcesfinformation" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
       </type>
     </element>
     <element id="AllergyIntolerance.extension:sourceofinformation.extension:source">
