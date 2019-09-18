@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NamingSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitRepo/R4/fhir-all-xsd/fhir-single.xsd">
     <meta>
-        <versionId value="0.1" />
+        <versionId value="0.2" />
     </meta>
     <name value="FEST-id" />
     <status value="draft" />
     <kind value="identifier" />
     <date value="2019-09-18"/>
-    <publisher value="Statens legemiddelverk" />
-    <responsible value="Statens legemiddelverk"/>
-    <description value="TODO" />
+    <publisher value="HL7 Norway on behalf of The Norwegian Medicines Agency" />
+    <responsible value="The Norwegian Medicines Agency (Statens legemiddelverk)"/>
+    <description value="Identification of medical products according to M30 FEST" />
+    <usage value="To identify a medicinal product listing according to M30 FEST message provided by The Norwegian Medicines Agency. See oppførings-ID in FEST documentation." />
     <uniqueId>
         <type value="uri" />
         <value value="http://hl7.no/fhir/NamingSystem/festid" />
