@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-13T12:23:00.348+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
-  <version value="2.0.0" />
+  <version value="2.0.3" />
   <name value="NoBasisMiddlename" />
   <title value="no-basis-middlename" />
   <status value="active" />

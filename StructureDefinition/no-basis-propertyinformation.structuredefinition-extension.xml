@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-13T12:21:26.15+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation" />
-  <version value="2.0.0" />
+  <version value="2.0.3" />
   <name value="NoBasisPropertyinformation" />
   <title value="no-basis-propertyinformation" />
   <status value="active" />

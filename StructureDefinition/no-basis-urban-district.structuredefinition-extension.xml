@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-13T12:22:12.74+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district" />
-  <version value="2.0.0" />
+  <version value="2.0.3" />
   <name value="NoBasisUrbanDistrict" />
   <title value="no-basis-urban-district" />
   <status value="active" />
