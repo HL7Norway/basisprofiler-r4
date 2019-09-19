@@ -408,34 +408,6 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <short value="Primitive Type uri" />
-      <definition value="String of characters used to identify a name or a resource" />
-      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Extension.url" />
-      </base>
-      <type>
-        <code value="uri" />
-      </type>
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district" />
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() or (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-        <source value="Element" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
   </snapshot>
   <differential>
     <element id="Extension">
@@ -462,13 +434,6 @@
         <description value="Bydel" />
         <valueSet value="urn:oid:2.16.578.1.12.4.1.1.3403" />
       </binding>
-    </element>
-    <element id="Extension.uri">
-      <path value="Extension.url" />
-      <type>
-        <code value="uri" />
-      </type>
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district" />
     </element>
   </differential>
 </StructureDefinition>
