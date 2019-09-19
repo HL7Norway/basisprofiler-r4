@@ -14,7 +14,6 @@
   <type value="AllergyIntolerance" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
   <derivation value="constraint" />
-<<<<<<< HEAD
   <snapshot>
     <element id="AllergyIntolerance">
       <path value="AllergyIntolerance" />
@@ -5401,8 +5400,6 @@
       </mapping>
     </element>
   </snapshot>
-=======
->>>>>>> 762cb010447a1e65a1738b78e4dfe0a6960ee701
   <differential>
     <element id="AllergyIntolerance">
       <path value="AllergyIntolerance" />
