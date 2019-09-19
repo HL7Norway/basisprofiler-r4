@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-13T12:22:47.269+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-HumanName" />
-  <version value="2.0.0" />
+  <version value="2.0.4" />
   <name value="NoBasisHumanName" />
   <title value="no-basis-HumanName" />
   <status value="active" />
@@ -38,6 +38,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -118,6 +119,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -125,6 +127,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -162,6 +165,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -169,6 +173,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -241,6 +246,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="ext-1" />
@@ -248,6 +254,7 @@
         <human value="Must have either extensions or value[x], not both" />
         <expression value="extension.exists() != value.exists()" />
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <source value="Extension" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -287,7 +294,7 @@
           </extension>
         </code>
       </type>
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
+      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -303,7 +310,7 @@
       <base>
         <path value="Extension.value[x]" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="base64Binary" />
@@ -459,6 +466,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -470,7 +478,7 @@
       </mapping>
     </element>
     <element id="HumanName.extension:middlename.value[x]:valueString">
-      <path value="HumanName.extension.valueString" />
+      <path value="HumanName.extension.value[x]" />
       <sliceName value="valueString" />
       <short value="The middlename" />
       <definition value="The middle name of the person.&#xD;&#xA;The middlename should be a norwegian middlename as defined by norwegian regulation (Lov om personnavn)." />
@@ -481,7 +489,7 @@
       <base>
         <path value="Extension.value[x]" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="string" />
@@ -493,6 +501,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mapping>
         <identity value="rim" />
@@ -501,35 +510,6 @@
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="HumanName.extension:middlename.url">
-      <path value="HumanName.extension.url" />
-      <short value="Primitive Type uri" />
-      <definition value="String of characters used to identify a name or a resource" />
-      <comment value="see http://en.wikipedia.org/wiki/Uniform_resource_identifier" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Extension.url" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="uri" />
-      </type>
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() or (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
       </mapping>
     </element>
     <element id="HumanName.use">
@@ -543,7 +523,7 @@
       <base>
         <path value="HumanName.use" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="code" />
@@ -555,6 +535,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <isModifier value="true" />
       <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old name etc.for a current/permanent one" />
@@ -592,7 +573,7 @@
       <base>
         <path value="HumanName.text" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="string" />
@@ -604,6 +585,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -631,7 +613,7 @@
       <base>
         <path value="HumanName.family" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="string" />
@@ -643,6 +625,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -688,6 +671,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -730,6 +714,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mustSupport value="false" />
       <isSummary value="true" />
@@ -773,6 +758,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <mustSupport value="false" />
       <isSummary value="true" />
@@ -800,7 +786,7 @@
       <base>
         <path value="HumanName.period" />
         <min value="0" />
-        <max value="*" />
+        <max value="1" />
       </base>
       <type>
         <code value="Period" />
@@ -812,6 +798,7 @@
         <human value="All FHIR elements must have a @value or children" />
         <expression value="hasValue() or (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
+        <source value="Element" />
       </constraint>
       <constraint>
         <key value="per-1" />
@@ -819,6 +806,7 @@
         <human value="If present, start SHALL have a lower value than end" />
         <expression value="start.hasValue().not() or end.hasValue().not() or (start &lt;= end)" />
         <xpath value="not(exists(f:start/@value)) or not(exists(f:end/@value)) or (xs:dateTime(f:start/@value) &lt;= xs:dateTime(f:end/@value))" />
+        <source value="Period" />
       </constraint>
       <isSummary value="true" />
       <mapping>
@@ -874,7 +862,7 @@
       </type>
     </element>
     <element id="HumanName.extension:middlename.value[x]:valueString">
-      <path value="HumanName.extension.valueString" />
+      <path value="HumanName.extension.value[x]" />
       <sliceName value="valueString" />
       <definition value="The middle name of the person.&#xD;&#xA;The middlename should be a norwegian middlename as defined by norwegian regulation (Lov om personnavn)." />
     </element>
