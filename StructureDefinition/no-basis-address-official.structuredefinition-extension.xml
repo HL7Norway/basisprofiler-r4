@@ -357,7 +357,8 @@
     <element id="Extension.value[x]:valueBoolean">
       <path value="Extension.value[x]" />
       <sliceName value="valueBoolean" />
-      <short value="True or false" />
+      <sliceIsConstraining value="true" />
+      <short value="Value of extension" />
       <definition value="True for officially registered addresses, false for other addresses" />
       <comment value="A stream of bytes, base64 encoded" />
       <min value="0" />
@@ -403,7 +404,7 @@
     <element id="Extension.value[x]:valueBoolean">
       <path value="Extension.value[x]" />
       <sliceName value="valueBoolean" />
-      <short value="True or false" />
+      <sliceIsConstraining value="true" />
       <definition value="True for officially registered addresses, false for other addresses" />
       <type>
         <code value="boolean" />
