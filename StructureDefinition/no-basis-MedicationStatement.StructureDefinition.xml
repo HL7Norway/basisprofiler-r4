@@ -59,6 +59,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="openAtEnd" />
       </slicing>
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
