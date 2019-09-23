@@ -14,6 +14,6 @@
     <uniqueId>
         <type value="uri" />
         <value value="http://legemiddelverket.no/fhir/NamingSystem/fest-id" />
-        <preferred value="false" />
+        <preferred value="true" />
     </uniqueId>
 </NamingSystem>
