@@ -13,7 +13,7 @@
     <usage value="To identify a medicinal product listing according to M30 FEST message provided by The Norwegian Medicines Agency. See oppførings-ID in FEST documentation." />
     <uniqueId>
         <type value="uri" />
-        <value value="http://hl7.no/fhir/NamingSystem/festid" />
+        <value value="http://slf.no/fhir/NamingSystem/fest-id" />
         <preferred value="false" />
     </uniqueId>
 </NamingSystem>
