@@ -6,11 +6,11 @@
     <lastUpdated value="2018-06-13T12:23:00.348+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
-  <version value="2.0.4" />
+  <version value="2.0.5" />
   <name value="NoBasisMiddlename" />
   <title value="no-basis-middlename" />
   <status value="active" />
-  <date value="2018-10-26" />
+  <date value="2019-09-23" />
   <publisher value="Direktoratet for e-helse" />
   <description value="The basis extension defines the Norwegian middlename wich is called &quot;mellomnavn&quot; and defined by Norwegian legislation (Lov om personnavn)." />
   <purpose value="Specific usage of middle name as a specific part of official name standard where name order is important" />
@@ -181,6 +181,13 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
       <short value="Value of extension" />
       <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list)." />
       <comment value="A stream of bytes, base64 encoded" />
@@ -403,6 +410,16 @@
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
     </element>
     <element id="Extension.value[x]:valueString">
       <path value="Extension.value[x]" />
