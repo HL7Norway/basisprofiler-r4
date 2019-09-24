@@ -1,32 +1,31 @@
-# Utvikling av HL7 FHIR basisprofiler for Norge - R4
-
-## Arbeidsplan
-# Utvikling av HL7 FHIR basisprofiler for Norge på FHIR R4 versjon
+# no-basis HL7 FHIR basisprofiler for norge R4 versjon
 HL7 FHIR Base profiles for Norway
 
 ## Mål
 
-### Løfte STU3-profilene til R4
-Alt som nå blir ferdigstilt etter høring i basisprofiler-r3 (Patient, Practitioner, Organization, med mer) skal løftes til r4 når deler av R4 blir vedtatt (desember 2018). Hovedløftet skjer når verktøystøtte for R4 er på plass, som Forge og Simplifier (antatt april 2019).
-
-Profilene skal være såkalte basisprofiler for Norge, som er minstekrav. Disse profilene kan brukes direkte, men vil ofte være gjenstand for videre profilering for spesifikke anvendelser og grensesnitt.
+Profilene beskrevet her er nasjonale basisprofiler for FHIR R4. Det vil si de beskriver det minimum av endringer som må gjøres på tilhørende internasjonal ressurser for å ta denne i bruk i Norge. Disse profilene kan brukes direkte, men vil ofte være gjenstand for videre profilering for spesifikke anvendelser og grensesnitt.
 Se [prinsipper for basisprofiler i wiki'en](https://github.com/HL7Norway/best-practice/wiki/Prinsipper-for-basisprofiler).
 
-## Ferdige profiler STU3
+## Ferdige profiler R4
 
-Følgende profiler er ferdige og venter på endelig godkjenning og endring av status fra "draft" til "final":
+15 profiler er publisert på SIMPLIFER.net og omfatter blant annet
 * no-basis-Patient
 * no-basis-Organization
 * no-basis-Practitioner
-* Tilhørende typer og extensions, slik som Address, HumanName
+* no-basis-Medication
 
-## Publisering
+[Profilene er beskrevet i implementasjonsguide på SIMPLIFIER.net](https://simplifier.net/guide/no-basis-entities-individuals/introduction)
+Conformance ressursene som som ligger til grunn for den publiserte versjonen av profilene på SIMPLIFIER er en nøyaktig kopi av ressursene i [Github prosjektet](https://github.com/HL7Norway/basisprofiler-r4).
 
-
+Implementasjonsguiden på SIMPLIFER er imidlertid ikke speilet tilbake til Github prosjektet, så denne finnes bare på SIMPLIFIER.
 
 ## Høring 
 
-Tilbakemeldinger kan skje, enten på epost (se kontaktpersoner under), eller ved å bli medlem av [prosjektet på GitHub](https://github.com/HL7Norway/basisprofiler-r4) og legge det inn som issues, eventuelt lage en egen branch med forslag til endringer. Det er mulig å legge inn issues uten å være medlem av git'en. 
+Det er gjennomført flere høringsrunder på profilene som nå er publisert, disse er nå ferdige (pr september 2019). Ytterligere tilbakemeldinger om bugs eller andre forslag til forbedringer kan skje:
+
+* På epost (se kontaktpersoner under)
+* Github prosjektet [prosjektet på GitHub](https://github.com/HL7Norway/basisprofiler-r4) og legge det inn som issues
+* eventuelt lage en egen branch med forslag til endringer på [prosjektet på GitHub](https://github.com/HL7Norway/basisprofiler-r4)
 
 ## Profiler diskutert på workshop 5. februar 2019
 
