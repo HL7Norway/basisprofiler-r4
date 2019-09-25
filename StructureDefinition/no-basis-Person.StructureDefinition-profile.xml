@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Person" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Person" />
-  <version value="2.0.0" />
+  <version value="2.0.5" />
   <name value="NoBasisPerson" />
   <title value="no-basis-Person" />
   <status value="active" />
