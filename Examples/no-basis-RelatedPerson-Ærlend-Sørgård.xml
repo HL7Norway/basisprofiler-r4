@@ -23,11 +23,6 @@
 		</identifier>
 	</patient>
 	<relationship>
-		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-marital-status">
-			<extension url="authority">
-				<valueString value="domstolen"/>
-			</extension>
-		</extension>
 		<coding>
 			<system value="http://hl7.no/fhir/ValueSet/no-basis-marital-status"/>
 			<code value="gift"/>
