@@ -23,7 +23,7 @@
 		</identifier>
 	</patient>
 	<relationship>
-		<extension url="http://ehelse.no/fhir/StructureDefinition/gd-marital-status">
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-marital-status">
 			<extension url="authority">
 				<valueString value="domstolen"/>
 			</extension>
