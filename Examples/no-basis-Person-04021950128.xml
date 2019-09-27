@@ -1,0 +1,19 @@
+<Person xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../R4/fhir-all-xsd/fhir-single.xsd">
+	<meta>
+		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Person"/>
+	</meta>
+	<identifier> <!-- Fødselnummeret til brukeren -->
+	<!-- VKP expects a Norwegian "fødselsnummer" as the primary patient identification. -->
+		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+		<value value="04021950128"/>
+	</identifier>
+	<name> <!-- Navnet til brukeren -->
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
+				<valueString value="Tirsdag"/>
+		</extension>
+		<family value="MANDAGSBIL"/>
+		<given value="AKTVERDIG"/>
+	</name>
+	<!-- Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes. -->
+	<gender value="male"/>
+</Person>
