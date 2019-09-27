@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-13T12:22:47.269+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-HumanName" />
-  <version value="2.0.5" />
+  <version value="2.0.6" />
   <name value="NoBasisHumanName" />
   <title value="no-basis-HumanName" />
   <status value="active" />
