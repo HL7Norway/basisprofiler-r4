@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-07T10:49:58.004+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
-  <version value="2.0.0" />
+  <version value="2.0.6" />
   <name value="NoBasisOrganization" />
   <title value="no-basis-Organization" />
   <status value="active" />
