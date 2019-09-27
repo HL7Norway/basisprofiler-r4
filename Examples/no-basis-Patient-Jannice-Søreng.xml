@@ -1,4 +1,4 @@
-<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../FHIR-utvikling/R4/fhir-all-xsd/fhir-single.xsd">
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../R4/fhir-all-xsd/fhir-single.xsd">
 	<meta>
 		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient"/>
 	</meta>
@@ -47,7 +47,7 @@
 		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation">
 		<!-- Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer. -->
 		<!-- I dette eksempelet er bare kommunenavn angitt, men vanligvis vil man benytte address.distreict hvis man bare ønsker kommunenavnet -->
-			<extension url="kommune">
+			<extension url="municipality">
 				<valueCoding>
 					<system value="urn:oid:2.16.578.1.12.4.1.1.3402"/>
 					<code value="0301"/>
