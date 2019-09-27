@@ -6,7 +6,7 @@
     <lastUpdated value="2019-05-15T13:38:12.872+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
-  <version value="2.0.5" />
+  <version value="2.0.6" />
   <name value="NoBasisAddress" />
   <title value="no-basis-Address" />
   <status value="active" />
@@ -236,7 +236,7 @@
       <path value="Address.extension" />
       <sliceName value="propertyInformation" />
       <short value="Real property identification" />
-      <definition value="Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer&#xD;&#xA;" />
+      <definition value="Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer" />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -805,8 +805,6 @@
     <element id="Address.extension:official">
       <path value="Address.extension" />
       <sliceName value="official" />
-      <short value="The concept of an officially registered address" />
-      <definition value="Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in &quot;Folkeregisteret&quot; for persons or &quot;Enhetsregisteret&quot; for organizations." />
       <alias value="offisiell adresse" />
       <type>
         <code value="Extension" />
@@ -818,9 +816,6 @@
       <sliceName value="urbanDistrict" />
       <short value="urban district information" />
       <definition value="The name and number of the of the urban district of this address." />
-      <alias value="bydel" />
-      <alias value="urban district" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -831,8 +826,7 @@
       <path value="Address.extension" />
       <sliceName value="propertyInformation" />
       <short value="Real property identification" />
-      <definition value="Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer&#xD;&#xA;" />
-      <min value="0" />
+      <definition value="Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer" />
       <max value="1" />
       <type>
         <code value="Extension" />
