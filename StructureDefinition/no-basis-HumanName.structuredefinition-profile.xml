@@ -22,7 +22,7 @@
     <element id="HumanName">
       <path value="HumanName" />
       <short value="Norwegian human name" />
-      <definition value="Defines the format of norwegian human name according to norwegian regulation (lov om personnavn)." />
+      <definition value="Defines the format of norwegian human name according to norwegian legislation (lov om personnavn)." />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <min value="0" />
       <max value="*" />
@@ -142,7 +142,7 @@
       <path value="HumanName.extension" />
       <sliceName value="middlename" />
       <short value="Defines a middle name" />
-      <definition value="Defines a middle name as a specific extension as this is widely used in Norwegian names and the given shoul appear before any middle name." />
+      <definition value="Defines a middle name as a specific extension as this is widely used in Norwegian names. The middlename is defined in norwegian legislation (lov om personnavn)." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -511,7 +511,7 @@
     <element id="HumanName">
       <path value="HumanName" />
       <short value="Norwegian human name" />
-      <definition value="Defines the format of norwegian human name according to norwegian regulation (lov om personnavn)." />
+      <definition value="Defines the format of norwegian human name according to norwegian legislation (lov om personnavn)." />
     </element>
     <element id="HumanName.extension">
       <path value="HumanName.extension" />
@@ -527,7 +527,7 @@
       <path value="HumanName.extension" />
       <sliceName value="middlename" />
       <short value="Defines a middle name" />
-      <definition value="Defines a middle name as a specific extension as this is widely used in Norwegian names and the given shoul appear before any middle name." />
+      <definition value="Defines a middle name as a specific extension as this is widely used in Norwegian names. The middlename is defined in norwegian legislation (lov om personnavn)." />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
