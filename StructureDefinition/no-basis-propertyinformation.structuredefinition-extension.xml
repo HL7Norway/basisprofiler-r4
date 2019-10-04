@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-13T12:21:26.15+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation" />
-  <version value="2.0.6" />
+  <version value="2.0.8" />
   <name value="NoBasisPropertyinformation" />
   <title value="no-basis-propertyinformation" />
   <status value="active" />
@@ -297,6 +297,7 @@
           </extension>
         </code>
       </type>
+      <fixedString value="cadastralUnitNumber" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -491,6 +492,7 @@
           </extension>
         </code>
       </type>
+      <fixedString value="propertyUnitNumber" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -685,6 +687,7 @@
           </extension>
         </code>
       </type>
+      <fixedString value="leaseholdNumber" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -879,6 +882,7 @@
           </extension>
         </code>
       </type>
+      <fixedString value="condominiumUnitNumber" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -1077,6 +1081,7 @@
           </extension>
         </code>
       </type>
+      <fixedString value="municipality" />
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -1085,7 +1090,7 @@
     <element id="Extension.extension:municipality.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Kommunenummer according to CodeSystem" />
-      <definition value="The norwegian kommunenummer identifies an administrative geographic unit in Norway called kommune by a predefined number. The number should be coded according to CodeSystem Kommunenummer og regionale spesialkoder (OID=3402).&#xD;&#xA;" />
+      <definition value="The norwegian kommunenummer identifies an administrative geographic unit in Norway called kommune by a predefined number. The number should be coded according to CodeSystem Kommunenummer og regionale spesialkoder (OID=3402)." />
       <comment value="A stream of bytes, base64 encoded" />
       <alias value="kommunenummer" />
       <min value="0" />
@@ -1347,6 +1352,10 @@
       <alias value="gårdsnummer" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:cadastralUnitNumber.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="cadastralUnitNumber" />
+    </element>
     <element id="Extension.extension:cadastralUnitNumber.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
@@ -1363,6 +1372,10 @@
       <alias value="bruksnummer" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:propertyUnitNumber.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="propertyUnitNumber" />
+    </element>
     <element id="Extension.extension:propertyUnitNumber.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
@@ -1378,6 +1391,10 @@
       <alias value="Leasehold number" />
       <alias value="Festenummer" />
     </element>
+    <element id="Extension.extension:leaseholdNumber.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="leaseholdNumber" />
+    </element>
     <element id="Extension.extension:leaseholdNumber.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
@@ -1392,6 +1409,10 @@
       <comment value="Seksjonsnummer" />
       <alias value="Condominium unit number" />
       <alias value="seksjonsnummer" />
+    </element>
+    <element id="Extension.extension:condominiumUnitNumber.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="condominiumUnitNumber" />
     </element>
     <element id="Extension.extension:condominiumUnitNumber.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -1411,10 +1432,14 @@
         <valueSet value="urn:oid:2.16.578.1.12.4.1.1.3402" />
       </binding>
     </element>
+    <element id="Extension.extension:municipality.url">
+      <path value="Extension.extension.url" />
+      <fixedString value="municipality" />
+    </element>
     <element id="Extension.extension:municipality.value[x]">
       <path value="Extension.extension.value[x]" />
       <short value="Kommunenummer according to CodeSystem" />
-      <definition value="The norwegian kommunenummer identifies an administrative geographic unit in Norway called kommune by a predefined number. The number should be coded according to CodeSystem Kommunenummer og regionale spesialkoder (OID=3402).&#xD;&#xA;" />
+      <definition value="The norwegian kommunenummer identifies an administrative geographic unit in Norway called kommune by a predefined number. The number should be coded according to CodeSystem Kommunenummer og regionale spesialkoder (OID=3402)." />
       <alias value="kommunenummer" />
       <type>
         <code value="Coding" />
