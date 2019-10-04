@@ -1,17 +1,7 @@
 <RelatedPerson xmlns="http://hl7.org/fhir"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../R4/fhir-all-xsd/fhir-single.xsd">
 	<meta>
-		<profile value="http://ehelse.no/fhir/StructureDefinition/gd-RelatedPerson"/>
+		<profile value="http://ehelse.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
 	</meta>
-	<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship">
-		<extension url="code">
-			<valueCodeableConcept>
-				<coding>
-					<system value="urn:iso:std:iso:3166" />
-                    <code value="NO" />
-				</coding>
-			</valueCodeableConcept>
-		</extension>
-	</extension>
 	<identifier>
 		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
 		<value value="15080050515"/>

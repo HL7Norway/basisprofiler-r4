@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Person" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Person" />
-  <version value="2.0.6" />
+  <version value="2.0.8" />
   <name value="NoBasisPerson" />
   <title value="no-basis-Person" />
   <status value="active" />
@@ -1346,7 +1346,7 @@
     <element id="Person.name">
       <path value="Person.name" />
       <short value="Norwegian human name" />
-      <definition value="Defines the format of norwegian human name according to norwegian regulation (lov om personnavn)." />
+      <definition value="Defines the format of norwegian human name according to norwegian legislation (lov om personnavn)." />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <requirements value="Need to be able to track the person by multiple names. Examples are your official name and a partner name." />
       <min value="0" />
