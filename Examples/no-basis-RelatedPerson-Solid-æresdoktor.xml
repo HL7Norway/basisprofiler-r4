@@ -1,6 +1,6 @@
 <RelatedPerson xmlns="http://hl7.org/fhir"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../R4/fhir-all-xsd/fhir-single.xsd">
 	<meta>
-		<profile value="http://ehelse.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
+		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
 	</meta>
 	<identifier>
 		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
