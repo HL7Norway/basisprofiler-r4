@@ -1,21 +1,44 @@
-<Person xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../R4/fhir-all-xsd/fhir-single.xsd">
+<RelatedPerson xmlns="http://hl7.org/fhir"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../R4/fhir-all-xsd/fhir-single.xsd">
 	<meta>
-		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Person"/>
+		<profile value="http://ehelse.no/fhir/StructureDefinition/gd-RelatedPerson"/>
 	</meta>
-	<identifier> <!-- Fødselnummeret til brukeren -->
-	<!-- Norwegian "fødselsnummer" as the primary patient identification. -->
-		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
-		<value value="04021950128"/>
-	</identifier>
-	<name> <!-- Name of the Person with norwegian middlename -->
-		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
-				<valueString value="Tirsdag"/>
+	<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship">
+		<extension url="code">
+			<valueCodeableConcept>
+				<coding>
+					<system value="urn:iso:std:iso:3166" />
+                    <code value="NO" />
+				</coding>
+			</valueCodeableConcept>
 		</extension>
-		<family value="NESTLEDER"/>
-		<given value="NERVØS"/>
+	</extension>
+	<identifier>
+		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+		<value value="15080050515"/>
+	</identifier>
+	<patient>
+		<identifier>
+			<system value="urn:oid:2.16.578.1.12.4.1.4.1" />
+			<value value="04021950128" />
+		</identifier>
+	</patient>
+	<relationship>
+		<coding>
+			<system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
+			<code value="far"/>
+		</coding>
+		<coding>
+			<system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
+			<code value="far"/>
+		</coding>
+	</relationship>
+	<name>
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
+			<valueString value="SKIKKELIG"/>
+		</extension>
+		<family value="ÆRESDOKTOR"/>
+		<given value="SOLID"/>
 	</name>
-	<!-- Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes. -->
-	<gender value="male"/>
 	<address>
 	<!-- Norwegian address: http://hl7.no/fhir/StructureDefinition/no-basis-Address -->
 	<!-- Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. -->
@@ -46,4 +69,4 @@
 		<postalCode value="5067"/> <!-- postnummer -->
 		<country value="NO"/> <!-- land (er overflødig i norge -->
 	</address>
-</Person>
+</RelatedPerson>
