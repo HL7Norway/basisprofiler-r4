@@ -1,4 +1,4 @@
-<RelatedPerson xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///E:/GitRepo/R4/fhir-all-xsd/fhir-single.xsd">
+<RelatedPerson xmlns="http://hl7.org/fhir">
 	<meta>
 		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
 	</meta>
