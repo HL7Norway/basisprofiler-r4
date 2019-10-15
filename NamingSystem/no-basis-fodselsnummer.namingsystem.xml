@@ -3,7 +3,7 @@
     <meta>
         <versionId value="1.0" />
     </meta>
-    <name value="Norsk Fødselsnummer" />
+    <name value="Foedselsnummer" />
     <status value="active" />
     <kind value="identifier" />
     <date value="2018-08-13"/>

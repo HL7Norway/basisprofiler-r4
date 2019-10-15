@@ -6,8 +6,9 @@
         <lastUpdated value="2019-05-07T00:00:00+00:00" />
     </meta>
     <url value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status" />
-    <version value="0.6" />
-    <name value="no-basis-marital-status.codesystem" />
+    <version value="2.0.8" />
+	<name value="NoBasisMaritalStatus"/>
+    <title value="no-basis-marital-status.codesystem" />
     <status value="active" /> 
     <date value="2019-05-07T00:00:00+00:00" />
     <publisher value="Copy of Codes from Sivilstandstype defined by Skatteetaten" />

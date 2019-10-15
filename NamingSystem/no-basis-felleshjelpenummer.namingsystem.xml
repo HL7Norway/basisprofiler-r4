@@ -3,7 +3,7 @@
     <meta>
         <versionId value="1.0" />
     </meta>
-    <name value="Felles hjelpenummer" />
+    <name value="FellesHjelpenummer" />
     <status value="active" />
     <kind value="identifier" />
     <date value="2018-10-26"/>
