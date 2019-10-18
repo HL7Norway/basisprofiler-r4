@@ -17,6 +17,8 @@
 			<system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation"/>
 			<code value="far"/>
 		</coding>
+	</relationship>
+	<relationship>
 		<coding>
 			<system value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility"/>
 			<code value="far"/>
