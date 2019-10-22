@@ -24,7 +24,7 @@
 	</patient>
 	<relationship>
 		<coding>
-			<system value="http://hl7.no/fhir/ValueSet/no-basis-marital-status"/>
+			<system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
 			<code value="gift"/>
 		</coding>
 	</relationship>

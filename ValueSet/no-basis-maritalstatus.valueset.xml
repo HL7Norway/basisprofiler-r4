@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2018-10-16T10:48:46.366+00:00" />
   </meta>
-  <url value="http://ehelse.no/fhir/ValueSet/no-basis-marital-status" />
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-marital-status" />
   <version value="2.0.8" />
   <name value="NoBasisMaritalStatus" />
   <title value="no-basis-marital-status.valueset" />
