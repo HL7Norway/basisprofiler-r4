@@ -3,7 +3,7 @@ HL7 FHIR Base profiles for Norway
 
 ## Mål
 
-Profilene beskrevet her er nasjonale basisprofiler for FHIR R4. Det vil si de beskriver det minimum av endringer som må gjøres på tilhørende internasjonal ressurser for å ta denne i bruk i Norge. Disse profilene kan brukes direkte, men vil ofte være gjenstand for videre profilering for spesifikke anvendelser og grensesnitt.
+Profilene beskrevet her er nasjonale basisprofiler for FHIR R4. Profilene definerer tilpasninger av FHIR-ressursene for å benytte HL7 FHIR i Norge. Profilene kan brukes direkte, men vil ofte være gjenstand for videre profilering for å tilpasse dem til spesifikke anvendelser og grensesnitt.
 Se [prinsipper for basisprofiler i wiki'en](https://github.com/HL7Norway/best-practice/wiki/Prinsipper-for-basisprofiler).
 
 ## Ferdige profiler R4
