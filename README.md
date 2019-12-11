@@ -48,6 +48,12 @@ Workshop på Gardermoen 23. oktober 2018 konsentrerte seg om
 
 Førsteutkast ligger i [branch emergingprofiles](https://github.com/HL7Norway/basisprofiler-r3/tree/emergingprofiles)
 
+## Versjonering
+
+Versjon: 2.0.11
+
+Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/wiki/Implementasjonsguide#versjonering). 
+
 ## Verktøy
 
 Vi anbefaler alle å bruke [Forge](https://fire.ly/forge/) for profilutvikling. Forge er gratis.
