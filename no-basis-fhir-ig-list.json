@@ -1,0 +1,24 @@
+{
+      "name": "Remote Patient Monitoring (RPM)",
+      "category": "Personal Healthcare",
+      "npm-name": "ihe.rpm.fhir",
+      "description": "Provides means of reporting measurements taken by Personal Healthcare Devices in a remote location",
+      "authority": "IHE",
+      "country": "uv",
+      "language": [
+        "en"
+      ],
+      "history": "http://wiki.ihe.net/index.php/Remote_Patient_Monitoring",
+      "canonical": "http://wiki.ihe.net/index.php/Remote_Patient_Monitoring",
+      "editions": [
+        {
+          "name": "STU3 Trial-Implementation",
+          "ig-version": "0.1.0",
+          "package": "ihe.rpm.fhir#0.1.0",
+          "fhir-version": [
+            "3.0.1"
+          ],
+          "url": "http://wiki.ihe.net/index.php/Remote_Patient_Monitoring"
+        }
+      ]
+    }
