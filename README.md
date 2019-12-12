@@ -52,7 +52,7 @@ Førsteutkast ligger i [branch emergingprofiles](https://github.com/HL7Norway/ba
 
 Versjon: 2.0.11
 
-Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/wiki/Implementasjonsguide#versjonering). 
+Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering). 
 
 ## Verktøy
 
@@ -61,9 +61,7 @@ Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplif
 
 ## Wiki
 
-Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/wiki) der vi oppfordrer alle til å bidra. 
-
-Det finnes en også en wiki på [git.sarepta.ehelse.no](https://git.sarepta.ehelse.no/utvikling/FHIR/wikis/home).
+Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/) der vi oppfordrer alle til å bidra. 
 
 ## Kontaktpersoner
 
