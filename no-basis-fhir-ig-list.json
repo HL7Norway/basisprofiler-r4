@@ -1,24 +1,24 @@
 {
-      "name": "Remote Patient Monitoring (RPM)",
-      "category": "Personal Healthcare",
-      "npm-name": "ihe.rpm.fhir",
-      "description": "Provides means of reporting measurements taken by Personal Healthcare Devices in a remote location",
-      "authority": "IHE",
-      "country": "uv",
+      "name": "HL7 Norway no-basis",
+      "category": "National Base",
+      "npm-name": "hl7.fhir.no.basis 2.0.11",
+      "description": "HL7 FHIR Base profiles for Norway",
+      "authority": "HL7 Norway",
+      "country": "no",
       "language": [
         "en"
       ],
-      "history": "http://wiki.ihe.net/index.php/Remote_Patient_Monitoring",
-      "canonical": "http://wiki.ihe.net/index.php/Remote_Patient_Monitoring",
+      "history": "https://simplifier.net/hl7norwayno-basis",
+      "canonical": "http://hl7.no/fhir/",
       "editions": [
         {
-          "name": "STU3 Trial-Implementation",
-          "ig-version": "0.1.0",
-          "package": "ihe.rpm.fhir#0.1.0",
+          "name": "HL7 Norway no-basis",
+          "ig-version": "2.0.11",
+          "package": "hl7.fhir.no.basis#2.0.11",
           "fhir-version": [
-            "3.0.1"
+            "4.0.0"
           ],
-          "url": "http://wiki.ihe.net/index.php/Remote_Patient_Monitoring"
+          "url": "https://simplifier.net/hl7norwayno-basis"
         }
       ]
     }
