@@ -1,4 +1,4 @@
-# no-basis HL7 FHIR basisprofiler for norge R4 versjon
+# no-basis HL7 FHIR basisprofiler for Norge R4 versjon
 HL7 FHIR Base profiles for Norway
 
 ## Mål
@@ -53,6 +53,10 @@ Førsteutkast ligger i [branch emergingprofiles](https://github.com/HL7Norway/ba
 Versjon: 2.0.11
 
 Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering). 
+
+## Normering
+
+[Basisprofilene ligger som anbefalt standard](https://ehelse.no/standarder/norske-basisprofiler-for-hl7-fhir) i Direktoratet for e-helse sin [Referansekatalog for e-helse](https://ehelse.no/referansekatalog/referansekatalogen-for-e-helse).
 
 ## Verktøy
 
