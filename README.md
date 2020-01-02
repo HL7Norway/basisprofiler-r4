@@ -1,9 +1,9 @@
-# no-basis HL7 FHIR basisprofiler for norge R4 versjon
+# no-basis HL7 FHIR basisprofiler for Norge R4 versjon
 HL7 FHIR Base profiles for Norway
 
 ## Mål
 
-Profilene beskrevet her er nasjonale basisprofiler for FHIR R4. Det vil si de beskriver det minimum av endringer som må gjøres på tilhørende internasjonal ressurser for å ta denne i bruk i Norge. Disse profilene kan brukes direkte, men vil ofte være gjenstand for videre profilering for spesifikke anvendelser og grensesnitt.
+Profilene beskrevet her er nasjonale basisprofiler for FHIR R4. Profilene definerer tilpasninger av FHIR-ressursene for å benytte HL7 FHIR i Norge. Profilene kan brukes direkte, men vil ofte være gjenstand for videre profilering for å tilpasse dem til spesifikke anvendelser og grensesnitt.
 Se [prinsipper for basisprofiler i wiki'en](https://github.com/HL7Norway/best-practice/wiki/Prinsipper-for-basisprofiler).
 
 ## Ferdige profiler R4
@@ -48,6 +48,16 @@ Workshop på Gardermoen 23. oktober 2018 konsentrerte seg om
 
 Førsteutkast ligger i [branch emergingprofiles](https://github.com/HL7Norway/basisprofiler-r3/tree/emergingprofiles)
 
+## Versjonering
+
+Versjon: 2.0.11
+
+Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering). 
+
+## Normering
+
+[Basisprofilene ligger som anbefalt standard](https://ehelse.no/standarder/norske-basisprofiler-for-hl7-fhir) i Direktoratet for e-helse sin [Referansekatalog for e-helse](https://ehelse.no/referansekatalog/referansekatalogen-for-e-helse).
+
 ## Verktøy
 
 Vi anbefaler alle å bruke [Forge](https://fire.ly/forge/) for profilutvikling. Forge er gratis.
@@ -55,9 +65,7 @@ Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplif
 
 ## Wiki
 
-Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/wiki) der vi oppfordrer alle til å bidra. 
-
-Det finnes en også en wiki på [git.sarepta.ehelse.no](https://git.sarepta.ehelse.no/utvikling/FHIR/wikis/home).
+Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/) der vi oppfordrer alle til å bidra. 
 
 ## Kontaktpersoner
 

@@ -1,0 +1,38 @@
+<RelatedPerson xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson"/>
+	</meta>
+	<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-person-citizenship">
+		<extension url="code">
+			<valueCodeableConcept>
+				<coding>
+					<system value="urn:iso:std:iso:3166" />
+                    <code value="NO" />
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<identifier>
+		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+		<value value="05073500186"/>
+	</identifier>
+	<patient>
+		<identifier>
+			<system value="urn:oid:2.16.578.1.12.4.1.4.1" />
+			<value value="04021950128" />
+		</identifier>
+	</patient>
+	<relationship>
+		<coding>
+			<system value="http://hl7.no/fhir/CodeSystem/no-basis-marital-status"/>
+			<code value="gift"/>
+		</coding>
+	</relationship>
+	<name>
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
+			<valueString value="Pårørende"/>
+		</extension>
+		<family value="Sørgård"/>
+		<given value="Ærlend"/>
+	</name>
+</RelatedPerson>

@@ -1,4 +1,4 @@
-<Practitioner xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../FHIR/STU3/fhir-all-xsd/fhir-single.xsd">
+<Practitioner xmlns="http://hl7.org/fhir" >
 	<meta>
 		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner"/>
 	</meta>
@@ -48,6 +48,16 @@
 			</coding>
 		</code>
 	</qualification>
+	<qualification>
+		
+		<code>
+			<coding>
+				<system value="urn:oid:2.16.578.1.12.4.1.1.7426"/>
+				<code value="1"/>
+				<display value="Allmennmedisin"/>
+			</coding>
+		</code>
+	</qualification>
 	<!-- Kvalififikasjon autorisasjonskode Godkjenningstype HPR (OID=7704) -->
 	<qualification>
 		<code>
@@ -57,6 +67,9 @@
 				<display value="Autorisasjon"/>
 			</coding>
 		</code>
+		<period>
+			<start value="2018-10-10"/>
+		</period>
 	</qualification>
 	<!-- Kvalififikasjon Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)-->
 	<qualification>

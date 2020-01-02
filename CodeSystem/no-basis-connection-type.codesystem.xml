@@ -2,8 +2,9 @@
 <CodeSystem xmlns="http://hl7.org/fhir" >
 	<id value="no-basis-connection-type.codesystem" />
     <url value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type" />
-    <version value="0.5" />
-    <name value="NoBasisConnectionType.codesystem" />
+    <version value="2.0.8" />
+    <name value="NoBasisConnectionType" />
+	<title value="no-basis-connection-type.codesystem" />
     <status value="active" /> 
     <date value="2019-05-15T00:00:00+00:00" />
     <publisher value="Direktoratet for e-helse, HL7 Norway" />

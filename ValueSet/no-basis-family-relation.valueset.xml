@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///E:/GitRepo/R4/fhir-all-xsd/fhir-single.xsd">
+<ValueSet xmlns="http://hl7.org/fhir">
   <id value="no-basis-family-relation.valueset" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2018-10-16T10:48:46.366+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/ValueSet/no-basis-family-relation" />
-  <version value="1.0" />
-  <name value="no-basis-family-relation.valueset" />
+  <version value="2.0.8" />
+  <name value="NoBasisFamilyRelation"/>
+  <title value="no-basis-family-relation.valueset" />
   <status value="active" />
   <experimental value="true" />
   <date value="2018-10-26T10:48:45.936+00:00" />
@@ -16,7 +17,7 @@
   <immutable value="false" />
   <compose>
     <include>
-      <system value="http://hl7.no/fhir/Codesystem/no-basis-family-relation" />
+      <system value="http://hl7.no/fhir/CodeSystem/no-basis-family-relation" />
     </include>
   </compose>
 </ValueSet>

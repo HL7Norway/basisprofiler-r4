@@ -6,8 +6,9 @@
     <lastUpdated value="2018-10-16T10:48:46.366+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/ValueSet/no-basis-connection-type" />
-  <version value="0.5" />
-  <name value="no-basis-connection-type.valueset" />
+  <version value="2.0.8" />
+  <name value="NoBasisConnectionType"/>
+  <title value="no-basis-connection-type.valueset" />
   <status value="active" />
   <experimental value="true" />
   <date value="2019-03-13T10:48:45.936+00:00" />
