@@ -14,9 +14,9 @@
 		</extension>
 	</extension>
 	<identifier> <!-- Fødselnummeret til brukeren -->
-	<!-- VKP expects a Norwegian "fødselsnummer" as the primary patient identification. -->
+	<!-- Norsk fødselsnummer -->
 		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
-		<value value="21037750231"/>
+		<value value="210377xxxxx"/>
 	</identifier>
 	<name> <!-- Navnet til brukeren -->
 		<family value="Eksempel"/>

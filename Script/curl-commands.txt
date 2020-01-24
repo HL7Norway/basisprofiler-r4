@@ -1,0 +1,5 @@
+curl -X POST "http://hapi.fhir.org/baseR4/Patient" -T "no-basis-Patient-Espen-Eksempel.xml" -H "Content-Type: application/fhir+xml"
+value="592410"
+
+curl -X POST "http://hapi.fhir.org/baseR4/Observation" -T "Vital-signs-weight.xml" -H "Content-Type: application/fhir+xml"
+<id value="592411"/>
