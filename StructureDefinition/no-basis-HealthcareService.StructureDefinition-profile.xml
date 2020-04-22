@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-HealthcareService" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService" />
-  <version value="2.0.5" />
+  <version value="2.0.13" />
   <name value="NoBasisHealthcareService" />
   <title value="no-basis-HealthcareService" />
   <status value="active" />
@@ -978,7 +978,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.101" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.101" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient" />
@@ -1415,7 +1415,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.102" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.102" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient" />
@@ -4887,7 +4887,7 @@
     <element id="HealthcareService.providedBy.identifier:ENH.system">
       <path value="HealthcareService.providedBy.identifier.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.101" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.101" />
     </element>
     <element id="HealthcareService.providedBy.identifier:ENH.value">
       <path value="HealthcareService.providedBy.identifier.value" />
@@ -4901,7 +4901,7 @@
     <element id="HealthcareService.providedBy.identifier:RSH.system">
       <path value="HealthcareService.providedBy.identifier.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.102" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.102" />
     </element>
     <element id="HealthcareService.providedBy.identifier:RSH.value">
       <path value="HealthcareService.providedBy.identifier.value" />

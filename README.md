@@ -50,7 +50,7 @@ Førsteutkast ligger i [branch emergingprofiles](https://github.com/HL7Norway/ba
 
 ## Versjonering
 
-Versjon: 2.0.11
+Versjon: 2.0.13
 
 Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering). 
 

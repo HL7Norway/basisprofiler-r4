@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Organization" />
   <meta>
-    <versionId value="2" />
-    <lastUpdated value="2018-06-07T10:49:58.004+00:00" />
+    <versionId value="3" />
+    <lastUpdated value="2020-04-22T10:49:58.004+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
-  <version value="2.0.6" />
+  <version value="2.0.13" />
   <name value="NoBasisOrganization" />
   <title value="no-basis-Organization" />
   <status value="active" />
@@ -730,7 +730,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.101" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.101" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient" />
@@ -1180,7 +1180,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.102" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.102" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient" />
@@ -2195,7 +2195,7 @@
     <element id="Organization.identifier:ENH.system">
       <path value="Organization.identifier.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.101" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.101" />
     </element>
     <element id="Organization.identifier:ENH.value">
       <path value="Organization.identifier.value" />
@@ -2209,7 +2209,7 @@
     <element id="Organization.identifier:RSH.system">
       <path value="Organization.identifier.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:2.16.578.1.12.4.1.2.102" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.4.102" />
     </element>
     <element id="Organization.identifier:RSH.value">
       <path value="Organization.identifier.value" />
