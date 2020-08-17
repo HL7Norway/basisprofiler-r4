@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="no-basis-documentreference-category" />
+  <url value="http://hl7.no/fhir/CodeSystem/no-basis-documentreference-category" />
+  <name value="NOBasisDocumentReferenceCategoryCodes" />
+  <title value="NO Basis DocumentReferences Category Codes" />
+  <status value="active" />
+  <publisher value="Norsk Helsenett" />
+  <description value="The NO Basis DocumentReferences Category Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="NO" />
+      <display value="Norway" />
+    </coding>
+  </jurisdiction>
+  <concept>
+    <code value="clinical-note" />
+    <display value="Clinical Note" />
+  </concept>
+</CodeSystem>
