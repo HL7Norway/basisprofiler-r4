@@ -1,0 +1,52 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-basis-documentreference-type" />
+  <name value="NOBasisDocumentReferenceType" />
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
+  <title value="NO Basis Document Reference Type" />
+  <status value="draft" />
+  <publisher value="Norsk Helsenett"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="NO" />
+      <display value="Norway" />
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="371530004" />
+        <display value="Clinical consultation report" />
+      </concept>
+      <concept>
+        <code value="371529009" />
+        <display value="History &amp; physical report" />
+      </concept>
+      <concept>
+        <code value="373942005" />
+        <display value="Discharge summary" />
+      </concept>
+      <concept>
+        <code value="371525003" />
+        <display value="Clinical procedure report" />
+      </concept>
+      <concept>
+        <code value="371532007" />
+        <display value="Progress report" />
+      </concept>
+      <concept>
+        <code value="721927009" />
+        <display value="Referral note" />
+      </concept>
+      <concept>
+        <code value="371526002" />
+        <display value="Operative report" />
+      </concept>
+      <concept>
+        <code value="5531000179105" />
+        <display value="Nursing report" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
