@@ -4,7 +4,7 @@
   <url value="http://hl7.no/fhir/CodeSystem/no-basis-documentreference-category" />
   <name value="NOBasisDocumentReferenceCategoryCodes" />
   <title value="NO Basis DocumentReferences Category Codes" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="Norsk Helsenett" />
   <description value="The NO Basis DocumentReferences Category Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources." />
   <jurisdiction>

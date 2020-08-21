@@ -3,7 +3,7 @@
   <name value="NOBasisDocumentReferenceType" />
   <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
   <title value="NO Basis Document Reference Type" />
-  <status value="active" />
+  <status value="draft" />
   <publisher value="Norsk Helsenett"/>
   <jurisdiction>
     <coding>
