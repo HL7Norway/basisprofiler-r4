@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="no-basis-documentreference-type" />
-  <name value="NOBasisDocumentReferenceType" />
+  <id value="no-basis-documentreference-type.valueset" />
+  <name value="NoBasisDocumentReferenceType" />
   <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
-  <title value="NO Basis Document Reference Type" />
-  <status value="active" />
+  <title value="no-basis-documentreference-type.valueset" />
+  <status value="draft" />
   <publisher value="Norsk Helsenett"/>
   <jurisdiction>
     <coding>
