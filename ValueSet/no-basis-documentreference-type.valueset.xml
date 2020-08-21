@@ -1,5 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="no-basis-documentreference-type" />
+  <id value="no-basis-documentreference-type.valueset" />
   <name value="NOBasisDocumentReferenceType" />
   <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
   <title value="NO Basis Document Reference Type" />

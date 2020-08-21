@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="no-basis-documentreference-category" />
+  <id value="no-basis-documentreference-category.valueset" />
   <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-category" />
   <name value="NOBasisDocumentReferenceCategory" />
   <title value="NO Basis Document Reference Category" />

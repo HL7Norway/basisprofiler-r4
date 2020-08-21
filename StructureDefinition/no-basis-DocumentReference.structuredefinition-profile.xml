@@ -2,7 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-DocumentReference" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-DocumentReference" />
-  <name value="NoHelseAPIDocumentReference" />
+  <name value="NoBasisDocumentReference" />
+  <title value="no-basis-DocumentReference" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <mapping>
