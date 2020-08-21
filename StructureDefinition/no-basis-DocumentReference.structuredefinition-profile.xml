@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-DocumentReference" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-DocumentReference" />
+  <name value="NoHelseAPIDocumentReference" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="fhircomposition" />
+    <uri value="http://hl7.org/fhir/composition" />
+    <name value="FHIR Composition" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="xds" />
+    <uri value="http://ihe.net/xds" />
+    <name value="XDS metadata equivalent" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DocumentReference" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DocumentReference.type">
+      <path value="DocumentReference.type" />
+      <short value="Kind of document" />
+      <definition value="Specifies the particular kind of document referenced  (e.g. History and Physical, Discharge Summary, Progress Note)." />
+      <comment value="Key metadata element describing the document that describes the exact type of document. Helps humans to assess whether the document is of interest when viewing a list of documents." />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
+      </binding>
+    </element>
+    <element id="DocumentReference.category">
+      <path value="DocumentReference.category" />
+      <definition value="A categorization for the type of document referenced - helps for indexing and searching." />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-category" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

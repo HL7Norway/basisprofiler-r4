@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-basis-documentreference-category" />
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-category" />
+  <name value="NOBasisDocumentReferenceCategory" />
+  <title value="NO Basis Document Reference Category" />
+  <status value="active" />
+  <publisher value="Norsk Helsenett" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="NO" />
+      <display value="Norway" />
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.no/fhir/CodeSystem/no-basis-documentreference-category" />
+    </include>
+  </compose>
+</ValueSet>
