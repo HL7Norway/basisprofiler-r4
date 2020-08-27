@@ -27,7 +27,11 @@ Det er gjennomført flere høringsrunder på profilene som nå er publisert, dis
 * Github prosjektet [prosjektet på GitHub](https://github.com/HL7Norway/basisprofiler-r4) og legge det inn som issues
 * eventuelt lage en egen branch med forslag til endringer på [prosjektet på GitHub](https://github.com/HL7Norway/basisprofiler-r4)
 
-## Profiler diskutert på workshop 5. februar 2019
+## Workshop 22. september 2020
+
+[Invitasjon til workshop](https://hl7norway.github.io/best-practice/docs/2020-09-22-Workshop).
+
+## Workshop 5. februar 2019
 
 * Person
 * PractionerRole
@@ -38,7 +42,7 @@ Det er gjennomført flere høringsrunder på profilene som nå er publisert, dis
 
 Førsteutkast legger vi ut her i [branch emergingprofiles](https://github.com/HL7Norway/basisprofiler-r3/tree/emergingprofiles)
 
-## Forrige workshop: Medication++
+## Workshop 23. oktober 2018
 
 Workshop på Gardermoen 23. oktober 2018 konsentrerte seg om
 * Medication
