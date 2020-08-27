@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Composition" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Composition" />
+  <name value="NoBasisComposition" />
+  <status value="draft" />
+  <description value="Basisprofil for Norwegian Composition. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds terminology and extensions specific to Norway. The basis profile is open, derived profiles should close down the information elements according to the relevant use-case.&#xD;&#xA;&#xD;&#xA;The profile sets the absolute minimum requirements, identifies the extensions and terminology which can be present." />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
+      </binding>
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-category" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
