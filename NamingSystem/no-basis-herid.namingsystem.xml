@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <meta>
+        <versionId value="0.1" />
+    </meta>
+    <name value="HER-id" />
+    <status value="draft" />
+    <kind value="identifier" />
+    <date value="2020-08-28"/>
+    <publisher value="HL7 Norway" />
+    <responsible value="Norsk Helsenett SF"/>
+    <description value="TODO" />
+    <usage value="TODO" />
+    <uniqueId>
+        <type value="uri" />
+        <value value="http://nhn.no/fhir/NamingSystem/her-id" />
+        <preferred value="true" />
+    </uniqueId>
+    <uniqueId>
+        <type value="uri" />
+        <value value="oid:XXXX.TODO" />
+        <preferred value="false" />
+    </uniqueId>
+</NamingSystem>
