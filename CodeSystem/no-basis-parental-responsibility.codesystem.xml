@@ -6,7 +6,7 @@
         <lastUpdated value="2019-05-07T00:00:00+00:00" />
     </meta>
     <url value="http://hl7.no/fhir/CodeSystem/no-basis-parental-responsibility" />
-    <version value="2.0.8" />
+    <version value="2.0.14" />
 	<name value="NoBasisParentalResponsibility" />
     <title value="no-basis-parental-responsibility.codesystem" />
     <status value="active" /> 
@@ -32,5 +32,9 @@
     <concept>
         <code value="andre" />
         <display value="Andre" />
+    </concept>
+	 <concept>
+        <code value="ukjent" />
+        <display value="Ukjent" />
     </concept>
 </CodeSystem>
