@@ -9,8 +9,10 @@
     <date value="2020-08-28"/>
     <publisher value="HL7 Norway" />
     <responsible value="Norsk Helsenett SF"/>
-    <description value="TODO" />
-    <usage value="TODO" />
+    <description value="Organizations that participates in message based electronic communication in Norway 
+uses a special identifier called HERid to identify the communication parties (e.g. 
+kommunikasjonspart) of the organization." />
+    <usage value="Identification of message based service endpoints in Norway" />
     <uniqueId>
         <type value="uri" />
         <value value="http://nhn.no/fhir/NamingSystem/her-id" />
