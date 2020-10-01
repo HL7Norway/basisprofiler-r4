@@ -1,13 +1,31 @@
 <Person xmlns="http://hl7.org/fhir">
 	<meta>
+		<versionId value="1"/>
 		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Person"/>
 	</meta>
 	<identifier> <!-- Fødselnummeret til brukeren -->
+		<extension url="http://ehelse.no/fhir/StructureDefinition/gd-person-identifier-status">
+			<valueCode value="iBruk"/>
+		</extension>
 	<!-- Norwegian "fødselsnummer" as the primary patient identification. -->
 		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
 		<value value="04021950128"/>
 	</identifier>
 	<name> <!-- Name of the Person with norwegian middlename -->
+		<extension url="http://ehelse.no/fhir/StructureDefinition/gd-fregmetadata">
+			<extension url="registeredTimestamp">
+				<valueDateTime value="2019-05-03T09:50:05+02:00"/>
+			</extension>
+			<extension url="currentInfo">
+				<valueBoolean value="true"/>
+			</extension>	
+			<extension url="reason">	
+				<valueString value="Første gangs navnevalg"/>
+			</extension>
+			<extension url="validFrom">
+				<valueDateTime value="2019-07-03T00:00:00+02:00"/>
+			</extension>
+		</extension>
 		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-middlename">
 				<valueString value="Tirsdag"/>
 		</extension>
@@ -15,7 +33,22 @@
 		<given value="NERVØS"/>
 	</name>
 	<!-- Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes. -->
-	<gender value="male"/>
+	<gender value="male">
+		<extension url="http://ehelse.no/fhir/StructureDefinition/gd-fregmetadata">
+			<extension url="registeredTimestamp">
+				<valueDateTime value="2019-02-18T11:15:43+01:00"/>
+			</extension>
+			<extension url="currentInfo">
+				<valueBoolean value="true"/>
+			</extension>	
+			<extension url="reason">	
+				<valueString value="Fødsel"/>
+			</extension>
+			<extension url="validFrom">
+				<valueDateTime value="2019-02-18T00:00:00+01:00"/>
+			</extension>
+		</extension>
+	</gender>
 	<address>
 	<!-- Norwegian address: http://hl7.no/fhir/StructureDefinition/no-basis-Address -->
 	<!-- Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. -->
