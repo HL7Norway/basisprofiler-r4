@@ -13,8 +13,8 @@
 kommunikasjonspart som tilhører en virksomhet i Adresseregisteret.
 
 HER-id is an uniqe identifier for an organization or communication party belonging to an organization registered in the Adresseregisteret" />
-    <usage value=" Organizations that participates in message based electronic communication in Norway 
-uses a special identifier called HERid to identify the communication parties (e.g. 
+    <usage value=" Organizations that participates in message based electronic communication in Norway
+uses a special identifier called HERid to identify the communication parties (e.g.
 kommunikasjonspart) of the organization." />
     <uniqueId>
         <type value="uri" />
@@ -23,7 +23,7 @@ kommunikasjonspart) of the organization." />
     </uniqueId>
     <uniqueId>
         <type value="uri" />
-        <value value="oid:XXXX.TODO" />
+        <value value="oid:2.16.578.1.12.4.1.2" />
         <preferred value="false" />
     </uniqueId>
 </NamingSystem>
