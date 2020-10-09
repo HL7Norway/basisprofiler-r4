@@ -59,13 +59,5 @@
         <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
       </binding>
     </element>
-    <element id="DocumentReference.category">
-      <path value="DocumentReference.category" />
-      <definition value="A categorization for the type of document referenced - helps for indexing and searching." />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-category" />
-      </binding>
-    </element>
   </differential>
 </StructureDefinition>

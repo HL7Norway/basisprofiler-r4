@@ -44,12 +44,5 @@
         <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
       </binding>
     </element>
-    <element id="Composition.category">
-      <path value="Composition.category" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-category" />
-      </binding>
-    </element>
   </differential>
 </StructureDefinition>
