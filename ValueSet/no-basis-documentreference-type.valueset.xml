@@ -1,52 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="no-basis-documentreference-type.valueset" />
-  <name value="NoBasisDocumentReferenceType" />
-  <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
-  <title value="no-basis-documentreference-type.valueset" />
-  <status value="draft" />
-  <publisher value="Norsk Helsenett"/>
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="NO" />
-      <display value="Norway" />
-    </coding>
-  </jurisdiction>
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <concept>
-        <code value="371530004" />
-        <display value="Clinical consultation report" />
-      </concept>
-      <concept>
-        <code value="371529009" />
-        <display value="History &amp; physical report" />
-      </concept>
-      <concept>
-        <code value="373942005" />
-        <display value="Discharge summary" />
-      </concept>
-      <concept>
-        <code value="371525003" />
-        <display value="Clinical procedure report" />
-      </concept>
-      <concept>
-        <code value="371532007" />
-        <display value="Progress report" />
-      </concept>
-      <concept>
-        <code value="721927009" />
-        <display value="Referral note" />
-      </concept>
-      <concept>
-        <code value="371526002" />
-        <display value="Operative report" />
-      </concept>
-      <concept>
-        <code value="5531000179105" />
-        <display value="Nursing report" />
-      </concept>
-    </include>
-  </compose>
+    <id value="no-basis-documentreference-type.valueset" />
+    <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
+    <name value="NoBasisDocumentReferenceType" />
+    <title value="no-basis-documentreference-type.valueset" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166" />
+            <code value="NO" />
+            <display value="Norway" />
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="urn:oid:2.16.578.1.12.4.1.1.9602" />
+            <concept>
+                <code value="A00-1" />
+                <display value="Epikriser og sammenfatninger" />
+            </concept>
+            <concept>
+                <code value="A01-2" />
+                <display value="Kriseplan" />
+            </concept>
+            <concept>
+                <code value="A02-2" />
+                <display value="Individuell plan" />
+            </concept>
+            <concept>
+                <code value="A03-2" />
+                <display value="Epikrise" />
+            </concept>
+            <concept>
+                <code value="A04-2" />
+                <display value="Sykepleiesammenfatning" />
+            </concept>
+            <concept>
+                <code value="A05-2" />
+                <display value="Fysioterapisammenfatning" />
+            </concept>
+            <concept>
+                <code value="A06-2" />
+                <display value="Ergoterapisammenfatning" />
+            </concept>
+            <concept>
+                <code value="A07-2" />
+                <display value="Psykologsammenfatning" />
+            </concept>
+            <concept>
+                <code value="A08-2" />
+                <display value="Sosionomsammenfatning" />
+            </concept>
+            <concept>
+                <code value="A09-2" />
+                <display value="Ernæringsfysiologsammenfatning" />
+            </concept>
+            <concept>
+                <code value="A10-2" />
+                <display value="Annet fagpersonell sammenfatning" />
+            </concept>
+            <concept>
+                <code value="A11-2" />
+                <display value="Tverrfaglig sammenfatning" />
+            </concept>
+            <concept>
+                <code value="A12-2" />
+                <display value="Utskrivings-/Pasientorientering" />
+            </concept>
+            <concept>
+                <code value="A13-2" />
+                <display value="Poliklinisk epikrise" />
+            </concept>
+            <concept>
+                <code value="B00-1" />
+                <display value="Kontinuerlig/løpende journal" />
+            </concept>
+            <concept>
+                <code value="B01-2" />
+                <display value="Tverrfaglig behandlingsplan" />
+            </concept>
+            <concept>
+                <code value="B02-2" />
+                <display value="Journalnotat" />
+            </concept>
+            <concept>
+                <code value="B03-2" />
+                <display value="Poliklinisk notat" />
+            </concept>
+            <concept>
+                <code value="C00-1" />
+                <display value="Prøvesvar, vev og væsker" />
+            </concept>
+            <concept>
+                <code value="C01-2" />
+                <display value="Medisinsk biokjemi" />
+            </concept>
+            <concept>
+                <code value="C02-2" />
+                <display value="Blodbank og immunologi" />
+            </concept>
+            <concept>
+                <code value="C03-2" />
+                <display value="Mikrobiologi, virologi og serologi" />
+            </concept>
+            <concept>
+                <code value="C04-2" />
+                <display value="Patologi, histologi og cytologi" />
+            </concept>
+            <concept>
+                <code value="C05-2" />
+                <display value="Klinisk farmakologi" />
+            </concept>
+            <concept>
+                <code value="C06-2" />
+                <display value="Medisinsk genetikk" />
+            </concept>
+            <concept>
+                <code value="C07-2" />
+                <display value="Allergiutredning" />
+            </concept>
+            <concept>
+                <code value="D00-1" />
+                <display value="Organfunksjon" />
+            </concept>
+            <concept>
+                <code value="D01-2" />
+                <display value="Hjerte og kretsløp" />
+            </concept>
+            <concept>
+                <code value="D02-2" />
+                <display value="Lunge" />
+            </concept>
+            <concept>
+                <code value="D03-2" />
+                <display value="Fordøyelse" />
+            </concept>
+            <concept>
+                <code value="D04-2" />
+                <display value="Urinveier" />
+            </concept>
+            <concept>
+                <code value="D05-2" />
+                <display value="Gyn/Reproduksjon" />
+            </concept>
+            <concept>
+                <code value="D06-2" />
+                <display value="Nervesystemet" />
+            </concept>
+            <concept>
+                <code value="D07-2" />
+                <display value="Ledd/ ben/ skjelett" />
+            </concept>
+            <concept>
+                <code value="D08-2" />
+                <display value="ØNH" />
+            </concept>
+            <concept>
+                <code value="D09-2" />
+                <display value="Øye" />
+            </concept>
+            <concept>
+                <code value="D10-2" />
+                <display value="Hud" />
+            </concept>
+            <concept>
+                <code value="D11-2" />
+                <display value="Endokrinologi" />
+            </concept>
+            <concept>
+                <code value="D12-2" />
+                <display value="Metabolisme" />
+            </concept>
+            <concept>
+                <code value="D13-2" />
+                <display value="Beinmargsutstryk" />
+            </concept>
+            <concept>
+                <code value="E00-1" />
+                <display value="Bildediagnostikk og andre medisinske bilder" />
+            </concept>
+            <concept>
+                <code value="E01-2" />
+                <display value="Diagnostiske bilder" />
+            </concept>
+            <concept>
+                <code value="F00-1" />
+                <display value="Kurve, observasjon og behandling" />
+            </concept>
+            <concept>
+                <code value="F01-2" />
+                <display value="Kurve" />
+            </concept>
+            <concept>
+                <code value="F02-2" />
+                <display value="Anestesi- og opr. Rapporter" />
+            </concept>
+            <concept>
+                <code value="F03-2" />
+                <display value="Intensiv/postoperativ observasjon" />
+            </concept>
+            <concept>
+                <code value="F04-2" />
+                <display value="Svangerskap og fødsel" />
+            </concept>
+            <concept>
+                <code value="F05-2" />
+                <display value="Diabetes/ endokrinologi" />
+            </concept>
+            <concept>
+                <code value="F06-2" />
+                <display value="Onkologi/ hematologi" />
+            </concept>
+            <concept>
+                <code value="F07-2" />
+                <display value="Nyre/ dialyse" />
+            </concept>
+            <concept>
+                <code value="F08-2" />
+                <display value="Smertebehandling" />
+            </concept>
+            <concept>
+                <code value="F09-2" />
+                <display value="Ambulansejournal" />
+            </concept>
+            <concept>
+                <code value="F10-2" />
+                <display value="Transplantasjon" />
+            </concept>
+            <concept>
+                <code value="I00-1" />
+                <display value="Korrespondanse" />
+            </concept>
+            <concept>
+                <code value="I01-2" />
+                <display value="Henvisninger" />
+            </concept>
+            <concept>
+                <code value="I02-2" />
+                <display value="Brev" />
+            </concept>
+            <concept>
+                <code value="J00-1" />
+                <display value="Attester, melding og erklæringer" />
+            </concept>
+            <concept>
+                <code value="J01-2" />
+                <display value="Sykmeldinger og trygdesaker" />
+            </concept>
+            <concept>
+                <code value="J02-2" />
+                <display value="Legeerklæring om dødsfall" />
+            </concept>
+            <concept>
+                <code value="S00-1" />
+                <display value="Test og scoring" />
+            </concept>
+            <concept>
+                <code value="S01-2" />
+                <display value="Tester" />
+            </concept>
+            <concept>
+                <code value="S02-2" />
+                <display value="Systematiserte diagnostiske intervju" />
+            </concept>
+            <concept>
+                <code value="S03-2" />
+                <display value="Voldsrisikovurdering" />
+            </concept>
+        </include>
+    </compose>
 </ValueSet>
