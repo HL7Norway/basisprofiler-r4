@@ -11,7 +11,7 @@
   <base value="Practitioner" />
   <base value="Person" />
   <type value="string" />
-  <expression value="Patient.name.extension.where(url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename') | Practitioner.name.extension.where(url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename') | Person.name.extension.where(url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename')" />
+  <expression value="Patient.name.extension.where(url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename').value | Practitioner.name.extension.where(url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename').value | Person.name.extension.where(url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename').value" />
   <xpath value="f:Patient/f:name/f:extension[@url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename'] | f:Practitioner/f:name/f:extension[@url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename'] | f:Person/f:name/f:extension[@url='http://hl7.no/fhir/StructureDefinition/no-basis-middlename']" />
   <xpathUsage value="normal" />
   <multipleOr value="true" />
