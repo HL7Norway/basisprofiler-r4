@@ -4,6 +4,6 @@ java -jar e:\FHIR-validator\org.hl7.fhir.publisher.jar -ig /media/sf_GitRepo/for
 
 java -jar /home/thomas/Downloads/org.hl7.fhir.validator.jar gd-Address-box.StructureDefinition-profile.xml -output validation-ADB.xml -version 4.0.0
 
-java -jar c:\download\org.hl7.fhir.validator.jar no-basis-Practitioner-example.xml -ig c:\GitRepo\for-validation-no-basis -version 4.0.0
+java -jar C:\Users\Thomas\Downloads\validator_cli.jar StructureDefinition\*.xml -version 4.0.0 -output validation-no-basis.xml
 
 java -jar c:\download\org.hl7.fhir.validator.jar no-basis-Practitioner-example.xml -ig c:\GitRepo\for-validation-no-basis -version 4.0.0
