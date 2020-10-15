@@ -2,7 +2,7 @@
 |-
 |Date|2020-09-22|
 |Changelog|Added version information and made search parameter active|
-|no-basis-individual-middlename.SearchParameter.xml|version 2.0.14 status = active|
+|no-basis-individual-middlename.SearchParameter.xml|version 2.0.14 status = active. Include optional search parameter for no-basis-middlename with status active in the package. Updated search parameter to run error free on the Vonk server.|
 |no-basis-person-citizenship.structuredefinition-extension|Documentation changes to clarify that this extension is for the Person resource|
 |no-basis-marital-status.codestystem.xml|Corrected two spelling errors in Display text "Registrert partner" and "Enke eller enkemann"|
 
