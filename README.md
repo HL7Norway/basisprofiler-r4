@@ -1,4 +1,5 @@
 # no-basis HL7 FHIR basisprofiler for Norge R4 versjon
+
 HL7 FHIR Base profiles for Norway
 
 ## Mål
@@ -9,6 +10,7 @@ Se [prinsipper for basisprofiler i wiki'en](https://github.com/HL7Norway/best-pr
 ## Ferdige profiler R4
 
 15 profiler er publisert på SIMPLIFER.net og omfatter blant annet
+
 * no-basis-Patient
 * no-basis-Organization
 * no-basis-Practitioner
@@ -19,7 +21,7 @@ Conformance ressursene som som ligger til grunn for den publiserte versjonen av 
 
 Implementasjonsguiden på SIMPLIFER er imidlertid ikke speilet tilbake til Github prosjektet, så denne finnes bare på SIMPLIFIER.
 
-## Høring 
+## Høring
 
 Det er gjennomført flere høringsrunder på profilene som nå er publisert, disse er nå ferdige (pr september 2019). Ytterligere tilbakemeldinger om bugs eller andre forslag til forbedringer kan skje:
 
@@ -45,6 +47,7 @@ Førsteutkast legger vi ut her i [branch emergingprofiles](https://github.com/HL
 ## Workshop 23. oktober 2018
 
 Workshop på Gardermoen 23. oktober 2018 konsentrerte seg om
+
 * Medication
 * MedicationStatement
 * Substance
