@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NamingSystem xmlns="http://hl7.org/fhir" >
     <meta>
-        <versionId value="1.0" />
+        <versionId value="1.1" />
     </meta>
     <name value="Kommunenummer" />
     <status value="active" />
@@ -19,5 +19,11 @@
         <type value="uri" />
         <value value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle" />
         <preferred value="true" />
+    </uniqueId>
+    <uniqueId>
+        <type value="oid" />
+        <value value="2.16.578.1.12.4.1.1.3402" />
+        <preferred value="false" />
+        <comment>Volven.no. For legacy/mapping purposes only.</comment>
     </uniqueId>
 </NamingSystem>
