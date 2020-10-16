@@ -59,7 +59,7 @@ Førsteutkast ligger i [branch emergingprofiles](https://github.com/HL7Norway/ba
 
 Versjon: 2.0.13
 
-Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering). 
+Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering).
 
 ## Normering
 
@@ -68,11 +68,11 @@ Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://git
 ## Verktøy
 
 Vi anbefaler alle å bruke [Forge](https://fire.ly/forge/) for profilutvikling. Forge er gratis.
-Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplifier.net/) for visualisering. 
+Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplifier.net/) for visualisering.
 
 ## Wiki
 
-Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/) der vi oppfordrer alle til å bidra. 
+Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/) der vi oppfordrer alle til å bidra.
 
 ## Kontaktpersoner
 
@@ -85,5 +85,4 @@ Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-p
 
 ## Prosjekt for R4
 
-Prosjekt: https://github.com/HL7Norway/basisprofiler-r4/projects/1
-
+Prosjekt: <https://github.com/HL7Norway/basisprofiler-r4/projects/1>
