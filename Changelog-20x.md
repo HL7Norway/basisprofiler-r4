@@ -1,5 +1,17 @@
 # Bugfixes no-basis-R4 2.0.x
 
+Bugfix-validering branch
+Fix bugs for validation with official java validator. Remove all snapshots from definitons.
+Fix errors in slicing: https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice
+|Version|2.0.xx|
+|-
+|Date|xxx|
+|All snapshots|Removed all snapshots|
+|no-basis-documentreference-type.valueset.xml|Added status in the ValueSet (required)|
+|no-basis-connection-type.valueset.xml|Added HL7 connection types to this valueset so to replace errondous slicing of the connectionType element in Endpoint|
+|no-basis-Endpoint.StructureDefinition-profile.xml|Wrong slice definition on non repeating element (1..1) Endpoint.connectionType|
+|no-basis-HealthcareService.StructureDefinition-profile.xml|Wrong slice definition on non repeating element (1..1)|
+
 |Version|2.0.14|
 |-
 |Date|2020-09-22|

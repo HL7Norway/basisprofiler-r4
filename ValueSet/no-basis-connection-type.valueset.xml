@@ -13,11 +13,14 @@
   <experimental value="true" />
   <date value="2019-03-13T10:48:45.936+00:00" />
   <publisher value="Direktoratet for e-helse" />
-  <description value="ValueSet for connection types used in Endpoint definition"/>
+  <description value="ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type"/>
   <immutable value="false" />
   <compose>
     <include>
       <system value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type" />
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
     </include>
   </compose>
 </ValueSet>
