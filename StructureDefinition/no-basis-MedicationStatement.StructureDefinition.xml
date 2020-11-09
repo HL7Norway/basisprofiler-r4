@@ -8,7 +8,7 @@
   <status value="active" />
   <date value="2019-09-20" />
   <description value="Basis profile for medication statement, to be used in Norway. The profile is adapted to include norwegian specific features and constraints." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationStatement" />
@@ -63,7 +63,7 @@
       </slicing>
     </element>
     <element id="MedicationStatement.medication[x]:medicationReference">
-      <path value="MedicationStatement.medicationReference" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationReference" />
       <min value="1" />
       <type>
