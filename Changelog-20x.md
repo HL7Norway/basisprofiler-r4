@@ -1,5 +1,11 @@
 # Bugfixes no-basis-R4 2.0.x
 
+### Version 2.0.15
+Date: 2020-11-13
+* `no-basis-DocumentReference` status set to active
+* `no-basis-Composition` status set to active
+* All StructureDefintions updated to FHIR version: 4.0.1
+
 ### Version 2.0.14
 Date: 2020-09-22
 * Added version information and made search parameter active
