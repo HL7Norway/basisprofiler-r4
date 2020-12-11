@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Composition" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Composition" />
+  <version value="2.0.15" />
   <name value="NoBasisComposition" />
   <title value="no-basis-Composition" />
   <status value="active" />
