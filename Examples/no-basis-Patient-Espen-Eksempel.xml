@@ -1,0 +1,80 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient"/>
+	</meta>
+	<!-- The nationality of the patient. should be a country code from ISO 3166-1 code system -->
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+			<valueCodeableConcept>
+				<coding>
+					<system value="urn:iso:std:iso:3166"/>
+					<code value="NO"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<identifier> <!-- Fødselnummeret til brukeren -->
+	<!-- Norsk fødselsnummer -->
+		<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+		<value value="210377xxxxx"/>
+	</identifier>
+	<name> <!-- Navnet til brukeren -->
+		<family value="Eksempel"/>
+		<given value="Espen"/>
+	</name>
+	<telecom>
+		<system value="phone"/>
+		<value value="+4798216832"/>
+		<use value="home"/>
+	</telecom>
+	<!-- Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes. -->
+	<gender value="male"/>
+	<address>
+	<!-- Norwegian address: http://hl7.no/fhir/StructureDefinition/no-basis-Address -->
+	<!-- Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. -->
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-propertyinformation">
+		<!-- Identification of a real property in Norway is defined using gårdsnummer, bruksnummer and kommunenummer. In addition real property can be rented out, the area of the real property that is rented is measured and is further identified by its festenummer. In addition some real property is split into sections identified by its seksjonsnummer. -->
+		<!-- I dette eksempelet er bare kommunenavn angitt, men vanligvis vil man benytte address.distreict hvis man bare ønsker kommunenavnet -->
+			<extension url="municipality">
+				<valueCoding>
+					<system value="urn:oid:2.16.578.1.12.4.1.1.3402"/>
+					<code value="0301"/>
+					<display value="Oslo"/>
+				</valueCoding>
+			</extension>
+		</extension>
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-address-official">
+		<!-- Defines the concept of an officially registered address in Norway. Usually this will be the adress registered in "Folkeregisteret" for persons or "Enhetsregisteret" for organizations. -->
+			<valueBoolean value="true"/>
+		</extension>
+		<use value="home"/>
+		<line value="Stålverkskroken 14"/>
+		<city value="Oslo"/> <!-- Poststed -->
+		<district value="Oslo"/> <!-- Kommunenavn -->
+		<postalCode value="0661"/> <!-- postnummer -->
+		<country value="NO"/> <!-- land (er overflødig i norge -->
+	</address>
+	<maritalStatus>
+	<!-- This field contains a patient's most recent marital (civil) status. -->
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<code value="U"/>
+			<display value="unmarried"/>
+		</coding>
+	</maritalStatus>
+	<communication>
+		<language>
+		<!-- Languages which may be used to communicate with the patient about his or her health. -->
+		<!-- Should we prefer coded values? -->
+			<text value="Norsk"/>
+		</language>
+	</communication>
+	<generalPractitioner>
+		<!-- VKP expects the HER id of the "tjeneste" responsible for providing the patient with "fastlege" services. -->
+		<identifier>
+			<system value="urn:oid:2.16.578.1.12.4.1.2"/> <!-- OID for HER-id -->
+			<value value="720"/> <!-- The actual HER-id -->
+		</identifier>
+		<display value="SIDSEL AASE JAVERY"/>
+	</generalPractitioner>
+</Patient>

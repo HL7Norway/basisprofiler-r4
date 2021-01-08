@@ -4,7 +4,7 @@
 	</meta>
 	<identifier>
 	<!-- Organization number from the norwegian enhetsregisteret -->
-		<system value="urn:oid:2.16.578.1.12.4.1.2.101"/>
+		<system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
 		<value value="915933149"/>
 	</identifier>
 	<name value="Direktoratet for e-Helse"/> <!-- The name of the organization -->

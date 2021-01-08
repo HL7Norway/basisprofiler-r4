@@ -1,4 +1,5 @@
-# no-basis HL7 FHIR basisprofiler for norge R4 versjon
+# no-basis HL7 FHIR basisprofiler for Norge R4 versjon
+
 HL7 FHIR Base profiles for Norway
 
 ## Mål
@@ -9,6 +10,7 @@ Se [prinsipper for basisprofiler i wiki'en](https://github.com/HL7Norway/best-pr
 ## Ferdige profiler R4
 
 15 profiler er publisert på SIMPLIFER.net og omfatter blant annet
+
 * no-basis-Patient
 * no-basis-Organization
 * no-basis-Practitioner
@@ -19,7 +21,7 @@ Conformance ressursene som som ligger til grunn for den publiserte versjonen av 
 
 Implementasjonsguiden på SIMPLIFER er imidlertid ikke speilet tilbake til Github prosjektet, så denne finnes bare på SIMPLIFIER.
 
-## Høring 
+## Høring
 
 Det er gjennomført flere høringsrunder på profilene som nå er publisert, disse er nå ferdige (pr september 2019). Ytterligere tilbakemeldinger om bugs eller andre forslag til forbedringer kan skje:
 
@@ -27,7 +29,11 @@ Det er gjennomført flere høringsrunder på profilene som nå er publisert, dis
 * Github prosjektet [prosjektet på GitHub](https://github.com/HL7Norway/basisprofiler-r4) og legge det inn som issues
 * eventuelt lage en egen branch med forslag til endringer på [prosjektet på GitHub](https://github.com/HL7Norway/basisprofiler-r4)
 
-## Profiler diskutert på workshop 5. februar 2019
+## Workshop 22. september 2020
+
+[Invitasjon til workshop](https://hl7norway.github.io/best-practice/docs/2020-09-22-Workshop).
+
+## Workshop 5. februar 2019
 
 * Person
 * PractionerRole
@@ -38,9 +44,10 @@ Det er gjennomført flere høringsrunder på profilene som nå er publisert, dis
 
 Førsteutkast legger vi ut her i [branch emergingprofiles](https://github.com/HL7Norway/basisprofiler-r3/tree/emergingprofiles)
 
-## Forrige workshop: Medication++
+## Workshop 23. oktober 2018
 
 Workshop på Gardermoen 23. oktober 2018 konsentrerte seg om
+
 * Medication
 * MedicationStatement
 * Substance
@@ -48,16 +55,24 @@ Workshop på Gardermoen 23. oktober 2018 konsentrerte seg om
 
 Førsteutkast ligger i [branch emergingprofiles](https://github.com/HL7Norway/basisprofiler-r3/tree/emergingprofiles)
 
+## Versjonering
+
+Versjon: 2.0.13
+
+Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering).
+
+## Normering
+
+[Basisprofilene ligger som anbefalt standard](https://ehelse.no/standarder/norske-basisprofiler-for-hl7-fhir) i Direktoratet for e-helse sin [Referansekatalog for e-helse](https://ehelse.no/referansekatalog/referansekatalogen-for-e-helse).
+
 ## Verktøy
 
 Vi anbefaler alle å bruke [Forge](https://fire.ly/forge/) for profilutvikling. Forge er gratis.
-Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplifier.net/) for visualisering. 
+Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplifier.net/) for visualisering.
 
 ## Wiki
 
-Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/wiki) der vi oppfordrer alle til å bidra. 
-
-Det finnes en også en wiki på [git.sarepta.ehelse.no](https://git.sarepta.ehelse.no/utvikling/FHIR/wikis/home).
+Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-practice/) der vi oppfordrer alle til å bidra.
 
 ## Kontaktpersoner
 
@@ -70,5 +85,4 @@ Det finnes en også en wiki på [git.sarepta.ehelse.no](https://git.sarepta.ehel
 
 ## Prosjekt for R4
 
-Prosjekt: https://github.com/HL7Norway/basisprofiler-r4/projects/1
-
+Prosjekt: <https://github.com/HL7Norway/basisprofiler-r4/projects/1>

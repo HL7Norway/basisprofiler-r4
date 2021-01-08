@@ -8,11 +8,11 @@
   <status value="active" />
   <date value="2019-09-20" />
   <description value="Part of norwegian KI standard." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
-    <type value="element" />
+    <type value="extension" />
     <expression value="AllergyIntolerance" />
   </context>
   <type value="Extension" />
@@ -40,43 +40,23 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:source.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="source" />
+    </element>
     <element id="Extension.extension:source.value[x]">
       <path value="Extension.extension.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:source.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:source.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.extension.valueCodeableConcept.coding.system" />
-      <min value="1" />
+    <element id="Extension.extension:source.value[x].coding.system">
+      <path value="Extension.extension.value[x].coding.system" />
       <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7498" />
-    </element>
-    <element id="Extension.extension:source.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.extension.valueCodeableConcept.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:source.value[x]:valueCodeableConcept.coding.display">
-      <path value="Extension.extension.valueCodeableConcept.coding.display" />
-      <min value="1" />
-    </element>
-    <element id="Extension.extension:source.value[x]:valueCodeableConcept.text">
-      <path value="Extension.extension.valueCodeableConcept.text" />
-      <max value="0" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

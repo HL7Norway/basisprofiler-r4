@@ -30,7 +30,7 @@
     </concept>
     <concept>
         <code value="enkeEllerEnkemann" />
-        <display value=">Enke eller enkemann" />
+        <display value="Enke eller enkemann" />
         <definition value="gjenlevende person fra et ekteskap"/>
     </concept>
     <concept>
@@ -45,7 +45,7 @@
     </concept>
     <concept>
         <code value="registrertPartner" />
-        <display value="Registert partner" />
+        <display value="Registrert partner" />
         <definition value="person som er i et partnerskap iht partnerskapsloven"/>
     </concept>
     <concept>
