@@ -78,7 +78,7 @@
     <element id="Address.district">
       <path value="Address.district" />
       <short value="name of &quot;kommune&quot;" />
-      <definition value="Name of the county (norwegian &quot;kommune&quot;). If kommune number is required &quot;eiendomsinformasjon&quot; should be used.&#xD;&#xA;&#xD;&#xA;The name of the administrative area (county)." />
+      <definition value="Name of the county (norwegian &quot;kommune&quot;).&#xD;&#xA;&#xD;&#xA;The name of the administrative area (county)." />
       <alias value="kommune" />
     </element>
     <element id="Address.state">
