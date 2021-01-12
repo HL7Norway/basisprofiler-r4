@@ -9,6 +9,8 @@ Date: 2021-01-12
 * `no-basis-kommunenummer.namingsystem` Added oid value as possible uniqueId for kommunenummer
 * `no-basis-Address` Updated the definition of district
 * `no-basis-municipalitycode` Added extension for municipalitycode
+* `no-basis-Address` Added extension municipalitycode in district
+* `no-basis-Patient-Jannice-Søreng` Added coded value to district, validated against updated Patient/Address profile, OK
 
 Date: 2021-01-11
 

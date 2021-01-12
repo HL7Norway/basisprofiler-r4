@@ -81,6 +81,28 @@
       <definition value="Name of the county (norwegian &quot;kommune&quot;).&#xD;&#xA;&#xD;&#xA;The name of the administrative area (county)." />
       <alias value="kommune" />
     </element>
+    <element id="Address.district.extension">
+      <path value="Address.district.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Address.district.extension:municipalitycode">
+      <path value="Address.district.extension" />
+      <sliceName value="municipalitycode" />
+      <short value="Coded value for municipality/county Norwegian kommune" />
+      <definition value="Coded value for municipality/county Norwegian kommune" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode" />
+      </type>
+    </element>
     <element id="Address.state">
       <path value="Address.state" />
       <short value="norwegian &quot;fylke&quot;" />
