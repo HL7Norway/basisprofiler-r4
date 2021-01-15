@@ -54,7 +54,14 @@
 		<use value="home"/>
 		<line value="Karisvingen 44"/>
 		<city value="Oslo"/> <!-- Poststed -->
-		<district value="Oslo"/> <!-- Kommunenavn -->
+		<district value="Oslo">	
+			<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode">
+				<valueCoding>
+					<system value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle"/>
+					<code value="0301"/>
+				</valueCoding>
+			</extension>
+		</district> <!-- Kommunenavn -->
 		<postalCode value="0603"/> <!-- postnummer -->
 		<country value="NO"/> <!-- land (er overflødig i norge -->
 	</address>
@@ -75,8 +82,8 @@
 		A coded value should be used for the main contact person. -->
 			<coding>
 				<system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
-				<code value="CP"/>
-				<display value="Contact person"/>
+				<code value="C"/>
+				<display value="Emergency Contact"/>
 			</coding>
 		</relationship>
 		<relationship>
