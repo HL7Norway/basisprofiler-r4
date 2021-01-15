@@ -59,6 +59,34 @@
       <path value="Organization.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="no-basis provides two commonly used slices to indicate Organization.type. Both ValueSets are used in the Norweian realm and is currently maintained at Volven.no: &#xD;&#xA;- Organisatorisk nivå (OID=8628)&#xD;&#xA;- Organisatorisk betegnelse (OID=8624)&#xD;&#xA;&#xD;&#xA;The kind(s) of organization that this is." />
+    </element>
+    <element id="Organization.type:organisatoriskNiva">
+      <path value="Organization.type" />
+      <sliceName value="organisatoriskNiva" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8628" />
+      </binding>
+    </element>
+    <element id="Organization.type:organisatoriskNiva.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8628" />
+    </element>
+    <element id="Organization.type:organisatoriskNiva.coding.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Organization.address">
       <path value="Organization.address" />
       <type>
