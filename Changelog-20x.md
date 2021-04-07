@@ -4,6 +4,10 @@
 
 ### Version 2.0.15
 
+Date: 2021-01-15
+
+* `no-basis-Organization` Added slices for 8624 og 8628, issue [#69](https://github.com/HL7Norway/basisprofiler-r4/issues/69)
+
 Date: 2021-01-12
 
 * `no-basis-kommunenummer.namingsystem` Added oid value as possible uniqueId for kommunenummer

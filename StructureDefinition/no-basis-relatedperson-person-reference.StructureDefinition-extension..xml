@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-relatedperson-person-reference" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
+  <version value="2.0.15" />
+  <name value="NoBasisRelatedpersonPersonReference" />
+  <status value="active" />
+  <date value="2021-04-07" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="RelatedPerson.patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
+    </element>
+  </differential>
+</StructureDefinition>

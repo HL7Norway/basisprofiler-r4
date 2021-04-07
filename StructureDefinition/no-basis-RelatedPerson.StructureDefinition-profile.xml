@@ -77,13 +77,11 @@
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
       <short value="The person this person is related to" />
-      <definition value="no-basis: Can reference no-basis-Patient, no-basis-Person or Person in addition to Patient resources.&#xD;&#xA;&#xD;&#xA;The patient this person is related to." />
+      <definition value="no-basis: Can reference no-basis-Patient in addition to Patient resources.&#xD;&#xA;&#xD;&#xA;The patient this person is related to." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Person" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person" />
       </type>
     </element>
     <element id="RelatedPerson.relationship">
