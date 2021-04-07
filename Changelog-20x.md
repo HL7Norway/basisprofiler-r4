@@ -9,6 +9,7 @@ Date: 2021-04-07
 * issue [#42](https://github.com/HL7Norway/basisprofiler-r4/issues/42)
 * `no-basis-relatedperson-person-reference` Added extension to add person reference to the RelatedPerson.patient element
 * `no-basis-RelatedPerson` Removed reference to no-basis-Person and Person from RelatedPerson.patient
+* `no-basis-RelatedPerson-Ærlend-Sørgård-person-extension.xml` Added example to demonstrate the use of the new extension
 
 Date: 2021-01-15
 
