@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-RelatedPerson" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson" />
-  <version value="2.0.9" />
+  <version value="2.0.15" />
   <name value="NoBasisRelatedPerson" />
   <title value="no-basis-RelatedPerson" />
   <status value="active" />
@@ -77,7 +77,7 @@
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
       <short value="The person this person is related to" />
-      <definition value="no-basis: Can reference no-basis-Patient in addition to Patient resources.&#xD;&#xA;&#xD;&#xA;The patient this person is related to." />
+      <definition value="no-basis: Can reference no-basis-Patient in addition to Patient resources. &#xD;&#xA;If a person reference is needed the optional extension should be used.&#xD;&#xA;&#xD;&#xA;The patient this person is related to." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />

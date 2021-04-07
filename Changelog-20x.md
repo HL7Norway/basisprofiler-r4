@@ -4,6 +4,11 @@
 
 ### Version 2.0.15
 
+Date: 2021-04-07
+
+* `no-basis-relatedperson-person-reference` Added extension to add person reference to the RelatedPerson.patient element
+* `no-basis-RelatedPerson` Removed reference to no-basis-Person and Person from RelatedPerson.patient
+
 Date: 2021-01-15
 
 * `no-basis-Organization` Added slices for 8624 og 8628, issue [#69](https://github.com/HL7Norway/basisprofiler-r4/issues/69)
