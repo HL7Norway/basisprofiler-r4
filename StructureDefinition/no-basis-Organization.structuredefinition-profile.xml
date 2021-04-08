@@ -6,7 +6,7 @@
     <lastUpdated value="2020-04-22T10:49:58.004+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
-  <version value="2.0.13" />
+  <version value="2.0.15" />
   <name value="NoBasisOrganization" />
   <title value="no-basis-Organization" />
   <status value="active" />
@@ -57,6 +57,53 @@
     </element>
     <element id="Organization.identifier:RSH.value">
       <path value="Organization.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="no-basis provides two commonly used slices to indicate Organization.type. Both ValueSets are used in the Norweian realm and is currently maintained at Volven.no: &#xD;&#xA;- Organisatorisk nivå (OID=8628)&#xD;&#xA;- Organisatorisk betegnelse (OID=8624)&#xD;&#xA;&#xD;&#xA;The kind(s) of organization that this is." />
+    </element>
+    <element id="Organization.type:organisatoriskNiva">
+      <path value="Organization.type" />
+      <sliceName value="organisatoriskNiva" />
+      <short value="Organisatorisk nivå" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8628" />
+      </binding>
+    </element>
+    <element id="Organization.type:organisatoriskNiva.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8628" />
+    </element>
+    <element id="Organization.type:organisatoriskNiva.coding.code">
+      <path value="Organization.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Organization.type:organisatoriskBetegnelse">
+      <path value="Organization.type" />
+      <sliceName value="organisatoriskBetegnelse" />
+      <short value="Organisatorisk betegnelse" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8624" />
+      </binding>
+    </element>
+    <element id="Organization.type:organisatoriskBetegnelse.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.8624" />
+    </element>
+    <element id="Organization.type:organisatoriskBetegnelse.coding.code">
+      <path value="Organization.type.coding.code" />
       <min value="1" />
     </element>
     <element id="Organization.address">
