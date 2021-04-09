@@ -6,7 +6,7 @@
     <lastUpdated value="2019-05-15T13:38:12.872+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
-  <version value="2.0.8" />
+  <version value="2.0.15" />
   <name value="NoBasisAddress" />
   <title value="no-basis-Address" />
   <status value="active" />

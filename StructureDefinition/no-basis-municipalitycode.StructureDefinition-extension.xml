@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-municipalitycode" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode" />
-  <version value="2.0.15" />
+  <version value="2.0.16" />
   <name value="NoBasisMunicipalitycode" />
   <title value="no-basis-municipalitycode" />
-  <status value="draft" />
-  <date value="2021-01-12" />
+  <status value="active" />
+  <date value="2021-04-09" />
   <description value="Coded value for municipality/county Norwegian kommune" />
   <fhirVersion value="4.0.1" />
   <mapping>
