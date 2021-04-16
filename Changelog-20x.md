@@ -7,6 +7,10 @@
 Bugfix release to include municipalitycode extension in package.
 2.0.15 pakke mangler municipalitycoded extension [#74](https://github.com/HL7Norway/basisprofiler-r4/issues/42)
 
+Date: 2021-04-16
+
+* `no-basis-relatedperson-person-reference` removed double dot in filename
+
 Date: 2021-04-09
 
 * `no-basis-municipalitycode` Changed status to active to include the extension in Package
