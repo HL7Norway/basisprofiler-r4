@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="3401-use-mapping"/>
+  <url value="http://ehelse.no/fhir/ConceptMap/3401-mapping"/>
+  <version value="4.0.1"/>
+  <name value="MappingUse3401"/>
+  <title value="Mapping 3401 to Address use"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-05-31"/>
+  <publisher value="Direktoratet for e-Helse"/>
+  <description value="An example mapping"/>
+  <purpose value="To illustrate mapping features"/>
+  <sourceUri value="http://hl7.org/fhir/address-use"/>
+  <targetUri value="urn:oid:2.16.578.1.12.4.1.1.3401"/>
+  <group>
+    <source value="http://hl7.org/fhir/address-use"/>
+    <target value="urn:oid:2.16.578.1.12.4.1.1.3401"/>
+    <element>
+      <code value="home"/>
+      <target>
+        <code value="H"/>
+        <display value="Bostedsadresse"/>
+        <equivalence value="narrower"/>
+        <comment value="Både Bosted og folkeregisteradresse mapper til home"/>
+        <dependsOn>
+          <property value="Address.official"/>
+          <value value="false"/>
+        </dependsOn>
+      </target>
+    </element>
+    <element>
+      <code value="home"/>
+      <target>
+        <code value="HP"/>
+        <display value="Folkeregisteradresse"/>
+        <equivalence value="narrower"/>
+        <comment value="Både Bosted og folkeregisteradresse mapper til home"/>
+        <dependsOn>
+          <property value="Address.official"/>
+          <value value="true"/>
+        </dependsOn>
+      </target>
+    </element>
+    <element>
+      <code value="work"/>
+      <target>
+        <code value="WP"/>
+        <display value="Arbeidsadresse"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="temp"/>
+      <target>
+        <code value="HV"/>
+        <display value="Ferieadresse"/>
+        <equivalence value="narrower"/>
+        <comment value="Både ferieadresse og midlertidig adresse mapper til temp"/>
+      </target>
+    </element>
+    <element>
+      <code value="temp"/>
+      <target>
+        <code value="TMP"/>
+        <display value="Midlertidig adresse"/>
+        <equivalence value="narrower"/>
+        <comment value="Både ferieadresse og midlertidig adresse mapper til temp"/>
+      </target>
+    </element>
+    <element>
+      <code value="old"/>
+      <target>
+        <code value="BAD"/>
+        <display value="Ubrukelig adresse"/>
+        <equivalence value="inexact"/>
+        <comment value="Gammel er relatert til ubrukerlig men ikke lik"/>
+      </target>
+    </element>
+    <element>
+      <code value="home"/>
+      <target>
+        <code value="INV"/>
+        <display value="Faktureringsadresse"/>
+        <equivalence value="equivalent"/>
+        <dependsOn>
+          <property value="Address.type"/>
+          <value value="billing"/>
+        </dependsOn>
+      </target>
+    </element>
+    <element>
+      <code value="home"/>
+      <target>
+        <code value="PST"/>
+        <display value="Postadresse"/>
+        <equivalence value="equivalent"/>
+        <dependsOn>
+          <property value="Address.type"/>
+          <value value="postal"/>
+        </dependsOn>
+      </target>
+    </element>
+    <element>
+      <code value="home"/>
+      <target>
+        <code value="RES"/>
+        <display value="Besøksadresse"/>
+        <equivalence value="equivalent"/>
+        <dependsOn>
+          <property value="Address.type"/>
+          <value value="physical"/>
+        </dependsOn>
+      </target>
+    </element>
+  </group>
+</ConceptMap>
