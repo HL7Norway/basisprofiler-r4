@@ -4,14 +4,12 @@
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <h2>FHIR-example-2 (http://hl7.org/fhir/ConceptMap/example2)</h2>
-      <p>Mapping from http://example.org/fhir/example1 to http://example.org/fhir/example2</p>
-      <p>DRAFT (not intended for production usage). Published on 13/06/2012 by HL7, Inc (FHIR project team (example): 
-        <a href="http://hl7.org/fhir">http://hl7.org/fhir</a>). 
+      <h2>3401-use-mapping (http://hl7.org/fhir/ConceptMap/3401-use-mapping)</h2>
+      <p>Mapping from http://hl7.org/fhir/address-use to urn:oid:2.16.578.1.12.4.1.1.3401</p>
+      <p>DRAFT EXAMPLE (not intended for production usage):  
       </p>
       <div>
         <p>An example mapping</p>
-
       </div>
       <br/>
       <table class="grid">
@@ -28,23 +26,87 @@
         </tr>
         <tr>
           <td>
-            <b>Code</b> from http://example.org/fhir/example1
+            <b>Code</b> from http://hl7.org/fhir/address-use
           </td>
           <td>
-            <b>Code</b> from http://example.org/fhir/example3
+            <b>Code</b> from Address.type
           </td>
           <td/>
           <td>
-            <b>Code</b> from http://example.org/fhir/example2
+            <b>Code</b> from urn:oid:2.16.578.1.12.4.1.1.3401
           </td>
         </tr>
         <tr>
-          <td>code</td>
-          <td>some-code</td>
+          <td>home</td>
+          <td></td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">narrower</a>
+          </td>
+          <td>H Bostedsadresse</td>
+        </tr>
+        <tr>
+          <td>home</td>
+          <td></td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">narrower</a>
+          </td>
+          <td>HP Folkeregisteradresse</td>
+        </tr>
+        <tr>
+          <td>work</td>
+          <td></td>
           <td>
             <a href="codesystem-concept-map-equivalence.html#equivalent">equivalent</a>
           </td>
-          <td>code2</td>
+          <td>WP Arbeidsadresse</td>
+        </tr>
+        <tr>
+          <td>temp</td>
+          <td></td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">narrower</a>
+          </td>
+          <td>TMP Midlertidig adresse</td>
+        </tr>
+        <tr>
+          <td>temp</td>
+          <td></td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">narrower</a>
+          </td>
+          <td>HV Ferieadresse</td>
+        </tr>
+         <tr>
+          <td>old</td>
+          <td></td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">inexact</a>
+          </td>
+          <td>BAD Ubrukelig adresse</td>
+        </tr>
+        <tr>
+          <td>home</td>
+          <td>billing</td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">equivalent</a>
+          </td>
+          <td>INV Faktureringsadresse</td>
+        </tr>
+        <tr>
+          <td>home</td>
+          <td>postal</td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">equivalent</a>
+          </td>
+          <td>PST Postadresse</td>
+        </tr>
+        <tr>
+          <td>home</td>
+          <td>physical</td>
+          <td>
+            <a href="codesystem-concept-map-equivalence.html#equivalent">equivalent</a>
+          </td>
+          <td>RES Besøksadresse</td>
         </tr>
       </table>
     </div>
@@ -122,7 +184,7 @@
         <code value="BAD"/>
         <display value="Ubrukelig adresse"/>
         <equivalence value="inexact"/>
-        <comment value="Gammel er relatert til ubrukerlig men ikke lik"/>
+        <comment value="Gammel er relatert til ubrukelig men ikke lik"/>
       </target>
     </element>
     <element>
