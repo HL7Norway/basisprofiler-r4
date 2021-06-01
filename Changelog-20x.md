@@ -5,7 +5,7 @@
 ### Version 2.0.16
 
 Bugfix release to include municipalitycode extension in package.
-2.0.15 pakke mangler municipalitycoded extension [#74](https://github.com/HL7Norway/basisprofiler-r4/issues/42)
+2.0.15 package missing municipalitycoded extension [#74](https://github.com/HL7Norway/basisprofiler-r4/issues/42)
 
 Date: 2021-04-16
 
