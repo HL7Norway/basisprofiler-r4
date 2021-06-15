@@ -7,6 +7,7 @@ Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream
 
 Date: 2021-06-15
 
+* `no-basis-AllergyIntolerance` Fixed wrong slice definition on non repeating element (1..1), slicing on code.coding element instead
 * `no-basis-Location` Removed invalid constraint on partOf element (was Organization whitch is illegal)
 * `no-basis-Practitioner` Practitioner.qualification slicen flyttet fra code (non-repeating) til qualification (0..*) for å fikse bug'en
 * `no-basis-connection-type.valueset.xml` Updated to version number
