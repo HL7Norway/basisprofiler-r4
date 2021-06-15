@@ -31,6 +31,12 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
       </type>
+      <constraint>
+        <key value="no-basis-providedBy-identifier" />
+        <severity value="warning" />
+        <human value="no-basis recommends the use of logical references by ENH or RESH identifiers. If providedBy exists, identifiers should exist." />
+        <expression value="$this.exists(identifier.exists())" />
+      </constraint>
     </element>
     <element id="HealthcareService.providedBy.identifier">
       <path value="HealthcareService.providedBy.identifier" />
@@ -42,7 +48,7 @@
       <constraint>
         <key value="no-basis-identifier-system" />
         <severity value="warning" />
-        <human value="no-basis recommends the use of ENH or RESH for identifier.system" />
+        <human value="no-basis recommends the use of urn:oid:2.16.578.1.12.4.1.4.101 (ENH) or urn:oid:2.16.578.1.12.4.1.4.102 (RESH) for identifier.system" />
         <expression value="$this.exists(value = 'urn:oid:2.16.578.1.12.4.1.4.101' or value = 'urn:oid:2.16.578.1.12.4.1.4.102')" />
       </constraint>
     </element>

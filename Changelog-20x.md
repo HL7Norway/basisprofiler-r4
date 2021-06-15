@@ -12,6 +12,8 @@ Date: 2021-06-15
 * `no-basis-connection-type.valueset.xml` Updated to version number
 * `no-basis-HealthcareService.StructureDefinition-profile.xml` Removed slicing, wrote constraint to check for correct providedBy.identifier.system value (ENH/RESH)
   * Validated constraint on providedBy invariant
+  * Updated constraint to also check for existing identifier, if providedBy exists
+* `no-basis-HealthcareService-example.xml` Added working example of no-basis-HealthcareService resource instance (JAVA validated)
 
 Date: 2020-10-17
 

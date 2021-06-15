@@ -8,7 +8,7 @@ java -jar C:\Users\Thomas\Downloads\validator_cli.jar StructureDefinition\*.xml 
 
 java -jar c:\download\validator_cli.jar no-basis-Practitioner-example.xml -ig c:\GitRepo\for-validation-no-basis -version 4.0.0
 
-java -jar C:\Users\Thomas\Downloads\validator_cli.jar no-basis-healthcareservice-example-2.xml -ig e:\GitRepo\for-validation-no-basis -version 4.0.1 -output healthcareservice-validation.xml
+java -jar C:\Users\Thomas\Downloads\validator_cli.jar no-basis-HealthcareService-example.xml -ig e:\GitRepo\for-validation-no-basis -version 4.0.1 -output healthcareservice-validation.xml
 
 java -jar C:\Users\Thomas\Downloads\validator_cli.jar *.xml -version 4.0.1 -output validation.xml
 

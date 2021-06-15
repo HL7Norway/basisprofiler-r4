@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><HealthcareService xmlns="http://hl7.org/fhir">
+	<id value="no-basis-HealthcareService example"/>
+	<meta>
+		<profile value="http://hl7.no/fhir/StructureDefinition/no-basis-HealthcareService"/>
+  </meta>
+  <identifier>
+    <system value="http://hl7.no/shared-ids"/>
+    <value value="HS-12"/>
+  </identifier>
+	<active value="true"/>
+  <providedBy>
+    <reference value="Organization/f001"/>
+    <identifier>
+        <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
+        <value value="test"/>
+    </identifier>
+    <display value="Burgers University Medical Center"/>
+  </providedBy>
+  <category>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.9040"/>
+      <code value="101"/>
+      <display value="Helseforetak/private sykehus"/>
+    </coding>
+  </category>
+  <specialty>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.8655"/>
+      <code value="S0208"/>
+      <display value="Ortopedisk kirurgi"/>
+    </coding>
+  </specialty>
+</HealthcareService>
