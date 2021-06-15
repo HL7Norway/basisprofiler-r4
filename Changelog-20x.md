@@ -9,12 +9,13 @@ Date: 2021-06-15
 
 * `no-basis-AllergyIntolerance` Fixed wrong slice definition on non repeating element (1..1), slicing on code.coding element instead
 * `no-basis-Location` Removed invalid constraint on partOf element (was Organization whitch is illegal)
-* `no-basis-Practitioner` Practitioner.qualification slicen flyttet fra code (non-repeating) til qualification (0..*) for å fikse bug'en
+* `no-basis-Practitioner` Practitioner.qualification moved slice from code (non-repeating) to qualification (0..*) to fix the slicing bug
 * `no-basis-connection-type.valueset.xml` Updated to version number
 * `no-basis-HealthcareService.StructureDefinition-profile.xml` Removed slicing, wrote constraint to check for correct providedBy.identifier.system value (ENH/RESH)
   * Validated constraint on providedBy invariant
   * Updated constraint to also check for existing identifier, if providedBy exists
 * `no-basis-HealthcareService-example.xml` Added working example of no-basis-HealthcareService resource instance (JAVA validated)
+* merged the current code in the `master` branch into the `Bugfix-validering` branch to continue the bugfix work based on current codebase
 
 Date: 2020-10-17
 
