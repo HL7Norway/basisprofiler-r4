@@ -2,12 +2,13 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-DocumentReference" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-DocumentReference" />
+  <version value="2.0.15" />
   <name value="NoBasisDocumentReference" />
   <title value="no-basis-DocumentReference" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2020-08-21" />
   <description value="Basisprofil for Norwegian DocumentReference. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds terminology and extensions specific to Norway. The basis profile is open, derived profiles should close down the information elements according to specification relevant to the use-case.&#xD;&#xA;&#xD;&#xA;The profile sets the absolute minimum requirements when searching, fething and storing documents within the healtcare domain. It sets the basic requirements for extensions and terminology which can be present." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />

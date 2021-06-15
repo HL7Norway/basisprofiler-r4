@@ -4,7 +4,7 @@
     <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
     <name value="NoBasisDocumentReferenceType" />
     <title value="no-basis-documentreference-type.valueset" />
-	<status value="draft"/>
+	<status value="active" />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166" />

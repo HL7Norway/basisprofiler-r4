@@ -12,7 +12,7 @@
   <status value="active" />
   <date value="2018-10-26" />
   <description value="This basis extension describes information identifying norwegian real property." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -50,7 +50,7 @@
     </element>
     <element id="Extension.extension:cadastralUnitNumber.url">
       <path value="Extension.extension.url" />
-      <fixedString value="cadastralUnitNumber" />
+      <fixedUri value="cadastralUnitNumber" />
     </element>
     <element id="Extension.extension:cadastralUnitNumber.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -70,7 +70,7 @@
     </element>
     <element id="Extension.extension:propertyUnitNumber.url">
       <path value="Extension.extension.url" />
-      <fixedString value="propertyUnitNumber" />
+      <fixedUri value="propertyUnitNumber" />
     </element>
     <element id="Extension.extension:propertyUnitNumber.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -89,7 +89,7 @@
     </element>
     <element id="Extension.extension:leaseholdNumber.url">
       <path value="Extension.extension.url" />
-      <fixedString value="leaseholdNumber" />
+      <fixedUri value="leaseholdNumber" />
     </element>
     <element id="Extension.extension:leaseholdNumber.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -108,7 +108,7 @@
     </element>
     <element id="Extension.extension:condominiumUnitNumber.url">
       <path value="Extension.extension.url" />
-      <fixedString value="condominiumUnitNumber" />
+      <fixedUri value="condominiumUnitNumber" />
     </element>
     <element id="Extension.extension:condominiumUnitNumber.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -130,7 +130,7 @@
     </element>
     <element id="Extension.extension:municipality.url">
       <path value="Extension.extension.url" />
-      <fixedString value="municipality" />
+      <fixedUri value="municipality" />
     </element>
     <element id="Extension.extension:municipality.value[x]">
       <path value="Extension.extension.value[x]" />

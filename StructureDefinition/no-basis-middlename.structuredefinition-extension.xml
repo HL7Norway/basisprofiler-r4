@@ -14,7 +14,7 @@
   <publisher value="Direktoratet for e-helse" />
   <description value="The basis extension defines the Norwegian middlename wich is called &quot;mellomnavn&quot; and defined by Norwegian legislation (Lov om personnavn)." />
   <purpose value="Specific usage of middle name as a specific part of official name standard where name order is important" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="primitive-type" />
   <abstract value="false" />
   <context>
@@ -34,7 +34,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-middlename" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

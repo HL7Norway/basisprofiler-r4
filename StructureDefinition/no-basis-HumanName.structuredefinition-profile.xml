@@ -6,13 +6,13 @@
     <lastUpdated value="2018-06-13T12:22:47.269+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-HumanName" />
-  <version value="2.0.6" />
+  <version value="2.0.15" />
   <name value="NoBasisHumanName" />
   <title value="no-basis-HumanName" />
   <status value="active" />
   <date value="2019-05-20" />
   <description value="Basisprofil for Norwegian HumanName. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds the concept of middlename and further explains of the use for the data-elements in a Norwegian context. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="HumanName" />
@@ -54,7 +54,6 @@
       <short value="Given names (not always 'first')" />
       <definition value="Given name. In Norway Given name does not include middlenames according to the regulation for norwegian names. Multiple given names are however legal. Ref. &quot;Lov om personnavn&quot; for further details about Norwegian HumanNames." />
       <alias value="fornavn" />
-      <max value="1" />
     </element>
     <element id="HumanName.prefix">
       <path value="HumanName.prefix" />

@@ -8,7 +8,7 @@
   <status value="active" />
   <date value="2019-07-03" />
   <description value="Part of norwegian standard for describing a prescription." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -38,6 +38,10 @@
       <path value="Extension.extension" />
       <sliceName value="prescriptiongroup" />
     </element>
+    <element id="Extension.extension:prescriptiongroup.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="prescriptiongroup" />
+    </element>
     <element id="Extension.extension:prescriptiongroup.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
@@ -50,7 +54,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-prescriptiongroup" />
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-prescriptiongroup" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

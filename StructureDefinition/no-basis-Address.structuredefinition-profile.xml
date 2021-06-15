@@ -6,14 +6,14 @@
     <lastUpdated value="2019-05-15T13:38:12.872+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Address" />
-  <version value="2.0.8" />
+  <version value="2.0.15" />
   <name value="NoBasisAddress" />
   <title value="no-basis-Address" />
   <status value="active" />
   <date value="2019-05-15" />
   <description value="Basisprofil for Norwegian Address information. Defined by The Norwegian Directorate of eHealth and HL7 Norway. The profile adds Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
   <purpose value="Norwegian basisprofil for Address resource adding Norwegian specific property information, official use of address and further explanation of the use for the data-elements in a Norwegian address." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="Address" />
@@ -78,8 +78,30 @@
     <element id="Address.district">
       <path value="Address.district" />
       <short value="name of &quot;kommune&quot;" />
-      <definition value="Name of the county (norwegian &quot;kommune&quot;). If kommune number is required &quot;eiendomsinformasjon&quot; should be used.&#xD;&#xA;&#xD;&#xA;The name of the administrative area (county)." />
+      <definition value="Name of the county (norwegian &quot;kommune&quot;).&#xD;&#xA;&#xD;&#xA;The name of the administrative area (county)." />
       <alias value="kommune" />
+    </element>
+    <element id="Address.district.extension">
+      <path value="Address.district.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Address.district.extension:municipalitycode">
+      <path value="Address.district.extension" />
+      <sliceName value="municipalitycode" />
+      <short value="Coded value for municipality/county Norwegian kommune" />
+      <definition value="Coded value for municipality/county Norwegian kommune" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-municipalitycode" />
+      </type>
     </element>
     <element id="Address.state">
       <path value="Address.state" />

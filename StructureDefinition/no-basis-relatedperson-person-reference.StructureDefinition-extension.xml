@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-relatedperson-person-reference" />
+  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
+  <version value="2.0.15" />
+  <name value="NoBasisRelatedpersonPersonReference" />
+  <status value="active" />
+  <date value="2021-04-07" />
+  <description value="If a person reference is needed in RelatedPerson.patient element, this optional extension should be used." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="RelatedPerson.patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Person reference in RelatedPerson.patient element" />
+      <definition value="If a person reference is needed in RelatedPerson.patient element, this optional extension should be used.&#xD;&#xA;The extension includes a reference to a single Person/no-basis-Person resource.&#xD;&#xA;&#xD;&#xA;To support searches for identifiers, an identifier value should be supported in addition to the literal reference." />
+      <comment value="no-basis currently (v2.0.15) don't include search parameter definition for this extension." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Reference to person resource" />
+      <definition value="Reference to a single Person/no-basis-Person resource in RelatedPerson.patient element. &#xD;&#xA;Should only be used when a Person resource reference is needed.&#xD;&#xA;&#xD;&#xA;Name or identifier should be supplied in the RelatedPerson.patient element, in addition to information supplied in this extension." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Person" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

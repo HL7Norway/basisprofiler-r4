@@ -12,7 +12,7 @@
   <status value="active" />
   <date value="2018-10-26" />
   <description value="Simple extension containing information about what part of a norwegian city the patient is a resident. Administrative purpose." />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -42,7 +42,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedString value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district" />
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-urban-district" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
