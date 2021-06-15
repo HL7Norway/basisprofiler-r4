@@ -1,0 +1,29 @@
+{
+  "name": "hl7.fhir.no.basis",
+  "version": "2.0.16-beta",
+  "description": "Norwegian core profiles for R4\r\nversion 2.0.16-beta",
+  "author": "thomiz",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.core": "4.0.1",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "keywords": [
+    "no",
+    "Norway",
+    "no-basis",
+    "core",
+    "HL7-Norway"
+  ],
+  "url": "https://simplifier.net/guide/no-basis-entities-individuals/introduction",
+  "title": "HL7 Norway no-basis",
+  "maintainers": [
+    {
+      "name": "HL7 Norway",
+      "email": "info@hl7.no"
+    }
+  ],
+  "canonical": "http://hl7.no/fhir/"
+}

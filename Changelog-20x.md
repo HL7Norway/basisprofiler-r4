@@ -7,6 +7,7 @@ Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream
 
 Date: 2021-06-15
 
+* `package.json` Added working package definition
 * `no-basis-AllergyIntolerance` Fixed wrong slice definition on non repeating element (1..1), slicing on code.coding element instead
 * `no-basis-Location` Removed invalid constraint on partOf element (was Organization whitch is illegal)
 * `no-basis-Practitioner` Practitioner.qualification moved slice from code (non-repeating) to qualification (0..*) to fix the slicing bug
