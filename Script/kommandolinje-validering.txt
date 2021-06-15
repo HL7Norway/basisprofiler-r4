@@ -6,9 +6,11 @@ java -jar /home/thomas/Downloads/org.hl7.fhir.validator.jar gd-Address-box.Struc
 
 java -jar C:\Users\Thomas\Downloads\validator_cli.jar StructureDefinition\*.xml -version 4.0.0 -output validation-no-basis.xml
 
-java -jar c:\download\org.hl7.fhir.validator.jar no-basis-Practitioner-example.xml -ig c:\GitRepo\for-validation-no-basis -version 4.0.0
+java -jar c:\download\validator_cli.jar no-basis-Practitioner-example.xml -ig c:\GitRepo\for-validation-no-basis -version 4.0.0
 
-java -jar C:\Users\Thomas\Downloads\org.hl7.fhir.validator.jar Examples\no-basis-Patient-Jannice-Søreng-district.xml -ig StructureDefinition -version 4.0.1
+java -jar C:\Users\Thomas\Downloads\validator_cli.jar no-basis-healthcareservice-example-2.xml -ig e:\GitRepo\for-validation-no-basis -version 4.0.1 -output healthcareservice-validation.xml
+
+java -jar C:\Users\Thomas\Downloads\validator_cli.jar *.xml -version 4.0.1 -output validation.xml
 
 Validere alt i valideringskatalogen:
 java -jar c:\users\Thomas\Downloads\validator_cli.jar E:\GitRepo\for-validation-no-basis\*.xml -version 4.0.1 -output validation.xml -ig e:\GitRepo\for-validation-no-basis

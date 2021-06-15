@@ -35,14 +35,6 @@
         <versioning value="specific" />
       </type>
     </element>
-    <element id="Location.partOf">
-      <path value="Location.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
-      </type>
-    </element>
     <element id="Location.endpoint">
       <path value="Location.endpoint" />
       <definition value="no-basis don't use this element to reference endpoints registered in the Norwegian Address register (endpoints connected to a kommunikasjonspart in tjenestebasert adressering). Endpoints registered in the Norwegian Address register should only be referenced through a kommunikasjonspart-Organization resource.&#xD;&#xA;&#xD;&#xA;Technical endpoints providing access to services operated for the location." />

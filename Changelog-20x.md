@@ -7,10 +7,11 @@ Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream
 
 Date: 2021-06-15
 
+* `no-basis-Location` Removed invalid constraint on partOf element (was Organization whitch is illegal)
+* `no-basis-Practitioner` Practitioner.qualification slicen flyttet fra code (non-repeating) til qualification (0..*) for å fikse bug'en
 * `no-basis-connection-type.valueset.xml` Updated to version number
 * `no-basis-HealthcareService.StructureDefinition-profile.xml` Removed slicing, wrote constraint to check for correct providedBy.identifier.system value (ENH/RESH)
-* Have not validated constraint yet
-
+  * Validated constraint on providedBy invariant
 
 Date: 2020-10-17
 

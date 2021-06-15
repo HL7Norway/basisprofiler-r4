@@ -43,7 +43,7 @@
         <key value="no-basis-identifier-system" />
         <severity value="warning" />
         <human value="no-basis recommends the use of ENH or RESH for identifier.system" />
-        <expression value="system.Value()=('urn:oid:2.16.578.1.12.4.1.4.101' or 'urn:oid:2.16.578.1.12.4.1.4.102')" />
+        <expression value="$this.exists(value = 'urn:oid:2.16.578.1.12.4.1.4.101' or value = 'urn:oid:2.16.578.1.12.4.1.4.102')" />
       </constraint>
     </element>
     <element id="HealthcareService.category">
