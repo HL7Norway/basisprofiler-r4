@@ -2,6 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="no-basis-documentreference-type.valueset" />
     <url value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
+    <version value="2.0.17" />
     <name value="NoBasisDocumentReferenceType" />
     <title value="no-basis-documentreference-type.valueset" />
 	<status value="active" />

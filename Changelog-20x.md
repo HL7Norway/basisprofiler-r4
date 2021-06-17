@@ -8,6 +8,7 @@ Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream
 Date: 2021-06-17
 
 * NamingSystems Added id value to namingsystem [Issue #76](https://github.com/HL7Norway/basisprofiler-r4/issues/76)
+* Added missing version elements `2.0.17`
 
 Date: 2021-06-15
 

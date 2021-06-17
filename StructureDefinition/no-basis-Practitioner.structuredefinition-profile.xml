@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-06T06:11:16.19+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
-  <version value="2.0.6" />
+  <version value="2.0.17" />
   <name value="NoBasisPractitioner" />
   <title value="no-basis-Practitioner" />
   <status value="active" />

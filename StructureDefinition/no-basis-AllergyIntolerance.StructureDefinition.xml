@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-AllergyIntolerance" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
-  <version value="2.0.3" />
+  <version value="2.0.17" />
   <name value="NoBasisAllergyIntolerance" />
   <title value="no-basis-AllergyIntolerance" />
   <status value="active" />
