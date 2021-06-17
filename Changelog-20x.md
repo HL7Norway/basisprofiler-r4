@@ -5,6 +5,10 @@
 Fix bugs for validation with official java validator. Remove all snapshots from definitons.
 Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice)
 
+Date: 2021-06-17
+
+* NamingSystems Added id value to namingsystem [Issue #76](https://github.com/HL7Norway/basisprofiler-r4/issues/76)
+
 Date: 2021-06-15
 
 * `package.json` Added working package definition
