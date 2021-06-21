@@ -1,6 +1,6 @@
 {
   "name": "hl7.fhir.no.basis",
-  "version": "2.0.16-beta",
+  "version": "2.0.17-alpha",
   "description": "Norwegian core profiles for R4\r\nversion 2.0.16-beta",
   "author": "thomiz",
   "fhirVersions": [
