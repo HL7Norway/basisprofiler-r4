@@ -1,6 +1,34 @@
 # Bugfixes no-basis-R4 2.0.x
 
-## Version 2.0 changes
+### Bugfix-validering branch
+
+Fix bugs for validation with official java validator. Remove all snapshots from definitons.
+Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice)
+
+Date: 2021-06-17
+
+* NamingSystems Added id value to namingsystem [Issue #76](https://github.com/HL7Norway/basisprofiler-r4/issues/76)
+* Added missing version elements `2.0.17`
+
+Date: 2021-06-15
+
+* `package.json` Added working package definition
+* `no-basis-AllergyIntolerance` Fixed wrong slice definition on non repeating element (1..1), slicing on code.coding element instead
+* `no-basis-Location` Removed invalid constraint on partOf element (was Organization whitch is illegal)
+* `no-basis-Practitioner` Practitioner.qualification moved slice from code (non-repeating) to qualification (0..*) to fix the slicing bug
+* `no-basis-connection-type.valueset.xml` Updated to version number
+* `no-basis-HealthcareService.StructureDefinition-profile.xml` Removed slicing, wrote constraint to check for correct providedBy.identifier.system value (ENH/RESH)
+  * Validated constraint on providedBy invariant
+  * Updated constraint to also check for existing identifier, if providedBy exists
+* `no-basis-HealthcareService-example.xml` Added working example of no-basis-HealthcareService resource instance (JAVA validated)
+* merged the current code in the `master` branch into the `Bugfix-validering` branch to continue the bugfix work based on current codebase
+
+Date: 2020-10-17
+
+* `no-basis-documentreference-type.valueset.xml` Added status in the ValueSet (required)
+* `no-basis-connection-type.valueset.xml` Added HL7 connection types to this valueset so to replace errondous slicing of the connectionType element in Endpoint
+* `no-basis-Endpoint.StructureDefinition-profile.xml` Wrong slice definition on non repeating element (1..1) Endpoint.connectionType|
+* `no-basis-HealthcareService.StructureDefinition-profile.xml` Wrong slice definition on non repeating element (1..1)
 
 ### Version 2.0.16
 

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Endpoint" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Endpoint" />
-  <version value="2.0.0" />
+  <version value="2.0.17" />
   <name value="NoBasisEndpoint" />
   <title value="no-basis-Endpoint" />
   <status value="active" />
@@ -25,22 +25,7 @@
     </element>
     <element id="Endpoint.connectionType">
       <path value="Endpoint.connectionType" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <definition value="no-basis:  the connection type should be coded according to http://hl7.org/fhir/ValueSet/endpoint-connection-type. However specific connection types used in Norway can be coded according to http://hl7.no/fhir/ValueSet/no-basis-endpoint-connection-type (amqp, ebxml etc.)&#xD;&#xA;&#xD;&#xA;A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way. (e.g. XDS.b/DICOM/cds-hook)." />
-    </element>
-    <element id="Endpoint.connectionType:ConnectionType">
-      <path value="Endpoint.connectionType" />
-      <sliceName value="ConnectionType" />
-    </element>
-    <element id="Endpoint.connectionType:additionalConnectionType">
-      <path value="Endpoint.connectionType" />
-      <sliceName value="additionalConnectionType" />
       <binding>
         <strength value="extensible" />
         <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-connection-type" />

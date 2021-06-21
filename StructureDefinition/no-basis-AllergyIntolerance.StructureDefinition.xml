@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-AllergyIntolerance" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
-  <version value="2.0.3" />
+  <version value="2.0.17" />
   <name value="NoBasisAllergyIntolerance" />
   <title value="no-basis-AllergyIntolerance" />
   <status value="active" />
@@ -50,37 +50,37 @@
       <path value="AllergyIntolerance.verificationStatus.coding.system" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
     </element>
-    <element id="AllergyIntolerance.code">
-      <path value="AllergyIntolerance.code" />
+    <element id="AllergyIntolerance.code.coding">
+      <path value="AllergyIntolerance.code.coding" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="coding.system" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
     </element>
-    <element id="AllergyIntolerance.code:ATC">
-      <path value="AllergyIntolerance.code" />
+    <element id="AllergyIntolerance.code.coding:ATC">
+      <path value="AllergyIntolerance.code.coding" />
       <sliceName value="ATC" />
     </element>
-    <element id="AllergyIntolerance.code:ATC.coding.system">
+    <element id="AllergyIntolerance.code.coding:ATC.system">
       <path value="AllergyIntolerance.code.coding.system" />
       <fixedUri value="http://www.whocc.no/atc" />
     </element>
-    <element id="AllergyIntolerance.code:FESTSubstance">
-      <path value="AllergyIntolerance.code" />
+    <element id="AllergyIntolerance.code.coding:FESTSubstance">
+      <path value="AllergyIntolerance.code.coding" />
       <sliceName value="FESTSubstance" />
     </element>
-    <element id="AllergyIntolerance.code:FESTSubstance.coding.system">
+    <element id="AllergyIntolerance.code.coding:FESTSubstance.system">
       <path value="AllergyIntolerance.code.coding.system" />
       <fixedUri value="http://ehelse.no/FESTSubstance" />
     </element>
-    <element id="AllergyIntolerance.code:FESTMedication">
-      <path value="AllergyIntolerance.code" />
+    <element id="AllergyIntolerance.code.coding:FESTMedication">
+      <path value="AllergyIntolerance.code.coding" />
       <sliceName value="FESTMedication" />
     </element>
-    <element id="AllergyIntolerance.code:FESTMedication.coding.system">
+    <element id="AllergyIntolerance.code.coding:FESTMedication.system">
       <path value="AllergyIntolerance.code.coding.system" />
       <fixedUri value="http://ehelse.no/FESTMedication" />
     </element>

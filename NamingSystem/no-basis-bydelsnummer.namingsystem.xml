@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NamingSystem xmlns="http://hl7.org/fhir" >
+    <id value="no-basis-bydelsnummer"/>
     <meta>
         <versionId value="1.0" />
     </meta>

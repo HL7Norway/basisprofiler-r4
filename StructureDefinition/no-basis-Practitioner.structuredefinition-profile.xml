@@ -6,7 +6,7 @@
     <lastUpdated value="2018-06-06T06:11:16.19+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
-  <version value="2.0.6" />
+  <version value="2.0.17" />
   <name value="NoBasisPractitioner" />
   <title value="no-basis-Practitioner" />
   <status value="active" />
@@ -108,70 +108,78 @@
     </element>
     <element id="Practitioner.qualification.code">
       <path value="Practitioner.qualification.code" />
+      <definition value="Coded representation of the qualification of the health care practitioner. Usually contains healthPersonnellCategory according to Kategori helsepersonell (OID=9060) and approvalType according to Godkjenningstype HPR (OID=7704)" />
+    </element>
+    <element id="Practitioner.qualification.code.coding">
+      <path value="Practitioner.qualification.code.coding" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="coding.system" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
+      <short value="Coded representation of the qualification" />
       <definition value="Coded representation of the qualification of the health care practitioner. Usually contains healthPersonnellCategory according to Kategori helsepersonell (OID=9060) and approvalType according to Godkjenningstype HPR (OID=7704)" />
     </element>
-    <element id="Practitioner.qualification.code:healthPersonnellCategory">
-      <path value="Practitioner.qualification.code" />
+    <element id="Practitioner.qualification.code.coding:healthPersonnellCategory">
+      <path value="Practitioner.qualification.code.coding" />
       <sliceName value="healthPersonnellCategory" />
       <short value="The health care personnel category" />
       <definition value="Category of health care personnel authorization according to Helsepersonnelloven §48" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.9060" />
+      </binding>
     </element>
-    <element id="Practitioner.qualification.code:healthPersonnellCategory.coding.system">
+    <element id="Practitioner.qualification.code.coding:healthPersonnellCategory.system">
       <path value="Practitioner.qualification.code.coding.system" />
       <short value="Identification of the CodeSystem 9060 on Volven" />
       <definition value="Identification of the CodeSystem Kategori helsepersonell (OID=9060) used to describe the category of authorized health care personnel" />
       <min value="1" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.9060" />
     </element>
-    <element id="Practitioner.qualification.code:healthPersonnellCategory.coding.code">
+    <element id="Practitioner.qualification.code.coding:healthPersonnellCategory.code">
       <path value="Practitioner.qualification.code.coding.code" />
-      <short value="The actual value according to 9060" />
-      <definition value="The actual value according to the CodeSystem Kategori helsepersonell (OID=9060)" />
       <min value="1" />
     </element>
-    <element id="Practitioner.qualification.code:approvalType">
-      <path value="Practitioner.qualification.code" />
+    <element id="Practitioner.qualification.code.coding:approvalType">
+      <path value="Practitioner.qualification.code.coding" />
       <sliceName value="approvalType" />
       <short value="The approval type of the practitioner" />
-      <definition value="The approval type of the practitioner (if applicable) according to the  CodeSystem Godkjenningstype HPR (OID=7704)" />
+      <definition value="The approval type of the practitioner (if applicable) according to the CodeSystem Godkjenningstype HPR (OID=7704)" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.7704" />
+      </binding>
     </element>
-    <element id="Practitioner.qualification.code:approvalType.coding.system">
+    <element id="Practitioner.qualification.code.coding:approvalType.system">
       <path value="Practitioner.qualification.code.coding.system" />
       <short value="Identification of the CodeSystem 7704 on Volven" />
-      <definition value="Identification of the CodeSystem Godkjenningstype HPR (OID=7704)&#xD;&#xA;used to describe type of autohorization registered in HPR." />
+      <definition value="Identification of the CodeSystem Godkjenningstype HPR (OID=7704) used to describe type of autohorization registered in HPR." />
       <min value="1" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7704" />
     </element>
-    <element id="Practitioner.qualification.code:approvalType.coding.code">
+    <element id="Practitioner.qualification.code.coding:approvalType.code">
       <path value="Practitioner.qualification.code.coding.code" />
-      <short value="The actual value according to 7704" />
-      <definition value="The actual value according to the CodeSystem Godkjenningstype HPR (OID=7704)" />
       <min value="1" />
     </element>
-    <element id="Practitioner.qualification.code:healthPersonnelSpecialization">
-      <path value="Practitioner.qualification.code" />
+    <element id="Practitioner.qualification.code.coding:healthPersonnelSpecialization">
+      <path value="Practitioner.qualification.code.coding" />
       <sliceName value="healthPersonnelSpecialization" />
       <short value="Godkjent spesialitet for helsepersonell registrert i HPR." />
-      <definition value="Godkjent spesialitet for helsepersonell registrert i HPR.&#xD;&#xA;Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)" />
+      <definition value="Godkjent spesialitet for helsepersonell registrert i HPR. Helsepersonellregisterets (HPR) klassifikasjon av spesialiteter (OID=7426)" />
       <binding>
         <strength value="preferred" />
-        <description value="klassifikasjon av spesialiteter" />
         <valueSet value="urn:oid:2.16.578.1.12.4.1.1.7426" />
       </binding>
     </element>
-    <element id="Practitioner.qualification.code:healthPersonnelSpecialization.coding.system">
+    <element id="Practitioner.qualification.code.coding:healthPersonnelSpecialization.system">
       <path value="Practitioner.qualification.code.coding.system" />
       <min value="1" />
       <fixedUri value="urn:oid:2.16.578.1.12.4.1.1.7426" />
     </element>
-    <element id="Practitioner.qualification.code:healthPersonnelSpecialization.coding.code">
+    <element id="Practitioner.qualification.code.coding:healthPersonnelSpecialization.code">
       <path value="Practitioner.qualification.code.coding.code" />
       <min value="1" />
     </element>

@@ -6,18 +6,21 @@
     <lastUpdated value="2018-10-16T10:48:46.366+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/ValueSet/no-basis-connection-type" />
-  <version value="2.0.8" />
+  <version value="2.0.17" />
   <name value="NoBasisConnectionType"/>
   <title value="no-basis-connection-type.valueset" />
   <status value="active" />
   <experimental value="true" />
   <date value="2019-03-13T10:48:45.936+00:00" />
   <publisher value="Direktoratet for e-helse" />
-  <description value="ValueSet for connection types used in Endpoint definition"/>
+  <description value="ValueSet for connection types used in Endpoint definition. Includes all Norwegian specific types (no-basis-connection-type) and the extensible HL7 CodeSystem for connection-type"/>
   <immutable value="false" />
   <compose>
     <include>
       <system value="http://hl7.no/fhir/CodeSystem/no-basis-connection-type" />
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
     </include>
   </compose>
 </ValueSet>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-Location" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Location" />
-  <version value="2.0.6" />
+  <version value="2.0.17" />
   <name value="NoBasisLocation" />
   <title value="no-basis-Location" />
   <status value="active" />
@@ -33,14 +33,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
         <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
         <versioning value="specific" />
-      </type>
-    </element>
-    <element id="Location.partOf">
-      <path value="Location.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Organization" />
       </type>
     </element>
     <element id="Location.endpoint">
