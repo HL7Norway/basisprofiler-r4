@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Procedure" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2021-06-02T13:43:40.793+00:00" />
+  </meta>
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-procedure" />
+  <name value="NoBasisProcedure" />
+  <title value="no-basis-Procedure" />
+  <status value="draft" />
+  <date value="2021-06-02T13:44:04.7410316+00:00" />
+  <description value="Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints.&quot;" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="true" />
+  <type value="Procedure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.code.coding">
+      <path value="Procedure.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.code.coding:NKPK">
+      <path value="Procedure.code.coding" />
+      <sliceName value="NKPK" />
+      <short value="Norsk Klinisk Prosedyrekodeverk (NCMP, NCSP og NCRP)" />
+      <max value="1" />
+      <patternCoding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.code.coding:SNOMED-CT">
+      <path value="Procedure.code.coding" />
+      <sliceName value="SNOMED-CT" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.code.coding:ICPC-2">
+      <path value="Procedure.code.coding" />
+      <sliceName value="ICPC-2" />
+      <max value="1" />
+      <patternCoding>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.subject">
+      <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+      </type>
+    </element>
+    <element id="Procedure.performer.actor">
+      <path value="Procedure.performer.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+      </type>
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <binding>
+        <strength value="extensible" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
