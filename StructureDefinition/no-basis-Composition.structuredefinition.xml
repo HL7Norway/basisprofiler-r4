@@ -41,6 +41,7 @@
   <differential>
     <element id="Composition.type">
       <path value="Composition.type" />
+      <definition value="Specifies the particular kind of composition using the codes defined in the valueset 'NoBasisDocumentReferenceType'.&#xD;&#xA;Such as:&#xD;&#xA;- A00-1 Epikriser og sammenfatninger&#xD;&#xA;- A01-2 Kriseplan&#xD;&#xA;- A02-2 Individuell plan&#xD;&#xA;- etc.&#xD;&#xA;&#xD;&#xA;See valueset 'NoBasisDocumentReferenceType' in the Terminology section for more information on available types" />
       <binding>
         <strength value="required" />
         <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-documentreference-type" />
