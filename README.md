@@ -51,9 +51,9 @@ Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://git
 
 ## Verktøy
 
-Vi anbefaler å bruke [Forge](https://fire.ly/forge/) for profilutvikling.
-Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplifier.net/) for visualisering.
-Forge og SIMPLIFIER er kostbart å ta i bruk i komersiell sammenheng.
+Vi anbefaler å bruke [Forge](https://fire.ly/forge/) for profilutvikling.  
+Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplifier.net/) for visualisering.  
+Forge og SIMPLIFIER er kostbart å ta i bruk i komersiell sammenheng.  
 
 [Andre verktøy og ressurser](https://hl7norway.github.io/best-practice/docs/resources.html)
 
