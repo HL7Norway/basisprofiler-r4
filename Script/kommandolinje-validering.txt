@@ -14,3 +14,9 @@ java -jar C:\Users\Thomas\Downloads\validator_cli.jar *.xml -version 4.0.1 -outp
 
 Validere alt i valideringskatalogen:
 java -jar c:\users\Thomas\Downloads\validator_cli.jar E:\GitRepo\for-validation-no-basis\*.xml -version 4.0.1 -output validation.xml -ig e:\GitRepo\for-validation-no-basis
+
+Alle filer i alle mapper til for-validation (for å validere og bruke som IG i HL7 validator)
+FOR /R "E:\GitRepo\HL7-norway-basisprofiler-r4" %i IN (*.xml) DO COPY "%i" "E:\GitRepo\for-validation-no-basis"
+
+IG publisher kommandolinje
+java -jar "C:\Users\Thomas\Downloads\publisher.jar" -ig "e:\GitRepo\for-validation-no-basis\ig.ini"
