@@ -12,8 +12,8 @@
       "editions": [
         {
           "name": "HL7 Norway no-basis",
-          "ig-version": "2.0.15",
-          "package": "hl7.fhir.no.basis#2.0.15",
+          "ig-version": "2.0.17",
+          "package": "hl7.fhir.no.basis#2.0.17",
           "fhir-version": [
             "4.0.1"
           ],
