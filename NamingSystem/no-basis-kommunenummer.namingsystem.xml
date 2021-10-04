@@ -18,7 +18,7 @@
     </uniqueId>
     <uniqueId>
         <type value="uri" />
-        <value value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle" />
+        <value value="https://register.geonorge.no/sosi-kodelister/kommunenummer" />
         <preferred value="true" />
     </uniqueId>
     <uniqueId>
