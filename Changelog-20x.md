@@ -5,6 +5,10 @@
 Fix bugs for validation with official java validator. Remove all snapshots from definitons.
 Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice)
 
+Date: 2021-10-04
+
+* Fix wrong uri for Kommunenummer NamingSystem
+
 Date: 2021-07-02
 
 * `no-basis-Datatypes.png` Updated diagram for IG documentation

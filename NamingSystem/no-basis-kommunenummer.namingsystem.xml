@@ -2,7 +2,7 @@
 <NamingSystem xmlns="http://hl7.org/fhir" >
     <id value="no-basis-kommunenummer"/>
     <meta>
-        <versionId value="1.0" />
+        <versionId value="2.0.18" />
     </meta>
     <name value="Kommunenummer" />
     <status value="active" />
@@ -18,7 +18,7 @@
     </uniqueId>
     <uniqueId>
         <type value="uri" />
-        <value value="https://register.geonorge.no/subregister/sosi-kodelister/kartverket/kommunenummer-alle" />
+        <value value="https://register.geonorge.no/sosi-kodelister/kommunenummer" />
         <preferred value="true" />
     </uniqueId>
     <uniqueId>
