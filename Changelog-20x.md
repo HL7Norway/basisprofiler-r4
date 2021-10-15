@@ -1,13 +1,16 @@
 # Bugfixes no-basis-R4 2.0.x
 
-### Bugfix-validering branch
-
-Fix bugs for validation with official java validator. Remove all snapshots from definitons.
-Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice)
+### Bugfixes
 
 Date: 2021-10-04
 
 * Fix wrong uri for Kommunenummer NamingSystem
+
+### Version 2.0.17
+
+Fix bugs for validation with official java validator. Remove all snapshots from definitons.
+Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice)
+[Issue 55](https://github.com/HL7Norway/basisprofiler-r4/issues/55]
 
 Date: 2021-07-02
 
