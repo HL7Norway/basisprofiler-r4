@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Procedure xmlns="http://hl7.org/fhir">
+    <id value="no-basis-Procedure-example"/>
+    <meta>
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Procedure"/>
+    </meta>
     <status value="completed"/>
     <code>        
         <coding>
