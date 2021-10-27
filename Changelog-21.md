@@ -1,16 +1,27 @@
-# Bugfixes no-basis-R4 2.0.x
+# no-basis v2.1.0
 
-### Bugfixes
+* Based on HL7 FHIR version 4.0.1*
+
+## Version 2.1.0
+
+Feature release to add no-basis-Procedure profile definition.
+
+Date: 2021-10-27
+* `no-Basis-Procedure` Added profile, constraints on code that explain how to use codes from code system that are common in Norway. Example is included.
+
+## Version 2.0.17
+
+Fix bugs for validation with official java validator. Remove all snapshots from definitons.
+Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice)
+[Issue 55](https://github.com/HL7Norway/basisprofiler-r4/issues/55)
+
+### Bugfixes 2.0.17
 
 Date: 2021-10-04
 
 * Fix wrong uri for Kommunenummer NamingSystem
 
-### Version 2.0.17
-
-Fix bugs for validation with official java validator. Remove all snapshots from definitons.
-Fix errors in slicing: [Slicing discussion](https://chat.fhir.org/#narrow/stream/179166-implementers/topic/Slicing.20non-repeating.20elements.20to.20define.20a.20choice)
-[Issue 55](https://github.com/HL7Norway/basisprofiler-r4/issues/55]
+### 2.0.17 Changelog
 
 Date: 2021-07-02
 
@@ -42,7 +53,7 @@ Date: 2020-10-17
 * `no-basis-Endpoint.StructureDefinition-profile.xml` Wrong slice definition on non repeating element (1..1) Endpoint.connectionType|
 * `no-basis-HealthcareService.StructureDefinition-profile.xml` Wrong slice definition on non repeating element (1..1)
 
-### Version 2.0.16
+## Version 2.0.16
 
 Bugfix release to include municipalitycode extension in package.
 2.0.15 package missing municipalitycoded extension [#74](https://github.com/HL7Norway/basisprofiler-r4/issues/42)
@@ -56,7 +67,7 @@ Date: 2021-04-09
 * `no-basis-municipalitycode` Changed status to active to include the extension in Package
 * `no-basis-Address` Updated version number
 
-### Version 2.0.15
+## Version 2.0.15
 
 Date: 2021-04-07
 
@@ -88,7 +99,7 @@ Date: 2020-11-13
 * `no-basis-Composition` status set to active
 * All StructureDefintions updated to FHIR version: 4.0.1
 
-### Version 2.0.14
+## Version 2.0.14
 
 Date: 2020-09-22
 
@@ -102,7 +113,7 @@ Date: 2020-09-22
   * `no-basis-marital-status.codestystem.xml`
   * `no-basis-marital-status.codestystem.xml`
   
-### Version 2.0.13
+## Version 2.0.13
 
 Date: 2020-04-22
 
