@@ -6,6 +6,7 @@
     <lastUpdated value="2021-06-02T13:43:40.793+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Procedure" />
+  <version value="2.1.0" />
   <name value="NoBasisProcedure" />
   <title value="no-basis-Procedure" />
   <status value="active" />
