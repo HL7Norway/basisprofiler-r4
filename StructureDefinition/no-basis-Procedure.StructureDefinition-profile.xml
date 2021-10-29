@@ -5,15 +5,16 @@
     <versionId value="3" />
     <lastUpdated value="2021-06-02T13:43:40.793+00:00" />
   </meta>
-  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-procedure" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Procedure" />
+  <version value="2.1.0" />
   <name value="NoBasisProcedure" />
   <title value="no-basis-Procedure" />
-  <status value="draft" />
-  <date value="2021-06-02T13:44:04.7410316+00:00" />
-  <description value="Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints.&quot;" />
+  <status value="active" />
+  <date value="2021-10-27" />
+  <description value="Basis profile for a procedure, to be used in Norway. The profile is adapted to include norwegian specific features and constraints." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
-  <abstract value="true" />
+  <abstract value="false" />
   <type value="Procedure" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
@@ -31,7 +32,8 @@
     <element id="Procedure.code.coding:NKPK">
       <path value="Procedure.code.coding" />
       <sliceName value="NKPK" />
-      <short value="Norsk Klinisk Prosedyrekodeverk (NCMP, NCSP og NCRP)" />
+      <short value="Codes defined by Norsk Klinisk Prosedyrekodeverk (NCMP, NCSP og NCRP)" />
+      <definition value="A reference to a code defined by Norsk Klinisk Prosedyrekodeverk (NCMP, NCSP og NCRP)" />
       <max value="1" />
       <patternCoding>
         <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
@@ -40,6 +42,8 @@
     <element id="Procedure.code.coding:SNOMED-CT">
       <path value="Procedure.code.coding" />
       <sliceName value="SNOMED-CT" />
+      <short value="Code defined by SNOMED CT" />
+      <definition value="A reference to a code defined SNOMED CT." />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
@@ -48,29 +52,17 @@
     <element id="Procedure.code.coding:ICPC-2">
       <path value="Procedure.code.coding" />
       <sliceName value="ICPC-2" />
+      <short value="Code defined by a ICPC-2" />
+      <definition value="A reference to a code defined by ICPC-2" />
       <max value="1" />
       <patternCoding>
         <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
       </patternCoding>
     </element>
-    <element id="Procedure.subject">
-      <path value="Procedure.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
-      </type>
-    </element>
-    <element id="Procedure.performer.actor">
-      <path value="Procedure.performer.actor" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
-      </type>
-    </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
       </binding>
     </element>
   </differential>

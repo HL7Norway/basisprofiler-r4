@@ -41,7 +41,7 @@ Det arrangeres workshop i forbindelse med utarbeidelser av alle no-basis profile
 
 ## Versjonering
 
-Versjon: 2.0.17
+Versjon: 2.1.0
 
 Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering).
 

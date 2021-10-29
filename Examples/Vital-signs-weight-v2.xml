@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/FHIR/R4/fhir-all-xsd/fhir-single.xsd">
+	<id value="592411"/>
+	<status value="registered"/>
+  <code> 
+    <!--     LOINC - always recommended to have a LOINC code     -->
+    <coding> 
+      <system value="http://loinc.org"/> 
+      <code value="29463-7"/>  <!--   more generic methodless LOINC   -->
+      <display value="Body Weight"/> 
+    </coding> 
+    <coding> 
+      <system value="http://loinc.org"/> 
+      <code value="3141-9"/> <!--   translation is more specific method = measured LOINC   -->
+      <display value="Body weight Measured"/> 
+    </coding> 
+    <!--     SNOMED CT Codes - becoming more common     -->
+    <coding> 
+      <system value="http://snomed.info/sct"/> 
+      <code value="27113001"/> 
+      <display value="Body weight"/> 
+    </coding> 
+    <!--     Also, a local code specific to the source system     -->
+    <coding> 
+      <system value="http://acme.org/devices/clinical-codes"/> 
+      <code value="body-weight"/> 
+      <display value="Body Weight"/> 
+    </coding> 
+  </code> 
+  <subject> 
+    <reference value="Patient/592410"/> 
+  </subject> 
+  <effectiveDateTime value="2020-01-27"/> 
+  <valueQuantity> 
+    <value value="99042"/> 
+    <unit value="gram"/> 
+    <system value="http://unitsofmeasure.org"/> 
+    <code value="g"/> 
+  </valueQuantity> 
+</Observation> 

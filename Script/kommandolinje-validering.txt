@@ -20,3 +20,5 @@ FOR /R "E:\GitRepo\HL7-norway-basisprofiler-r4" %i IN (*.xml) DO COPY "%i" "E:\G
 
 IG publisher kommandolinje
 java -jar "C:\Users\Thomas\Downloads\publisher.jar" -ig "e:\GitRepo\for-validation-no-basis\ig.ini"
+
+java -jar C:\Users\Thomas\Downloads\validator_cli.jar no-basis-Procedure-example.xml -ig E:\GitRepo\fsh-no-basis\gh-pages -version 4.0.1
