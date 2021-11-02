@@ -11,6 +11,7 @@ Feature release to add no-basis-Procedure profile definition.
 Date: 2021-11-01
 version: 2.1.1
 * `no-Basis-Procedure` Corrected oid for ICPC-2 code in element Procedure.code
+* `no-basis-icpc-2` added NamingSystem for ICPC-2
 
 ### 2.1.0 Changelog
 
