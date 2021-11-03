@@ -4,9 +4,9 @@
     <meta>
         <versionId value="2.1.1" />
     </meta>
-    <name value="ICPC-2 (International Classification of Primary Care) (PH3C)" />
+    <name value="NoBasisICPC2" />
     <status value="active" />
-    <kind value="codesystem" />
+    <kind value="codesystem" /> 
     <date value="2021-11-02"/>
     <publisher value="HL7 Norway" />
     <responsible value="Wonca International Classification Committee (WICC)"/>
