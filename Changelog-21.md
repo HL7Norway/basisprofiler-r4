@@ -1,10 +1,19 @@
-# no-basis v2.1.0
+# no-basis v2.1
 
 * Based on HL7 FHIR version 4.0.1*
 
-## Version 2.1.0
+## Version 2.1
 
 Feature release to add no-basis-Procedure profile definition.
+
+### Bugfixes
+
+Date: 2021-11-04
+version: 2.1.1
+* `no-Basis-Procedure` replaced oid reference to ICPC-2 slice with uri in element Procedure.code
+* `no-basis-icpc-2` added NamingSystem for ICPC-2
+
+### 2.1.0 Changelog
 
 Date: 2021-10-27
 * `no-Basis-Procedure` Added profile, constraints on code that explain how to use codes from code system that are common in Norway. Example is included.

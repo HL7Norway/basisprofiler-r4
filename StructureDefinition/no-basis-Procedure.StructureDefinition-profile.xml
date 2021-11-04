@@ -56,7 +56,7 @@
       <definition value="A reference to a code defined by ICPC-2" />
       <max value="1" />
       <patternCoding>
-        <system value="urn:oid:2.16.578.1.12.4.1.1.7275" />
+        <system value="http://hl7.org/fhir/sid/icpc-2" />
       </patternCoding>
     </element>
     <element id="Procedure.bodySite">
