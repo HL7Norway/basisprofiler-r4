@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-postponementReason" />
+  <url value="https://example.org/fhir/StructureDefinition/PostponementReason" />
+  <name value="NoBasisPostponementReason" />
+  <title value="no-basis-postponementReason" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Appointment" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/PostponementReason" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="The reason for postponing the appointment" />
+      <definition value="The reason for postponing the appointment" />
+      <type>
+        <code value="code" />
+      </type>
+      <mustSupport value="false" />
+      <isModifier value="false" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Volven" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8446" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

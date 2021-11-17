@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-Appointment" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment" />
+  <name value="NoBasisAppointment" />
+  <title value="no-basis-Appointment" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Appointment" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Appointment.extension">
+      <path value="Appointment.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Appointment.extension:group">
+      <path value="Appointment.extension" />
+      <sliceName value="group" />
+      <short value="The appointment is a group session." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/Group" />
+      </type>
+    </element>
+    <element id="Appointment.extension:postponementReason">
+      <path value="Appointment.extension" />
+      <sliceName value="postponementReason" />
+      <short value="The reason code for delaying." />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://example.org/fhir/StructureDefinition/PostponementReason" />
+      </type>
+    </element>
+    <element id="Appointment.extension:postponementReason.value[x]">
+      <path value="Appointment.extension.value[x]" />
+      <short value="The reason for postponing the appointment" />
+      <definition value="The reason for postponing the appointment" />
+      <mustSupport value="false" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+    <element id="Appointment.extension:partOf">
+      <path value="Appointment.extension" />
+      <sliceName value="partOf" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/PartOf" />
+      </type>
+    </element>
+    <element id="Appointment.extension:partOf.value[x]">
+      <path value="Appointment.extension.value[x]" />
+      <definition value="A larger appointment of which this particular appointment is a component or step." />
+      <comment value="" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Appointment.cancelationReason">
+      <path value="Appointment.cancelationReason" />
+      <code>
+        <system value="urn:oid:2.16.578.1.12.4.1.1.8445" />
+        <display value="Volven kodeverk 8445 - Ventetid sluttkode" />
+      </code>
+    </element>
+    <element id="Appointment.appointmentType.coding">
+      <path value="Appointment.appointmentType.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Appointment.appointmentType.coding:omsorgsNiva">
+      <path value="Appointment.appointmentType.coding" />
+      <sliceName value="omsorgsNiva" />
+      <short value="Volven 8406" />
+      <definition value="Volven 8406" />
+      <comment value="" />
+      <requirements value="" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Volven" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8406" />
+      </binding>
+    </element>
+    <element id="Appointment.appointmentType.coding:kontaktType">
+      <path value="Appointment.appointmentType.coding" />
+      <sliceName value="kontaktType" />
+      <short value="Volven 8432" />
+      <definition value="Volven 8432" />
+      <comment value="" />
+      <requirements value="" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Volven" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8432" />
+      </binding>
+    </element>
+    <element id="Appointment.appointmentType.coding:innbygger">
+      <path value="Appointment.appointmentType.coding" />
+      <sliceName value="innbygger" />
+      <short value="Volven 7617" />
+      <definition value="Volven 7617" />
+      <comment value="" />
+      <requirements value="" />
+      <max value="1" />
+      <mustSupport value="false" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Volven" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.7617" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

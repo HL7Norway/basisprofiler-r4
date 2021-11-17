@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-partOf" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/PartOf" />
+  <name value="NoBasisPartOf" />
+  <title value="no-basis-partOf" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Appointment" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/PartOf" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Appoinment partOf structure." />
+      <definition value="A larger appointment of which this particular appointment is a component or step." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
