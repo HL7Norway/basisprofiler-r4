@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-group" />
-  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/Group" />
+  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/group" />
   <name value="NoBasisGroup" />
   <title value="no-basis-group" />
   <status value="draft" />
+  <description value="The basis extension defines a boolean concept that expresses the possibility to meet on short notice if the there are available appointment slots." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -24,7 +25,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/Group" />
+      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/group" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

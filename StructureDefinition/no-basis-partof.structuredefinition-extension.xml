@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-partOf" />
-  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/PartOf" />
+  <id value="no-basis-partof" />
+  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/partof" />
   <name value="NoBasisPartOf" />
-  <title value="no-basis-partOf" />
+  <title value="no-basis-partof" />
   <status value="draft" />
+  <description value="This basis extension mirrors the Encounter.partOF-attribute. The partOf-attribute enables booking of a set of related appointments with a set of sub-appointments being linked to the main appointment in the same way as encounters are being linked." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -18,7 +19,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment/PartOf" />
+      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/partof" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

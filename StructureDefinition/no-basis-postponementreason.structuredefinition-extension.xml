@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-postponementReason" />
-  <url value="https://example.org/fhir/StructureDefinition/PostponementReason" />
+  <id value="no-basis-postponementreason" />
+  <url value="https://example.org/fhir/structuredefinition/postponementreason" />
   <name value="NoBasisPostponementReason" />
-  <title value="no-basis-postponementReason" />
+  <title value="no-basis-postponementreason" />
   <status value="draft" />
+  <description value="The basis extension defines the reason for a postponement for example of an appointment or an encounter." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -18,7 +19,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://example.org/fhir/StructureDefinition/PostponementReason" />
+      <fixedUri value="https://example.org/fhir/structuredefinition/postponementreason" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
