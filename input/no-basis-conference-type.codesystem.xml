@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-bais-conferencetype" />
+  <id value="no-basis-conference-type.codesystem" />
   <url value="http://hl7.no/fhir/codesystem/no-basis-conference-type" />
   <name value="NoBasisConferenceType" />
   <status value="draft" />
+  <experimental value="false" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -31,8 +32,8 @@
         <display value="Telefon" />
       </code>
       <code>
-        <code value="fysiskt" />
-        <display value="Fysiskt" />
+        <code value="fysisk" />
+        <display value="Fysisk" />
       </code>
       <definition value="Codes to describe Norwegian conference types" />
     </element>

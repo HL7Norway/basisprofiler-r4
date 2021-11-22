@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-conference-type" />
+  <id value="no-basis-conference-type.valuset" />
   <url value="http://hl7.no/fhir/valueset/no-basis-conference-type" />
   <name value="NoBasisConferenceType" />
   <title value="no-basis-conference-type" />
