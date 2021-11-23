@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-conferencetype" />
+  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/conferencetype" />
+  <name value="NoBasisConferenceType" />
+  <status value="draft" />
+  <description value="Norwegian valueset for conference type." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Appointment" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/conferencetype" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="Norwegian valueset conference type" />
+        <valueSet value="http://hl7.no/fhir/valueset/no-basis-conference-type" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
