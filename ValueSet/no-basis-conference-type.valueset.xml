@@ -12,11 +12,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
   <derivation value="constraint" />
   <differential>
-    <element id="ValueSet.compose.include.system">
-      <path value="ValueSet.compose.include.system" />
+    <element id="ValueSet.compose.include.concept.code">
+      <path value="ValueSet.compose.include.concept.code" />
       <binding>
         <strength value="extensible" />
-        <description value="Norwegian valueset conference type" />
+        <description value="Norwegian valueset for conference type" />
         <valueSet value="http://hl7.no/fhir/codesystem/no-basis-conference-type" />
       </binding>
     </element>
