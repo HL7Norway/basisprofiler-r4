@@ -24,8 +24,12 @@
       <path value="Extension.value[x]" />
       <type>
         <code value="code" />
-        <profile value="http://hl7.no/fhir/valueset/no-basis-conference-type" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <description value="Norwegian valueset conference type" />
+        <valueSet value="http://hl7.no/fhir/valueset/no-basis-conference-type" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
