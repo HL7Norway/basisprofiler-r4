@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-appointment" />
-  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment" />
+  <id value="no-basis-Appointment" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment" />
   <name value="NoBasisAppointment" />
-  <title value="no-basis-appointment" />
+  <title value="no-basis-Appointment" />
   <status value="draft" />
   <description value="Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) must be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
   <fhirVersion value="4.0.1" />

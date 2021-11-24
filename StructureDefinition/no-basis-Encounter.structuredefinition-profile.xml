@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-encounter" />
-  <url value="http://hl7.no/fhir/structuredefinition/no-basis-encounter" />
+  <id value="no-basis-Encounter" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Encounter" />
   <name value="NoBasisEncounter" />
-  <title value="no-basis-encounter" />
+  <title value="no-basis-Encounter" />
   <status value="draft" />
   <description value="Basisprofil for Norwegian Location information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where more specific encounter information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
   <fhirVersion value="4.0.1" />
@@ -15,40 +15,26 @@
   <differential>
     <element id="Encounter.class">
       <path value="Encounter.class" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Encounter.class:omsorgsNiva">
-      <path value="Encounter.class" />
-      <sliceName value="omsorgsNiva" />
       <binding>
         <strength value="extensible" />
         <description value="Volven 8406 - omsorgsniva" />
         <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8406" />
       </binding>
     </element>
-    <element id="Encounter.class:kontaktType">
-      <path value="Encounter.class" />
-      <sliceName value="kontaktType" />
+    <element id="Encounter.type">
+      <path value="Encounter.type" />
       <binding>
         <strength value="extensible" />
-        <description value="Volven" />
+        <description value="Volven 8432 - Kontakttype" />
         <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8432" />
       </binding>
     </element>
     <element id="Encounter.priority">
       <path value="Encounter.priority" />
-      <code>
-        <system value="urn:oid:2.16.578.1.12.4.1.1.8428" />
-        <display value="Volven kodeverk 8428 - Hastegrad" />
-      </code>
       <binding>
         <strength value="extensible" />
+        <description value="Volven 8428 - Hastegrad" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8428" />
       </binding>
     </element>
   </differential>
