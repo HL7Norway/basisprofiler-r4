@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-group" />
-  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/group" />
+  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-group" />
   <name value="NoBasisGroup" />
   <title value="no-basis-group" />
   <status value="draft" />
@@ -25,7 +25,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/group" />
+      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-group" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
