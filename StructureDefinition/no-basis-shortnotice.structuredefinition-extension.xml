@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-shortnotice" />
-  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointmentresponse/shortnotice" />
+  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointmentresponse/no-basis-shortnotice" />
   <name value="NoBasisShortNotice" />
   <title value="no-basis-shortnotice" />
   <status value="draft" />
@@ -23,7 +23,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointmentresponse/shortnotice" />
+      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointmentresponse/no-basis-shortnotice" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

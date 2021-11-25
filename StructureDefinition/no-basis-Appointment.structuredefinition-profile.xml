@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-appointment" />
-  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment" />
+  <id value="no-basis-Appointment" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment" />
   <name value="NoBasisAppointment" />
-  <title value="no-basis-appointment" />
+  <title value="no-basis-Appointment" />
   <status value="draft" />
   <description value="Base profile for Norwegian Appointment information. Defined by HL7 Norway. This profile identifies a set of minimum expectations for an Appointment resource when creating, searching and retrieving compositions by defining which coding system(s) must be present when using this profile. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
   <fhirVersion value="4.0.1" />
@@ -24,16 +24,19 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Appointment.extension:postponementReason">
+    <element id="Appointment.extension:conferenceType">
       <path value="Appointment.extension" />
-      <sliceName value="postponementReason" />
-      <definition value="The reason code for the postponement" />
+      <sliceName value="conferenceType" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://example.org/fhir/structuredefinition/postponementreason" />
+        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-conferencetype" />
       </type>
+    </element>
+    <element id="Appointment.extension:conferenceType.value[x]">
+      <path value="Appointment.extension.value[x]" />
+      <short value="Conference type" />
     </element>
     <element id="Appointment.extension:group">
       <path value="Appointment.extension" />
@@ -42,28 +45,30 @@
       <min value="0" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/group" />
+        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-group" />
       </type>
     </element>
     <element id="Appointment.extension:partOf">
       <path value="Appointment.extension" />
       <sliceName value="partOf" />
+      <short value="Appoinment partOf structure." />
       <definition value="A larger appointment of which this particular appointment is a component or step." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/partof" />
+        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-partof" />
       </type>
     </element>
-    <element id="Appointment.extension:conferenceType">
+    <element id="Appointment.extension:postponementReason">
       <path value="Appointment.extension" />
-      <sliceName value="conferenceType" />
+      <sliceName value="postponementReason" />
+      <definition value="The reason code for the postponement" />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/conferencetype" />
+        <profile value="https://example.org/fhir/structuredefinition/no-basis-postponementreason" />
       </type>
     </element>
     <element id="Appointment.cancelationReason">

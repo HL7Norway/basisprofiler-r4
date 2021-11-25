@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-partof" />
-  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/partof" />
+  <url value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-partof" />
   <name value="NoBasisPartOf" />
   <title value="no-basis-partof" />
   <status value="draft" />
@@ -19,7 +19,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/partof" />
+      <fixedUri value="http://hl7.no/fhir/structuredefinition/no-basis-appointment/no-basis-partof" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

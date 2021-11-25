@@ -1,40 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="no-basis-conference-type.codesystem" />
-  <url value="http://hl7.no/fhir/codesystem/no-basis-conference-type" />
-  <name value="NoBasisConferenceType" />
-  <status value="draft" />
-  <experimental value="false" />
-  <fhirVersion value="4.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="CodeSystem" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CodeSystem" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="CodeSystem">
-      <path value="CodeSystem" />
-      <definition value="This basis extension defines the conference  type for an appointment between patient and health care personell. It is a CodeableConcept that contains the values physical, phone and video meeting." />
-    </element>
-    <element id="CodeSystem.copyright">
-      <path value="CodeSystem.copyright" />
-      <definition value="Direktoratet for e-helse, HL7 Norway" />
-    </element>
-    <element id="CodeSystem.concept">
-      <path value="CodeSystem.concept" />
-      <code>
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir" >
+	<id value="no-basis-conference-type.codesystem" />
+    <url value="http://hl7.no/fhir/CodeSystem/no-basis-conference-type" />
+    <version value="4.0.1" />
+    <name value="NoBasisConferenceType" />
+	<title value="no-basis-conference-type.codesystem" />
+    <status value="draft" /> 
+    <date value="2021-11-24T00:00:00+00:00" />
+    <publisher value="HL7 Norway" />
+    <description value="Codes to describe conference  type for an appointment between patient and health care personell."/>
+    <content value="complete" />
+    <concept>
         <code value="video" />
         <display value="Video" />
-      </code>
-      <code>
+    </concept>
+    <concept>
         <code value="telefon" />
         <display value="Telefon" />
-      </code>
-      <code>
+    </concept>
+    <concept>
         <code value="fysisk" />
         <display value="Fysisk" />
-      </code>
-      <definition value="Codes to describe Norwegian conference types" />
-    </element>
-  </differential>
-</StructureDefinition>
+    </concept>	
+</CodeSystem>

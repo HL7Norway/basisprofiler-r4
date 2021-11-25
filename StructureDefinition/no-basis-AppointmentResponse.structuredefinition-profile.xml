@@ -31,8 +31,12 @@
       <min value="0" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-appointmentresponse/shortnotice" />
+        <profile value="http://hl7.no/fhir/structuredefinition/no-basis-appointmentresponse/no-basis-shortnotice" />
       </type>
+    </element>
+    <element id="AppointmentResponse.extension:shortNotice.value[x]">
+      <path value="AppointmentResponse.extension.value[x]" />
+      <definition value="Pasient can come on short notice." />
     </element>
   </differential>
 </StructureDefinition>
