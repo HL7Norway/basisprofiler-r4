@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-basis-act-encounter-code.valueset" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2021-21-24T00:00:00+00:00" />
+  </meta>
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-act-encounter-code" />
+  <version value="4.0.1" />
+  <name value="NoBasisActEncounterCode"/>
+  <title value="no-basis-act-encounter-code.valueset" />
+  <status value="active" />
+  <experimental value="true" />
+  <date value="2021-11-24T00:00:00+00:00" />
+  <publisher value="HL7 Norway" />
+  <description value="ValueSet to describe activity code type for an encounter between patient and health care personell"/>
+  <immutable value="false" />
+  <compose>
+    <include>
+      <system value="http://hl7.no/fhir/CodeSystem/no-basis-act-encounter-code" />
+    </include>
+  </compose>
+</ValueSet>
