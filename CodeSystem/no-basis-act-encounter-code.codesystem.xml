@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir" >
+	<id value="no-basis-act-encounter-code.codesystem" />
+    <url value="http://hl7.no/fhir/CodeSystem/no-basis-act-encounter-code" />
+    <version value="4.0.1" />
+    <name value="NoBasisActEncounterCode" />
+	<title value="no-basis-act-encounter-code.codesystem" />
+    <status value="draft" /> 
+    <date value="2021-20-24T00:00:00+00:00" />
+    <publisher value="HL7 Norway" />
+    <description value="Codes to describe the activity code type for an encounter between patient and health care personell."/>
+    <content value="complete" />
+    <concept>
+        <code value="AMB" />
+        <display value="ambulatory" />
+    </concept>
+    <concept>
+        <code value="IMP" />
+        <display value="inpatient encounter" />
+    </concept>
+    <concept>
+        <code value="DT" />
+        <display value="day treatment" />
+    </concept>
+    <concept>
+        <code value="AAMBR" />
+        <display value="radiology" />
+    </concept>		
+</CodeSystem>
