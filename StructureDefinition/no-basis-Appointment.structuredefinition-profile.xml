@@ -73,19 +73,20 @@
     </element>
     <element id="Appointment.cancelationReason">
       <path value="Appointment.cancelationReason" />
-      <code>
-        <system value="urn:oid:2.16.578.1.12.4.1.1.8445" />
-        <display value="Volven kodeverk 8445 - Ventetid sluttkode" />
-      </code>
+      <binding>
+        <strength value="extensible" />
+        <description value="Volven 8445 - Ventetid sluttkode" />
+        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8445" />
+      </binding>
     </element>
     <element id="Appointment.appointmentType.coding">
       <path value="Appointment.appointmentType.coding" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="$this" />
+          <path value="system" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
     </element>
     <element id="Appointment.appointmentType.coding:omsorgsNiva">

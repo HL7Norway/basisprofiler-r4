@@ -5,7 +5,7 @@
   <name value="NoBasisEncounter" />
   <title value="no-basis-Encounter" />
   <status value="draft" />
-  <description value="Basisprofil for Norwegian Location information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where more specific encounter information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
+  <description value="Basisprofil for Norwegian Encounter information. Defined by HL7 Norway. Should be used as a basis for further profiling in use-cases where more specific encounter information is needed. The basis profile is open, but derived profiles should close down the information elements according to specification relevant to the use-case." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -17,14 +17,26 @@
       <path value="Encounter.class" />
       <binding>
         <strength value="extensible" />
-        <description value="Volven 8406 - omsorgsniva" />
-        <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8406" />
+        <description value="Activity codes for Encounter defined by HL7.no" />
+        <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-act-encounter-code" />
       </binding>
     </element>
     <element id="Encounter.type">
       <path value="Encounter.type" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Encounter.type:Kontakttype">
+      <path value="Encounter.type" />
+      <sliceName value="Kontakttype" />
+      <max value="1" />
       <binding>
-        <strength value="extensible" />
+        <strength value="example" />
         <description value="Volven 8432 - Kontakttype" />
         <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8432" />
       </binding>
@@ -33,6 +45,27 @@
       <path value="Encounter.priority" />
       <binding>
         <strength value="extensible" />
+      </binding>
+    </element>
+    <element id="Encounter.priority.coding">
+      <path value="Encounter.priority.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="Indicates the urgency of the encounter." />
+      <max value="1" />
+    </element>
+    <element id="Encounter.priority.coding:Hastegrad">
+      <path value="Encounter.priority.coding" />
+      <sliceName value="Hastegrad" />
+      <definition value="Indicates the urgency of the encounter." />
+      <max value="1" />
+      <binding>
+        <strength value="preferred" />
         <description value="Volven 8428 - Hastegrad" />
         <valueSet value="urn:oid:2.16.578.1.12.4.1.1.8428" />
       </binding>
