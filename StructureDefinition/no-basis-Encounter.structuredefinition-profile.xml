@@ -17,7 +17,7 @@
       <path value="Encounter.class" />
       <binding>
         <strength value="extensible" />
-        <description value="Activity codes for Encounter defined by HL7.no" />
+        <description value="Volven 8406 expressed in ActEncounterCodes" />
         <valueSet value="http://hl7.no/fhir/ValueSet/no-basis-act-encounter-code" />
       </binding>
     </element>
