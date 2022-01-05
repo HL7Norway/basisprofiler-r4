@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="no-basis-AllergyIntolerance" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-AllergyIntolerance" />
+  <version value="2.0.17" />
+  <name value="NoBasisAllergyIntolerance" />
+  <title value="no-basis-AllergyIntolerance" />
+  <status value="active" />
+  <date value="2019-07-03" />
+  <description value="Basis profile for allergy intolerance, to be used in Norway. The profile is adapted to support the norwegian standard for critical information (KI standard)." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="AllergyIntolerance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="AllergyIntolerance">
+      <path value="AllergyIntolerance" />
+      <definition value="Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.&#xD;&#xA;&#xD;&#xA;Norwegian profile:  &#xD;&#xA;no-basis-AllergyIntolerance is the basic profile for communicating Allergy intoleeance identifed for a patient. It is adapted to be used in Norway. The profile has the following changes from AllergyIntolerance:&#xD;&#xA;- There are restrictions to use verificationStatus since KI is using Certainty that has similar use&#xD;&#xA;- Reference to patient is changes. no-basis-patient should be used.&#xD;&#xA;- Substance is required and should include one of: ATC, FestSubstance, FestMedication&#xD;&#xA;- manifestation is changed to use codingsystem 7497&#xD;&#xA;- the profile is extended with certanity and sourceOfInformation to support national KI standard" />
+    </element>
+    <element id="AllergyIntolerance.extension">
+      <path value="AllergyIntolerance.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AllergyIntolerance.extension:sourceofinformation">
+      <path value="AllergyIntolerance.extension" />
+      <sliceName value="sourceofinformation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-sourceofinformation" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.clinicalStatus">
+      <path value="AllergyIntolerance.clinicalStatus" />
+      <definition value="Inaktiv if refuted or entered-in-error, others = active." />
+    </element>
+    <element id="AllergyIntolerance.verificationStatus">
+      <path value="AllergyIntolerance.verificationStatus" />
+      <short value="unconfirmed | presumed | confirmed | refuted | entered-in-error" />
+      <definition value="Mapping KI sannsynlighet: KJ: &#xD;&#xA;Mistenkt=unconfirmed&#xD;&#xA;Sannsynlig=presumed&#xD;&#xA;Bekreftet=confirmed&#xD;&#xA;Avkreftet = refuted&#xD;&#xA;Slette = entered-in-error" />
+    </element>
+    <element id="AllergyIntolerance.verificationStatus.coding.system">
+      <path value="AllergyIntolerance.verificationStatus.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification" />
+    </element>
+    <element id="AllergyIntolerance.code.coding">
+      <path value="AllergyIntolerance.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AllergyIntolerance.code.coding:ATC">
+      <path value="AllergyIntolerance.code.coding" />
+      <sliceName value="ATC" />
+    </element>
+    <element id="AllergyIntolerance.code.coding:ATC.system">
+      <path value="AllergyIntolerance.code.coding.system" />
+      <fixedUri value="http://www.whocc.no/atc" />
+    </element>
+    <element id="AllergyIntolerance.code.coding:FESTSubstance">
+      <path value="AllergyIntolerance.code.coding" />
+      <sliceName value="FESTSubstance" />
+    </element>
+    <element id="AllergyIntolerance.code.coding:FESTSubstance.system">
+      <path value="AllergyIntolerance.code.coding.system" />
+      <fixedUri value="http://ehelse.no/FESTSubstance" />
+    </element>
+    <element id="AllergyIntolerance.code.coding:FESTMedication">
+      <path value="AllergyIntolerance.code.coding" />
+      <sliceName value="FESTMedication" />
+    </element>
+    <element id="AllergyIntolerance.code.coding:FESTMedication.system">
+      <path value="AllergyIntolerance.code.coding.system" />
+      <fixedUri value="http://ehelse.no/FESTMedication" />
+    </element>
+    <element id="AllergyIntolerance.patient">
+      <path value="AllergyIntolerance.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.recorder">
+      <path value="AllergyIntolerance.recorder" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.asserter">
+      <path value="AllergyIntolerance.asserter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Practitioner" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-PractitionerRole" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-Patient" />
+        <targetProfile value="http://hl7.no/fhir/StructureDefinition/no-basis-RelatedPerson" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.reaction">
+      <path value="AllergyIntolerance.reaction" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation">
+      <path value="AllergyIntolerance.reaction.manifestation" />
+      <definition value="Clinical symptoms and/or signs that are observed or associated with the adverse reaction event. Coding system 7497 shall be used." />
+      <max value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.coding">
+      <path value="AllergyIntolerance.reaction.manifestation.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.coding.system">
+      <path value="AllergyIntolerance.reaction.manifestation.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:uid:2.16.578.1.12.4.1.1.7497" />
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.coding.code">
+      <path value="AllergyIntolerance.reaction.manifestation.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.coding.display">
+      <path value="AllergyIntolerance.reaction.manifestation.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.severity">
+      <path value="AllergyIntolerance.reaction.severity" />
+      <definition value="Clinical assessment of the severity of the reaction event as a whole, potentially considering multiple different manifestations. Mapping to KI standard  is Severe=Alvorlig. Moderate=Mild=Mindre alvorlig." />
+    </element>
+  </differential>
+</StructureDefinition>
