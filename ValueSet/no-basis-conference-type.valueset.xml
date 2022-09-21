@@ -6,10 +6,10 @@
     <lastUpdated value="2021-11-24T00:00:00+00:00" />
   </meta>
   <url value="http://hl7.no/fhir/ValueSet/no-basis-conference-type" />
-  <version value="4.0.1" />
+  <version value="0.0.1" />
   <name value="NoBasisConferenceType"/>
   <title value="no-basis-conference-type.valueset" />
-  <status value="active" />
+  <status value="draft" />
   <experimental value="true" />
   <date value="2021-11-24T00:00:00+00:00" />
   <publisher value="HL7 Norway" />
