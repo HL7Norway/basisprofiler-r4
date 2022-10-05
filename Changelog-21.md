@@ -8,6 +8,11 @@ Feature release to add no-basis-Procedure profile definition.
 
 ### Bugfixes
 
+Date 2022-10-05
+version: 2.1.2
+* Removed all conference type resources, as they contained errors and stopped snapshot generation of packages
+* Test non include of hl7.fhir.core dependency not found by build pipeline (hl7.fhir.r4.core is the correct id)
+
 Date: 2021-11-04
 version: 2.1.1
 * `no-Basis-Procedure` replaced oid reference to ICPC-2 slice with uri in element Procedure.code
