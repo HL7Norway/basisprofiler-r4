@@ -17,7 +17,7 @@
 		<value value="05073500186"/>
 	</identifier>
 	<patient>
-		<extension url="http://ehelse.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference">
+		<extension url="http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference">
 			<valueReference>
 				<identifier>
 					<system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
