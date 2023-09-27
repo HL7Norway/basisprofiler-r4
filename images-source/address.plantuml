@@ -1,0 +1,41 @@
+@startuml
+
+class "no-basis-Address" as address
+class "no-basis-propertyInformation:extension" as property
+class "no-basis-address-official:extension" as official
+class "no-basisurban-district:extension" as urbandistrict
+class "no-basis-municipalitycode:extension" as municipality
+
+'package "FHIR DataTypes" #DDDDDD {
+class "Period" as period #aliceblue ##[dotted]blue
+'}
+
+address *-- "propertyInformation 0..1" property
+address *- "0..1" period :period
+address *-- "official 0..1" official
+address *-- "urbanDistrict 0..1" urbandistrict 
+address *-- "district.municipalitycode 0..1" municipality 
+
+address : use:code[0..1]
+address : type:code[0..1]
+address : city:string[0..1]
+address : district:string[0..1]
+address : state:string[0..1]
+address : postalCode:string[0..1]
+
+property : cadastralUnitNumber:int[0..1]
+property : propertyUnitNumber:int[0..1]
+property : leaseholdNumber:int[0..*]
+property : condominiumUnitNumber:int[0..*]
+property : municipality:Coding[0..*]
+
+official : valeBoolean:boolean[0..1]
+
+urbandistrict : valueCoding:Coding[0..1]
+
+municipality : valueCoding:Coding[0..1]
+
+period : end:dateTime[0..1]
+period : start:dateTime[0..1]
+
+@enduml
