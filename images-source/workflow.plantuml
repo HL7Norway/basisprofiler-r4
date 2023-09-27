@@ -1,34 +1,31 @@
 @startuml
 skinparam linetype ortho
 
-package "no-basis" {
-class "no-basis-Appointment" as class1 
-class "no-basis-AppointmentResponse" as class2
-class2 -up-> class1 : appointment
-}
-
 package "FHIR Entities" #DDDDDD {
-class "Patient" as class4
-class "Practitioner" as class5
+'together {
+class "Patient" as patient #aliceblue ##[dotted]blue
+class "Practitioner" as practitioner #aliceblue ##[dotted]blue
+class "Person" as person #aliceblue ##[dotted]blue
 
-class4 -down[hidden]-> class5
-class "Person" as class6
+patient -down[hidden]-> practitioner 
 }
 
+'together {
+package "no-basis Workflow" {
+class "no-basis-Appointment" as appointment
+class "no-basis-AppointmentResponse" as appointmentresponse
+appointmentresponse -up-> appointment : appointment
+}
+
+'together {
 package "FHIR Workflow" #DDDDDD {
-class "Schedule" as class7
-class "Slot" as class8
+class "Schedule" as schedule #aliceblue ##[dotted]blue
+class "Slot" as slot #aliceblue ##[dotted]blue
 
-class8 -down-> class7
+slot -down-> schedule
 }
 
-'class1 -left-> class4
-class1 -left-> "FHIR Entities" :participants
-class2 -left-> "FHIR Entities" 
-'"FHIR Entities" -right-> class1
-class1 -right-> class8
-
-'class1 -left-> "FHIR Entities" 
-'class2 -left-> "FHIR Entities"
-'"FHIR Entities" -left[hidden]-> "FHIR Workflow"
+appointment -left-> "FHIR Entities" :participants
+appointmentresponse -left-> "FHIR Entities" 
+appointment -right-> slot
 @enduml
