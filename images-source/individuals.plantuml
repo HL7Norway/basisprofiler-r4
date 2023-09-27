@@ -26,12 +26,14 @@ enum "no-basis-person-citizenship" as citizenship
 personreference --> citizenship
 }
 
-link -right-> relatedperson
-link -right-> patient
+link -> relatedperson
+link -> patient
+person *-- link
 practitioner <-left- patient
 prole -> patient
+person <- personreference
 
-patient *-right- citizenship
-relatedperson *-right- personreference
+patient *- citizenship
+relatedperson *- personreference
 
 @enduml
