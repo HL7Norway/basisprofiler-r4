@@ -1,39 +1,53 @@
 @startuml
-'skinparam linetype ortho
 
-together {
+'together {
+class "void" as void $void
 entity "link" as link
 class "no-basis-Practitioner" as practitioner
 class "no-basis-PractitionerRole" as prole
 
-link --> practitioner
-practitioner <-- prole
+void--[hidden] link
+link "target"-->practitioner
+practitioner<--prole
+hide $void
+'}
+
+class "no-basis-Person" as person {
+address:no-basis-Address[0..*]
+{field}identifier:identifier(FNR, DNR)[0..*]
+managingOrganization:Reference[0..1]
+name:no-basis-HumanName[0..*]
 }
-
-together {
-class "no-basis-Person" as person
-class "no-basis-Patient" as patient
-class "no-basis-RelatedPerson" as relatedperson
-
+class "no-basis-Patient" as patient {
+address:no-basis-Address[0..*]
+{field}identifier:identifier(FNR, DNR, FHNR, HNR)[0..*]
+name:no-basis-HumanName[0..*]
+}
+class "no-basis-RelatedPerson" as relatedperson {
+address:no-basis-Address[0..*]
+{field}identifier:identifier(FNR, DNR)[0..*]
+name:no-basis-HumanName[0..*]
+patient:Reference
+relationship:CodableConcept[0..*]
+}
 person --[hidden] relatedperson
 relatedperson --> patient
-}
 
-together {
+class "bogus" as bogus $bogus
 enum "no-basis-relatedperson-person-reference" as personreference
 enum "no-basis-person-citizenship" as citizenship
+personreference-->citizenship
+bogus--personreference
+hide $bogus
 
-personreference --> citizenship
-}
-
-link -> relatedperson
-link -> patient
-person *-- link
-practitioner <-left- patient
+link->relatedperson :target
+link "target"-> patient
+person "link"*-- link
+practitioner <- patient
 prole -> patient
 person <- personreference
 
-patient *- citizenship
-relatedperson *- personreference
+patient*-citizenship
+relatedperson*-personreference
 
 @enduml
