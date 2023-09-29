@@ -1,6 +1,6 @@
 @startuml
 
-class "void" as void $void
+class "void" as void $void 
 entity "link" as link
 class "no-basis-Practitioner" as practitioner {
 address:no-basis-Address[0..*]
@@ -18,7 +18,7 @@ practitioner:Reference[0..1]
 speciality:CodeableConcept[0..1]
 }
 
-void--[hidden] link
+void--[hidden] link 
 link "target"-->practitioner
 practitioner<--prole
 hide $void
@@ -44,7 +44,7 @@ relationship:CodableConcept[0..*]
 person --[hidden] relatedperson
 relatedperson --> patient
 
-class "bogus" as bogus $bogus
+class "bogus" as bogus $bogus 
 enum "no-basis-relatedperson-person-reference" as personreference {
 valueReference:Reference[0..1]
 }
@@ -63,7 +63,7 @@ practitioner <- patient
 patient  --> prole
 
 person <-"valueReference" personreference
-patient*- citizenship :citizenship
+patient*-citizenship :citizenship
 relatedperson*-personreference :patient.extension
 
 @enduml
