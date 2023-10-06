@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="no-basis-virtual-service-type-vs"/>
+  <id value="no-basis-virtual-service-type.valueset"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
-  <url value="http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs"/>
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type"/>
   <version value="2.2.0"/>
-  <name value="NoBasisVirtualServiceTypeVS"/>
+  <name value="NoBasisVirtualServiceType"/>
   <title value="No Basis VirtualServiceType Value Set"/>
   <status value="active"/>
   <experimental value="false"/>
