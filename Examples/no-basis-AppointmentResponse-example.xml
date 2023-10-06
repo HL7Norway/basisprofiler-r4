@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AppointmentResponse xmlns="http://hl7.org/fhir">
+  <id value="PatientAppointmentResponseExample"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AppointmentResponse</b><a name="PatientAppointmentResponseExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AppointmentResponse &quot;PatientAppointmentResponseExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-AppointmentResponse.html">no-basis-AppointmentResponse</a></p></div><p><b>no-basis-shortnotice</b>: true</p><p><b>appointment</b>: <a href="Appointment-d6c523ec-b520-4221-a8d6-c1c58911ce7a.html">Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a: MRI results discussion</a></p><p><b>actor</b>: <a href="Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.html">Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473: Peter James Chalmers</a> &quot; CHALMERS&quot;</p><p><b>participantStatus</b>: accepted</p></div>
+  </text>
+  <extension url="http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice">
+    <valueBoolean value="true"/>
+  </extension>
+  <appointment>
+    <reference value="Appointment/d6c523ec-b520-4221-a8d6-c1c58911ce7a"/>
+    <display value="MRI results discussion"/>
+  </appointment>
+  <actor>
+    <reference value="Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"/>
+    <type value="Patient"/>
+    <display value="Peter James Chalmers"/>
+  </actor>
+  <participantStatus value="accepted"/>
+</AppointmentResponse>

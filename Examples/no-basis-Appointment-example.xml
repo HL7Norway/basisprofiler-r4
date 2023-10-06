@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="d6c523ec-b520-4221-a8d6-c1c58911ce7a"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="d6c523ec-b520-4221-a8d6-c1c58911ce7a"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;d6c523ec-b520-4221-a8d6-c1c58911ce7a&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-Appointment.html">no-basis-Appointment</a></p></div><p><b>status</b>: booked</p><p><b>appointmentType</b>: A routine check-up, such as an annual physical <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0276.html">appointmentReason</a>#CHECKUP; unknown#Ordinær)</span></p><p><b>description</b>: Discussion on the results of your recent MRI</p><p><b>start</b>: 10. aug. 2023, 11:00:00</p><p><b>end</b>: 10. aug. 2023, 13:00:00</p><p><b>comment</b>: Further expand on the results of the MRI and determine the next actions that may be appropriate.</p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td><td><b>Required</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td><a href="Patient-e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473.html">Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473: Peter James Chalmers</a> &quot; CHALMERS&quot;</td><td>required</td><td>accepted</td></tr></table></div>
+  </text>
+  <status value="booked"/>
+  <appointmentType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+      <code value="CHECKUP"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:2.16.578.1.12.4.1.1.7617"/>
+      <code value="Ordinær"/>
+    </coding>
+  </appointmentType>
+  <description value="Discussion on the results of your recent MRI"/>
+  <start value="2023-08-10T09:00:00Z"/>
+  <end value="2023-08-10T11:00:00Z"/>
+  <comment value="Further expand on the results of the MRI and determine the next actions that may be appropriate."/>
+  <participant>
+    <actor>
+      <reference value="Patient/e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"/>
+      <display value="Peter James Chalmers"/>
+    </actor>
+    <required value="required"/>
+    <status value="accepted"/>
+  </participant>
+</Appointment>

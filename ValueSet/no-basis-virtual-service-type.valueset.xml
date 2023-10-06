@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="no-basis-virtual-service-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-virtual-service-type-vs"/>
+  <version value="2.2.0"/>
+  <name value="NoBasisVirtualServiceTypeVS"/>
+  <title value="No Basis VirtualServiceType Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-05T23:14:02+02:00"/>
+  <publisher value="Hl7 Norge"/>
+  <contact>
+    <name value="Hl7 Norge"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://Hl7.no/Hl7Norge-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.4.642.4.1809"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/contact-point-system"/>
+    </include>
+  </compose>
+</ValueSet>
