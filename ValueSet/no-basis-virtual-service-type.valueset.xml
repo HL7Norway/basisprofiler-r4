@@ -17,7 +17,7 @@
     <name value="Hl7 Norge"/>
     <telecom>
       <system value="url"/>
-      <value value="http://Hl7.no/Hl7Norge-publisher"/>
+      <value value="http://Hl7.no/"/>
     </telecom>
   </contact>
   <description value="Example codes for virtual service connection types. Any other codes or codesystem should be added to this valueSet"/>

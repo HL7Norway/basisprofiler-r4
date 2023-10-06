@@ -141,7 +141,7 @@
       <path value="Patient.identifier" />
       <sliceName value="HNR" />
       <short value="A locally assigned H-nummer" />
-      <definition value="A locally assigned H-nummer. If this identifier is used, information about the assigner is mandatory." />
+      <definition value="A locally assigned H-nummer. If this identifier is used, information about the assigner is mandatory. Merk at lokale hjelpenummer (H-nummer) for pasient ikke garanterer at kombinasjonen system og value er gir unik identifikasjon, siden disse tildeles på lokalt i det enkelte kliniske fagsystem. Felles nasjonale hjelpenummer utstedt av tjenesten for felles hjelpenummer er imidlertid unike i Norge (og globalt unike i kombinasjon med system)." />
     </element>
     <element id="Patient.identifier:HNR.type.coding.system">
       <path value="Patient.identifier.type.coding.system" />
