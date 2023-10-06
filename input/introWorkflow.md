@@ -2,7 +2,7 @@
 
 Appointment and Encounter have dependencies as they both describe different aspects of the administrative relationship between patient and health care organizations.  
 
-![Figuren kommer med master](https://www.plantuml.com/plantuml/svg/7Sqnhi8m303G_P_YSu3Kg20XCPMD0N47DtLRYoIER4SHjmSnlV5DvgZUSlexS8cfBVI_krUx0cpiUvk7A1dkZyjJjECRPZIsgh9o8Wrw1iKEjrg5YsSg7iRZU0BEk945awQHe8k-rYHzg0dBxvgeB5y_)
+![Appointment og AppointmentResponse profiler](http://www.plantuml.com/plantuml/uml/7Smn3i8m3030dLV00relI4XC7HaGVt1Jjx5muiXs5F5x4DDjjtYWHIzokd1DqZSwvuZcTu238_TrJbhWyRozr0P-O4LdRwOx2zbaLp0Sm0KFyicrMo8OQkzTTCnDiFxhXUhsymi0)
 
 **Appointment** (no:timeavtale; npr:planlagt episode) – describes a planned meeting between a patient and healthcare personell.  
 
