@@ -1,0 +1,69 @@
+@startuml
+
+class "void" as void $void 
+entity "link" as link
+class "no-basis-Practitioner" as practitioner {
+address:no-basis-Address[0..*]
+{field}identifier:identifier(HPR, FNR, DNR)[0..*]
+name:no-basis-HumanName[0..*]
+qualification:CodeableConcept[0..*]
+}
+class "no-basis-PractitionerRole" as prole {
+code:CodableConcept[0..*]
+endpoint:Reference[0..*]
+healthcareService:Reference[0..*]
+location:Reference
+organization:Reference[0..1]
+practitioner:Reference[0..1]
+speciality:CodeableConcept[0..1]
+}
+
+void--[hidden] link 
+link "target"-->practitioner
+practitioner<--prole
+hide $void
+
+class "no-basis-Person" as person {
+address:no-basis-Address[0..*]
+{field}identifier:identifier(FNR, DNR)[0..*]
+managingOrganization:Reference[0..1]
+name:no-basis-HumanName[0..*]
+}
+class "no-basis-Patient" as patient {
+address:no-basis-Address[0..*]
+{field}identifier:identifier(FNR, DNR, FHNR, HNR)[0..*]
+name:no-basis-HumanName[0..*]
+}
+class "no-basis-RelatedPerson" as relatedperson {
+address:no-basis-Address[0..*]
+{field}identifier:identifier(FNR, DNR)[0..*]
+name:no-basis-HumanName[0..*]
+patient:Reference
+relationship:CodableConcept[0..*]
+}
+person --[hidden] relatedperson
+relatedperson --> patient
+
+class "bogus" as bogus $bogus 
+enum "no-basis-relatedperson-person-reference" as personreference {
+valueReference:Reference[0..1]
+}
+enum "no-basis-person-citizenship" as citizenship {
+nationality:code[0..1]
+period:Period[0..1]
+}
+personreference-->citizenship
+bogus--personreference
+hide $bogus
+
+link-right->relatedperson :target
+link "target"--> patient
+person "link"*-- link
+practitioner <- patient
+patient  --> prole
+
+person <-"valueReference" personreference
+patient*-citizenship :citizenship
+relatedperson*-personreference :patient.extension
+
+@enduml

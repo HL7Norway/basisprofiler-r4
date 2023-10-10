@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-relatedperson-person-reference" />
-  <url value="http://ehelse.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
+  <url value="http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
   <version value="2.0.15" />
   <name value="NoBasisRelatedpersonPersonReference" />
   <status value="active" />
@@ -31,7 +31,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehelse.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
+      <fixedUri value="http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

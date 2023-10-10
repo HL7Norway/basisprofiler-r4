@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="e70f0ba2-44d8-4f14-9c3a-ff4c6ead7473"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Peter James Chalmers (OFFICIAL)</b> (no stated gender), DoB Unknown</p><hr/></div>
+  </text>
+  <name>
+    <use value="official"/>
+    <family value="Chalmers"/>
+    <given value="Peter James"/>
+  </name>
+</Patient>

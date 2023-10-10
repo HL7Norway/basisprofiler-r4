@@ -1,0 +1,31 @@
+@startuml
+skinparam linetype ortho
+
+package "FHIR Entities" #DDDDDD {
+'together {
+class "Patient" as patient #aliceblue ##[dotted]blue
+class "Practitioner" as practitioner #aliceblue ##[dotted]blue
+class "Person" as person #aliceblue ##[dotted]blue
+
+patient -down[hidden]-> practitioner 
+}
+
+'together {
+package "no-basis Workflow" {
+class "no-basis-Appointment" as appointment
+class "no-basis-AppointmentResponse" as appointmentresponse
+appointmentresponse -up-> appointment : appointment
+}
+
+'together {
+package "FHIR Workflow" #DDDDDD {
+class "Schedule" as schedule #aliceblue ##[dotted]blue
+class "Slot" as slot #aliceblue ##[dotted]blue
+
+slot -down-> schedule
+}
+
+appointment -left-> "FHIR Entities" :participants
+appointmentresponse -left-> "FHIR Entities" 
+appointment -right-> slot
+@enduml

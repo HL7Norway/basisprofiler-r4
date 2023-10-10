@@ -1,3 +1,28 @@
+# no-basis v2.2
+
+* Based on HL7 FHIR version 4.0.1
+
+## Version 2.2
+
+Feature release to add no-basis-Appointment and no-basis-AppointmentResponse profile definition (issue #97).  
+Including bugfixes:  
+
+* issue #87 HNR, lokale hjelpenummer
+* issue #99 Wrong canonical on NoBasisRelatedPersonReference
+* issue #97 Removed deprecated proposal for no-basis-Encounter
+
+### 2.2.0 Changelog
+
+Release date: 2023-10-06
+
+* `no-basis-Appointment` Added profile, with example
+* `no-basis-AppointmentResponse` Added profile, with example
+* `no-basis-Virtual-Service` Added extension
+* `no-basis-group` Added extension
+* `no-basis-partof` Added extension
+* `no-basis-shortnotice` Added extension
+* `No Basis VirtualServiceType Value Set` Added valueset
+
 # no-basis v2.1
 
 * Based on HL7 FHIR version 4.0.1*
@@ -15,13 +40,13 @@ version: 2.1.2
 
 Date: 2021-11-04
 version: 2.1.1
-* `no-basis-Procedure` replaced oid reference to ICPC-2 slice with uri in element Procedure.code
+* `no-Basis-Procedure` replaced oid reference to ICPC-2 slice with uri in element Procedure.code
 * `no-basis-icpc-2` added NamingSystem for ICPC-2
 
 ### 2.1.0 Changelog
 
 Date: 2021-10-27
-* `no-basis-Procedure` Added profile, constraints on code that explain how to use codes from code system that are common in Norway. Example is included.
+* `no-Basis-Procedure` Added profile, constraints on code that explain how to use codes from code system that are common in Norway. Example is included.
 
 ## Version 2.0.17
 
