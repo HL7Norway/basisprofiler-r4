@@ -1,12 +1,15 @@
 @startuml
 skinparam linetype ortho
 
-package "FHIR Entities" #DDDDDD {
+package "FHIR Entities and Individuals" #DDDDDD {
 'together {
 class "Patient" as patient #aliceblue ##[dotted]blue
 class "Practitioner" as practitioner #aliceblue ##[dotted]blue
 class "Person" as person #aliceblue ##[dotted]blue
+class "PractitionerRole" as practitionerrole #aliceblue ##[dotted]blue
+class "Location" as location #aliceblue ##[dotted]blue
 
+person -down[hidden]-> practitionerrole
 patient -down[hidden]-> practitioner 
 }
 
@@ -25,7 +28,7 @@ class "Slot" as slot #aliceblue ##[dotted]blue
 slot -down-> schedule
 }
 
-appointment -left-> "FHIR Entities" :participants
-appointmentresponse -left-> "FHIR Entities" 
+appointment -left-> "FHIR Entities and Individuals" :participants
+appointmentresponse -left-> "FHIR Entities and Individuals" 
 appointment -right-> slot
 @enduml
