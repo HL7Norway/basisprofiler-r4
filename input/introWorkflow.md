@@ -1,4 +1,12 @@
-## Short on relationship between no-basis Appointment and no-basis-Encounter
+# Workflow
+
+HL7 Norway proposed base profiles for Workflow resources in HL7 FHIR R4.
+
+![Appointment and ApppointmentResponse profiles and extensions](../Images/no-basis-Workflow-class.png)  
+
+Only attributes with actual profiling is included in the information model diagram as well as any optional extensions provided as a part of the no-basis package. The model should be forward compatible to Appointment in R5 as far as possible.  
+
+## Short notice on relationship between no-basis Appointment and no-basis-Encounter
 
 Appointment and Encounter have dependencies as they both describe different aspects of the administrative relationship between patient and health care organizations.  
 

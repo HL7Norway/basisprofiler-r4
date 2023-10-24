@@ -1,0 +1,18 @@
+@startuml
+
+class "no-basis-Appointment" as appointment {
+appointmentType:Coding[0..1]
+}
+class "no-basis-AppointmentResponse" as appointmentr
+enum "no-basis-shortnotice" as shortnotice
+enum "no-basis-group" as group
+enum "no-basis-partof" as partof
+enum "no-basis-virtual-service" as virtual
+
+virtual -u-* appointment :virtualService
+group -u-* appointment :group
+partof -u-* appointment :partOf
+appointmentr -> appointment
+appointmentr *-- shortnotice :shortNotice
+
+@enduml
