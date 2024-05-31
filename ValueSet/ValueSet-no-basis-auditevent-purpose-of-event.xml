@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a></li><li>Include all codes defined in <a href="CodeSystem-decisiontemplate.html"><code>https://terminology.dips.com/decisiontemplate</code></a></li><li>Include all codes defined in <code>urn:oid:2.16.578.1.12.4.1.1.9151</code></li></ul></div>
   </text>
-  <url value="urn:no-basis-auditevent/ValueSet/no-basis-auditevent-purpose-of-event"/>
-  <version value="0.9.2"/>
+  <url value="http://hl7.no/fhir/ValueSet/no-basis-auditevent-purpose-of-event"/>
+  <version value="2.3.0"/>
   <name value="NO_basis_auditevent_purpose_of_event"/>
   <title value="PurposeOfEvent valueset"/>
   <status value="active"/>
-  <date value="2024-05-24T12:06:20+02:00"/>
+  <date value="2024-05-31T08:32:10+02:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>

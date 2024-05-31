@@ -3,16 +3,16 @@
 <AuditEvent xmlns="http://hl7.org/fhir">
   <id value="NOBasisAuditeventInstance3"/>
   <meta>
-    <profile value="urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"/>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Auditevent"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AuditEvent </b><a name="NOBasisAuditeventInstance3"> </a><a name="hcNOBasisAuditeventInstance3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceAuditEvent &quot;NOBasisAuditeventInstance3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-auditevent.html">no-basis-auditevent</a></p></div><p><b>AuditEventEncounterExtension</b>: <a name="hcEncounterInstance3"> </a></p><blockquote><p/><p><a name="EncounterInstance3"> </a></p><p><a name="hcEncounterInstance3"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Legetjeneste ved sykehjem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#KP1)</span></p></blockquote><p><b>AuditEventPatientExtension</b>: <a name="hcPatientInstance3"> </a></p><blockquote><p/><p><a name="PatientInstance3"> </a></p><p><a name="hcPatientInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?</p></blockquote><blockquote><p><b>AuditEventCareRelationMetaData</b></p><blockquote><p><b>url</b></p><code>toa</code></blockquote><p><b>value</b>: 1710830705</p><blockquote><p><b>url</b></p><code>decision-ref-id</code></blockquote><p><b>value</b>: 23423255</p><blockquote><p><b>url</b></p><code>decision-ref-description</code></blockquote><p><b>value</b>: Innlagt pasient</p><blockquote><p><b>url</b></p><code>decision-ref-user-selected</code></blockquote><p><b>value</b>: false</p></blockquote><p><b>type</b>: Patient Record (Details: DICOM code 110110  = ' Patient Record , stated as  Patient Record ')</p><p><b>action</b>: R</p><p><b>recorded</b>: 19. mars 2024, 07:45:00</p><p><b>purposeOfEvent</b>: coordination of care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html">ActReason</a>#COC)</span>, Helsetjenester i hjemmet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#15)</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td><a name="hcPractitionerRoleInstance3"> </a><blockquote><p/><p><a name="PractitionerRoleInstance3"> </a></p><p><a name="hcPractitionerRoleInstance3"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance3</p><p><b>organization</b>: #PractitionerLegalEntityInstance3</p><p><b>location</b>: #PractitionerPointOfCareInstance3</p></blockquote></td><td>true</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>server.example.com</td><td><a href="Device/ex-device">Device/ex-device</a></td><td>Application Server (Details: Audit Event Source Type code 4  = ' Application Server , stated as  Application Server ')</td></tr></table><h3>Entities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>What</b></td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><a href="StructureDefinition/DocumentReference">StructureDefinition/DocumentReference</a></td><td>DocumentReference (Details: [not stated] code DocumentReference  = ' DocumentReference , stated as  null ')</td><td>Document</td></tr></table><hr/><blockquote><p><b>Generated Narrative: PractitionerRole  #PractitionerRoleInstance3</b><a name="PractitionerRoleInstance3"> </a><a name="hcPractitionerRoleInstance3"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance3</p><p><b>organization</b>: #PractitionerLegalEntityInstance3</p><p><b>location</b>: #PractitionerPointOfCareInstance3</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Practitioner  #PractitionerInstance3</b><a name="PractitionerInstance3"> </a><a name="hcPractitionerInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/03117000205, <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p><p><b>name</b>: Rita Lin</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Lege <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#LE)</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerLegalEntityInstance3</b><a name="PractitionerLegalEntityInstance3"> </a><a name="hcPractitionerLegalEntityInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO KOMMUNE HELSEETATEN</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location  #PractitionerPointOfCareInstance3</b><a name="PractitionerPointOfCareInstance3"> </a><a name="hcPractitionerPointOfCareInstance3"> </a></p><p><b>managingOrganization</b>: #PractitionerPointOfCareOrganizationInstance3</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerPointOfCareOrganizationInstance3</b><a name="PractitionerPointOfCareOrganizationInstance3"> </a><a name="hcPractitionerPointOfCareOrganizationInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: MADSERUDHJEMMET</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Encounter  #EncounterInstance3</b><a name="EncounterInstance3"> </a><a name="hcEncounterInstance3"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Legetjeneste ved sykehjem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#KP1)</span></p></blockquote><hr/><blockquote><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?)</p><hr/></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AuditEvent </b><a name="NOBasisAuditeventInstance3"> </a><a name="hcNOBasisAuditeventInstance3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceAuditEvent &quot;NOBasisAuditeventInstance3&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-Auditevent.html">no-basis-auditevent</a></p></div><p><b>AuditEventEncounterExtension</b>: <a name="hcEncounterInstance3"> </a></p><blockquote><p/><p><a name="EncounterInstance3"> </a></p><p><a name="hcEncounterInstance3"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Legetjeneste ved sykehjem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#KP1)</span></p></blockquote><p><b>AuditEventPatientExtension</b>: <a name="hcPatientInstance3"> </a></p><blockquote><p/><p><a name="PatientInstance3"> </a></p><p><a name="hcPatientInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?</p></blockquote><blockquote><p><b>AuditEventCareRelationMetaData</b></p><blockquote><p><b>url</b></p><code>toa</code></blockquote><p><b>value</b>: 1710830705</p><blockquote><p><b>url</b></p><code>decision-ref-id</code></blockquote><p><b>value</b>: 23423255</p><blockquote><p><b>url</b></p><code>decision-ref-description</code></blockquote><p><b>value</b>: Innlagt pasient</p><blockquote><p><b>url</b></p><code>decision-ref-user-selected</code></blockquote><p><b>value</b>: false</p></blockquote><p><b>type</b>: Patient Record (Details: DICOM code 110110  = ' Patient Record , stated as  Patient Record ')</p><p><b>action</b>: R</p><p><b>recorded</b>: 19. mars 2024, 07:45:00</p><p><b>purposeOfEvent</b>: coordination of care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html">ActReason</a>#COC)</span>, Helsetjenester i hjemmet <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#15)</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td><a name="hcPractitionerRoleInstance3"> </a><blockquote><p/><p><a name="PractitionerRoleInstance3"> </a></p><p><a name="hcPractitionerRoleInstance3"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance3</p><p><b>organization</b>: #PractitionerLegalEntityInstance3</p><p><b>location</b>: #PractitionerPointOfCareInstance3</p></blockquote></td><td>true</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>server.example.com</td><td><a href="Device/ex-device">Device/ex-device</a></td><td>Application Server (Details: Audit Event Source Type code 4  = ' Application Server , stated as  Application Server ')</td></tr></table><h3>Entities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>What</b></td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><a href="StructureDefinition/DocumentReference">StructureDefinition/DocumentReference</a></td><td>DocumentReference (Details: [not stated] code DocumentReference  = ' DocumentReference , stated as  null ')</td><td>Document</td></tr></table><hr/><blockquote><p><b>Generated Narrative: PractitionerRole  #PractitionerRoleInstance3</b><a name="PractitionerRoleInstance3"> </a><a name="hcPractitionerRoleInstance3"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance3</p><p><b>organization</b>: #PractitionerLegalEntityInstance3</p><p><b>location</b>: #PractitionerPointOfCareInstance3</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Practitioner  #PractitionerInstance3</b><a name="PractitionerInstance3"> </a><a name="hcPractitionerInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/03117000205, <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144900</p><p><b>name</b>: Rita Lin</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Lege <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#LE)</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerLegalEntityInstance3</b><a name="PractitionerLegalEntityInstance3"> </a><a name="hcPractitionerLegalEntityInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO KOMMUNE HELSEETATEN</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location  #PractitionerPointOfCareInstance3</b><a name="PractitionerPointOfCareInstance3"> </a><a name="hcPractitionerPointOfCareInstance3"> </a></p><p><b>managingOrganization</b>: #PractitionerPointOfCareOrganizationInstance3</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerPointOfCareOrganizationInstance3</b><a name="PractitionerPointOfCareOrganizationInstance3"> </a><a name="hcPractitionerPointOfCareOrganizationInstance3"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: MADSERUDHJEMMET</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Encounter  #EncounterInstance3</b><a name="EncounterInstance3"> </a><a name="hcEncounterInstance3"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Legetjeneste ved sykehjem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#KP1)</span></p></blockquote><hr/><blockquote><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?)</p><hr/></blockquote></div>
   </text>
   <contained>
     <PractitionerRole>
       <id value="PractitionerRoleInstance3"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitionerrole"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitionerrole"/>
       </meta>
       <active value="true"/>
       <practitioner>
@@ -30,7 +30,7 @@
     <Practitioner>
       <id value="PractitionerInstance3"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner"/>
       </meta>
       <identifier>
         <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
@@ -64,7 +64,7 @@
     <Organization>
       <id value="PractitionerLegalEntityInstance3"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-legalentity"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-legalentity"/>
       </meta>
       <identifier id="997506499">
         <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
@@ -79,7 +79,7 @@
     <Location>
       <id value="PractitionerPointOfCareInstance3"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-pointofcare"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare"/>
       </meta>
       <managingOrganization>
         <reference value="#PractitionerPointOfCareOrganizationInstance3"/>
@@ -90,7 +90,7 @@
     <Organization>
       <id value="PractitionerPointOfCareOrganizationInstance3"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-pointofcare-organization"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare-organization"/>
       </meta>
       <identifier id="875300342">
         <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
@@ -105,7 +105,7 @@
     <Encounter>
       <id value="EncounterInstance3"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-encounter"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-encounter"/>
       </meta>
       <status value="unknown"/>
       <class>
@@ -124,7 +124,7 @@
     <Patient>
       <id value="PatientInstance3"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-patient"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-patient"/>
       </meta>
       <identifier id="05076600324">
         <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
@@ -134,17 +134,17 @@
       </identifier>
     </Patient>
   </contained>
-  <extension url="urn:no-basis-auditevent/StructureDefinition/AuditEventEncounterExtension">
+  <extension url="http://hl7.no/fhir/StructureDefinition/AuditEventEncounterExtension">
     <valueReference>
       <reference value="#EncounterInstance3"/>
     </valueReference>
   </extension>
-  <extension url="urn:no-basis-auditevent/StructureDefinition/AuditEventPatientExtension">
+  <extension url="http://hl7.no/fhir/StructureDefinition/AuditEventPatientExtension">
     <valueReference>
       <reference value="#PatientInstance3"/>
     </valueReference>
   </extension>
-  <extension url="urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData">
+  <extension url="http://hl7.no/fhir/StructureDefinition/CareRelationMetaData">
     <extension url="toa">
       <valueUnsignedInt value="1710830705"/>
     </extension>

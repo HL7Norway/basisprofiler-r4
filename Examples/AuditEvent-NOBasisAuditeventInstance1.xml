@@ -3,16 +3,16 @@
 <AuditEvent xmlns="http://hl7.org/fhir">
   <id value="NOBasisAuditeventInstance1"/>
   <meta>
-    <profile value="urn:no-basis-auditevent/StructureDefinition/no-basis-auditevent"/>
+    <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-Auditevent"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AuditEvent </b><a name="NOBasisAuditeventInstance1"> </a><a name="hcNOBasisAuditeventInstance1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceAuditEvent &quot;NOBasisAuditeventInstance1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-auditevent.html">no-basis-auditevent</a></p></div><p><b>AuditEventEncounterExtension</b>: <a name="hcEncounterInstance1"> </a></p><blockquote><p/><p><a name="EncounterInstance1"> </a></p><p><a name="hcEncounterInstance1"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Indremedisin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#S03)</span></p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td>#EncounterPointOfCareInstance1</td></tr></table><p><b>serviceProvider</b>: #EncounterServiceProviderOrganizationInstance1</p></blockquote><p><b>AuditEventPatientExtension</b>: <a name="hcPatientInstance1"> </a></p><blockquote><p/><p><a name="PatientInstance1"> </a></p><p><a name="hcPatientInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?</p></blockquote><blockquote><p><b>AuditEventCareRelationMetaData</b></p><blockquote><p><b>url</b></p><code>toa</code></blockquote><p><b>value</b>: 1710830705</p><blockquote><p><b>url</b></p><code>decision-ref-id</code></blockquote><p><b>value</b>: 23423255</p><blockquote><p><b>url</b></p><code>decision-ref-description</code></blockquote><p><b>value</b>: Innlagt pasient</p><blockquote><p><b>url</b></p><code>decision-ref-user-selected</code></blockquote><p><b>value</b>: false</p></blockquote><p><b>type</b>: Patient Record (Details: DICOM code 110110  = ' Patient Record , stated as  Patient Record ')</p><p><b>action</b>: R</p><p><b>recorded</b>: 19. mars 2024, 07:45:00</p><p><b>purposeOfEvent</b>: Treatment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html">ActReason</a>#TREAT)</span>, Poliklinisk besøk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-decisiontemplate.html">DIPS decision template codes used as basis of care relation between health care personel and patient.</a>#POLBESOK)</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td><a name="hcPractitionerRoleInstance1"> </a><blockquote><p/><p><a name="PractitionerRoleInstance1"> </a></p><p><a name="hcPractitionerRoleInstance1"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance1</p><p><b>organization</b>: #PractitionerDepartment1</p><p><b>location</b>: #PractitionerPointOfCareInstance1</p></blockquote></td><td>true</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>server.example.com</td><td><a href="Device/ex-device">Device/ex-device</a></td><td>Application Server (Details: Audit Event Source Type code 4  = ' Application Server , stated as  Application Server ')</td></tr></table><h3>Entities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>What</b></td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle/Documentlist">Bundle/Documentlist</a></td><td>Bundle (Details: [not stated] code Bundle  = ' Bundle , stated as  null ')</td><td>Document list</td></tr></table><hr/><blockquote><p><b>Generated Narrative: Practitioner  #PractitionerInstance1</b><a name="PractitionerInstance1"> </a><a name="hcPractitionerInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/20086600138, <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144897</p><p><b>name</b>: August September</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Lege <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#LE)</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: PractitionerRole  #PractitionerRoleInstance1</b><a name="PractitionerRoleInstance1"> </a><a name="hcPractitionerRoleInstance1"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance1</p><p><b>organization</b>: #PractitionerDepartment1</p><p><b>location</b>: #PractitionerPointOfCareInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerLegalEntityInstance1</b><a name="PractitionerLegalEntityInstance1"> </a><a name="hcPractitionerLegalEntityInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: Oslo universitetssykehus HF</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerDepartment1</b><a name="PractitionerDepartment1"> </a><a name="hcPractitionerDepartment1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.102</code>/?ngen-9?</p><p><b>name</b>: Anestesiologi Seksjon RH</p><p><b>partOf</b>: #PractitionerLegalEntityInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location  #PractitionerPointOfCareInstance1</b><a name="PractitionerPointOfCareInstance1"> </a><a name="hcPractitionerPointOfCareInstance1"> </a></p><p><b>managingOrganization</b>: #PractitionerPointOfCareOrganizationInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerPointOfCareOrganizationInstance1</b><a name="PractitionerPointOfCareOrganizationInstance1"> </a><a name="hcPractitionerPointOfCareOrganizationInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Encounter  #EncounterInstance1</b><a name="EncounterInstance1"> </a><a name="hcEncounterInstance1"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Indremedisin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#S03)</span></p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td>#EncounterPointOfCareInstance1</td></tr></table><p><b>serviceProvider</b>: #EncounterServiceProviderOrganizationInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location  #EncounterPointOfCareInstance1</b><a name="EncounterPointOfCareInstance1"> </a><a name="hcEncounterPointOfCareInstance1"> </a></p><p><b>managingOrganization</b>: #EncounterPointOfCareOrganizationInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #EncounterServiceProviderOrganizationInstance1</b><a name="EncounterServiceProviderOrganizationInstance1"> </a><a name="hcEncounterServiceProviderOrganizationInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.102</code>/?ngen-9?</p><p><b>name</b>: Øye dagkir/pol 1. etasje</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #EncounterPointOfCareOrganizationInstance1</b><a name="EncounterPointOfCareOrganizationInstance1"> </a><a name="hcEncounterPointOfCareOrganizationInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK</p></blockquote><hr/><blockquote><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?)</p><hr/></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: AuditEvent </b><a name="NOBasisAuditeventInstance1"> </a><a name="hcNOBasisAuditeventInstance1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceAuditEvent &quot;NOBasisAuditeventInstance1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-no-basis-Auditevent.html">no-basis-auditevent</a></p></div><p><b>AuditEventEncounterExtension</b>: <a name="hcEncounterInstance1"> </a></p><blockquote><p/><p><a name="EncounterInstance1"> </a></p><p><a name="hcEncounterInstance1"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Indremedisin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#S03)</span></p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td>#EncounterPointOfCareInstance1</td></tr></table><p><b>serviceProvider</b>: #EncounterServiceProviderOrganizationInstance1</p></blockquote><p><b>AuditEventPatientExtension</b>: <a name="hcPatientInstance1"> </a></p><blockquote><p/><p><a name="PatientInstance1"> </a></p><p><a name="hcPatientInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?</p></blockquote><blockquote><p><b>AuditEventCareRelationMetaData</b></p><blockquote><p><b>url</b></p><code>toa</code></blockquote><p><b>value</b>: 1710830705</p><blockquote><p><b>url</b></p><code>decision-ref-id</code></blockquote><p><b>value</b>: 23423255</p><blockquote><p><b>url</b></p><code>decision-ref-description</code></blockquote><p><b>value</b>: Innlagt pasient</p><blockquote><p><b>url</b></p><code>decision-ref-user-selected</code></blockquote><p><b>value</b>: false</p></blockquote><p><b>type</b>: Patient Record (Details: DICOM code 110110  = ' Patient Record , stated as  Patient Record ')</p><p><b>action</b>: R</p><p><b>recorded</b>: 19. mars 2024, 07:45:00</p><p><b>purposeOfEvent</b>: Treatment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html">ActReason</a>#TREAT)</span>, Poliklinisk besøk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-decisiontemplate.html">DIPS decision template codes used as basis of care relation between health care personel and patient.</a>#POLBESOK)</span></p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>Requestor</b></td></tr><tr><td style="display: none">*</td><td><a name="hcPractitionerRoleInstance1"> </a><blockquote><p/><p><a name="PractitionerRoleInstance1"> </a></p><p><a name="hcPractitionerRoleInstance1"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance1</p><p><b>organization</b>: #PractitionerDepartment1</p><p><b>location</b>: #PractitionerPointOfCareInstance1</p></blockquote></td><td>true</td></tr></table><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Site</b></td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>server.example.com</td><td><a href="Device/ex-device">Device/ex-device</a></td><td>Application Server (Details: Audit Event Source Type code 4  = ' Application Server , stated as  Application Server ')</td></tr></table><h3>Entities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>What</b></td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle/Documentlist">Bundle/Documentlist</a></td><td>Bundle (Details: [not stated] code Bundle  = ' Bundle , stated as  null ')</td><td>Document list</td></tr></table><hr/><blockquote><p><b>Generated Narrative: Practitioner  #PractitionerInstance1</b><a name="PractitionerInstance1"> </a><a name="hcPractitionerInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/20086600138, <code>urn:oid:2.16.578.1.12.4.1.4.4</code>/9144897</p><p><b>name</b>: August September</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Lege <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#LE)</span></td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: PractitionerRole  #PractitionerRoleInstance1</b><a name="PractitionerRoleInstance1"> </a><a name="hcPractitionerRoleInstance1"> </a></p><p><b>active</b>: true</p><p><b>practitioner</b>: #PractitionerInstance1</p><p><b>organization</b>: #PractitionerDepartment1</p><p><b>location</b>: #PractitionerPointOfCareInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerLegalEntityInstance1</b><a name="PractitionerLegalEntityInstance1"> </a><a name="hcPractitionerLegalEntityInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: Oslo universitetssykehus HF</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerDepartment1</b><a name="PractitionerDepartment1"> </a><a name="hcPractitionerDepartment1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.102</code>/?ngen-9?</p><p><b>name</b>: Anestesiologi Seksjon RH</p><p><b>partOf</b>: #PractitionerLegalEntityInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location  #PractitionerPointOfCareInstance1</b><a name="PractitionerPointOfCareInstance1"> </a><a name="hcPractitionerPointOfCareInstance1"> </a></p><p><b>managingOrganization</b>: #PractitionerPointOfCareOrganizationInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #PractitionerPointOfCareOrganizationInstance1</b><a name="PractitionerPointOfCareOrganizationInstance1"> </a><a name="hcPractitionerPointOfCareOrganizationInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO UNIVERSITETSSYKEHUS HF RIKSHOSPITALET - SOMATIKK</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Encounter  #EncounterInstance1</b><a name="EncounterInstance1"> </a><a name="hcEncounterInstance1"> </a></p><p><b>status</b>: unknown</p><p><b>class</b>: unknown (Details: [not stated] code unknown  = ' unknown , stated as  null ')</p><p><b>serviceType</b>: Indremedisin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#S03)</span></p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td>#EncounterPointOfCareInstance1</td></tr></table><p><b>serviceProvider</b>: #EncounterServiceProviderOrganizationInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Location  #EncounterPointOfCareInstance1</b><a name="EncounterPointOfCareInstance1"> </a><a name="hcEncounterPointOfCareInstance1"> </a></p><p><b>managingOrganization</b>: #EncounterPointOfCareOrganizationInstance1</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #EncounterServiceProviderOrganizationInstance1</b><a name="EncounterServiceProviderOrganizationInstance1"> </a><a name="hcEncounterServiceProviderOrganizationInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.102</code>/?ngen-9?</p><p><b>name</b>: Øye dagkir/pol 1. etasje</p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #EncounterPointOfCareOrganizationInstance1</b><a name="EncounterPointOfCareOrganizationInstance1"> </a><a name="hcEncounterPointOfCareOrganizationInstance1"> </a></p><p><b>identifier</b>: <code>urn:oid:2.16.578.1.12.4.1.4.101</code>/?ngen-9?</p><p><b>name</b>: OSLO UNIVERSITETSSYKEHUS HF ULLEVÅL - SOMATIKK</p></blockquote><hr/><blockquote><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Anonymous Patient</b> (no stated gender), DoB Unknown ( <code>urn:oid:2.16.578.1.12.4.1.4.1</code>/?ngen-9?)</p><hr/></blockquote></div>
   </text>
   <contained>
     <Practitioner>
       <id value="PractitionerInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner"/>
       </meta>
       <identifier>
         <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
@@ -46,7 +46,7 @@
     <PractitionerRole>
       <id value="PractitionerRoleInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitionerrole"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitionerrole"/>
       </meta>
       <active value="true"/>
       <practitioner>
@@ -64,7 +64,7 @@
     <Organization>
       <id value="PractitionerLegalEntityInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-legalentity"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-legalentity"/>
       </meta>
       <identifier id="993467049">
         <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
@@ -79,7 +79,7 @@
     <Organization>
       <id value="PractitionerDepartment1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-department"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-department"/>
       </meta>
       <identifier id="705592">
         <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
@@ -97,7 +97,7 @@
     <Location>
       <id value="PractitionerPointOfCareInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-pointofcare"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare"/>
       </meta>
       <managingOrganization>
         <reference value="#PractitionerPointOfCareOrganizationInstance1"/>
@@ -108,7 +108,7 @@
     <Organization>
       <id value="PractitionerPointOfCareOrganizationInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-practitioner-pointofcare-organization"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-practitioner-pointofcare-organization"/>
       </meta>
       <identifier id="874716782">
         <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
@@ -123,7 +123,7 @@
     <Encounter>
       <id value="EncounterInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-encounter"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-encounter"/>
       </meta>
       <status value="unknown"/>
       <class>
@@ -150,7 +150,7 @@
     <Location>
       <id value="EncounterPointOfCareInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-encounter-pointofcare"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-encounter-pointofcare"/>
       </meta>
       <managingOrganization>
         <reference value="#EncounterPointOfCareOrganizationInstance1"/>
@@ -161,7 +161,7 @@
     <Organization>
       <id value="EncounterServiceProviderOrganizationInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-encounter-serviceprovider-organization"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-encounter-serviceprovider-organization"/>
       </meta>
       <identifier id="109765">
         <system value="urn:oid:2.16.578.1.12.4.1.4.102"/>
@@ -176,7 +176,7 @@
     <Organization>
       <id value="EncounterPointOfCareOrganizationInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-encounter-pointofcare-organization"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-encounter-pointofcare-organization"/>
       </meta>
       <identifier id="974589095">
         <system value="urn:oid:2.16.578.1.12.4.1.4.101"/>
@@ -191,7 +191,7 @@
     <Patient>
       <id value="PatientInstance1"/>
       <meta>
-        <profile value="urn:no-basis-auditevent/StructureDefinition/auditevent-patient"/>
+        <profile value="http://hl7.no/fhir/StructureDefinition/auditevent-patient"/>
       </meta>
       <identifier id="05076600324">
         <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
@@ -201,17 +201,17 @@
       </identifier>
     </Patient>
   </contained>
-  <extension url="urn:no-basis-auditevent/StructureDefinition/AuditEventEncounterExtension">
+  <extension url="http://hl7.no/fhir/StructureDefinition/AuditEventEncounterExtension">
     <valueReference>
       <reference value="#EncounterInstance1"/>
     </valueReference>
   </extension>
-  <extension url="urn:no-basis-auditevent/StructureDefinition/AuditEventPatientExtension">
+  <extension url="http://hl7.no/fhir/StructureDefinition/AuditEventPatientExtension">
     <valueReference>
       <reference value="#PatientInstance1"/>
     </valueReference>
   </extension>
-  <extension url="urn:no-basis-auditevent/StructureDefinition/CareRelationMetaData">
+  <extension url="http://hl7.no/fhir/StructureDefinition/CareRelationMetaData">
     <extension url="toa">
       <valueUnsignedInt value="1710830705"/>
     </extension>
