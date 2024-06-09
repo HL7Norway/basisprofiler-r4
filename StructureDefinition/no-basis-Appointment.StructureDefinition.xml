@@ -6,7 +6,7 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment"/>
-  <version value="2.2.0"/>
+  <version value="2.2.1"/>
   <name value="NoBasisAppointment"/>
   <title value="no-basis-Appointment"/>
   <status value="active"/>
