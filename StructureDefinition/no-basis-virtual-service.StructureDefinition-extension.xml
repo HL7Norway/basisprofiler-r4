@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service"/>
-  <version value="2.2.0"/>
+  <version value="2.2.1"/>
   <name value="NoBasisVirtualService"/>
   <title value="no-basis-virtual-service"/>
   <status value="active"/>
-  <date value="2023-10-05T23:14:02+02:00"/>
+  <date value="2024-06-09"/>
   <publisher value="Hl7 Norge"/>
   <contact>
     <name value="Hl7 Norge"/>
