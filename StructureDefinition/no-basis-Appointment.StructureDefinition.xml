@@ -397,7 +397,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
     <element id="Appointment.extension:group">
@@ -433,7 +432,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
     <element id="Appointment.extension:partOf">
@@ -469,7 +467,6 @@
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
-      <mustSupport value="true"/>
       <isModifier value="false"/>
     </element>
     <element id="Appointment.modifierExtension">
@@ -959,7 +956,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -1005,7 +1001,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -1051,7 +1046,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="true"/>
       <binding>
@@ -2058,7 +2052,6 @@
         <code value="Extension"/>
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-virtual-service"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="Appointment.extension:group">
       <path value="Appointment.extension"/>
@@ -2069,7 +2062,6 @@
         <code value="Extension"/>
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-group"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="Appointment.extension:partOf">
       <path value="Appointment.extension"/>
@@ -2080,7 +2072,6 @@
         <code value="Extension"/>
         <profile value="http://hl7.no/fhir/StructureDefinition/no-basis-partof"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="Appointment.appointmentType.coding">
       <path value="Appointment.appointmentType.coding"/>
@@ -2101,7 +2092,6 @@
       <definition value="Omsorgsnivå (OID=8406)."/>
       <min value="0"/>
       <max value="1"/>
-      <mustSupport value="false"/>
       <binding>
         <strength value="required"/>
         <description value="Volven"/>
@@ -2115,7 +2105,6 @@
       <definition value="Kontakttype (OID=8432)"/>
       <min value="0"/>
       <max value="1"/>
-      <mustSupport value="false"/>
       <binding>
         <strength value="required"/>
         <description value="Volven"/>
@@ -2129,7 +2118,6 @@
       <definition value="Timetype innbyggerportal (OID=7617)"/>
       <min value="0"/>
       <max value="1"/>
-      <mustSupport value="false"/>
       <binding>
         <strength value="required"/>
         <description value="Volven"/>
