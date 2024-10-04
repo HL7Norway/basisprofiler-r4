@@ -23,6 +23,15 @@ Release date: 2023-10-06
 * `no-basis-shortnotice` Added extension
 * `No Basis VirtualServiceType Value Set` Added valueset
 
+### Bugfixes
+
+Date: 2024-10-04
+version: 2.2.0
+
+* Update to fix rendering of appointment and workflow information in the implementation guide
+  * Fix image rendering in `introWorkflow.md`
+  * Fix rendering of page for `no-basis-Appointment` (only `no-basis-AppointmentResponse` was rendered as part of IG)
+
 # no-basis v2.1
 
 * Based on HL7 FHIR version 4.0.1*
