@@ -2,7 +2,7 @@
 
 HL7 Norway proposed base profiles for Workflow resources in HL7 FHIR R4.
 
-![Appointment and ApppointmentResponse profiles and extensions](../Images/no-basis-Workflow-class.png)  
+![Appointment and ApppointmentResponse profiles and extensions](https://github.com/HL7Norway/basisprofiler-r4/raw/bugfix-workflow-IG-rendering/Images/no-basis-workflow.png)  
 
 Only attributes with actual profiling is included in the information model diagram as well as any optional extensions provided as a part of the no-basis package. The model should be forward compatible to Appointment in R5 as far as possible.  
 
@@ -10,7 +10,7 @@ Only attributes with actual profiling is included in the information model diagr
 
 Appointment and Encounter have dependencies as they both describe different aspects of the administrative relationship between patient and health care organizations.  
 
-![Appointment og AppointmentResponse profiler](http://www.plantuml.com/plantuml/svg/7Sqn3i8m3030dLV00relI4XC7HaGVt1Jjx5muiXs5F5x4DEDjtYWHIzokd1DqZSwvuZcTu238_TrJbhWyRozr0P-O4LdRwOx2zbaLp0SKD233BZWGJwvTai4G-szYuwv2TR_i53TVdu1)
+![Appointment og AppointmentResponse profiler](https://raw.githubusercontent.com/HL7Norway/basisprofiler-r4/master/Images/no-basis-Workflow-class.png)
 
 **Appointment** (no:timeavtale; npr:planlagt episode) – describes a planned meeting between a patient and healthcare personell.  
 
