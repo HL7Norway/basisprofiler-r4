@@ -64,11 +64,12 @@ Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-p
 ## Kontaktpersoner
 
 [Thomas Tveit Rosenlund](mailto:thomas.tveit.rosenlund@ehelse.no)
-<br/>Direktoratet for e-helse
+<br/>Teknisk styringskommité, HL7 Norge
+<br/>Helsedirektoratet
 
 [Espen Stranger Seland](mailto:Espen.Stranger.Seland@ehelse.no)
 <br/>Teknisk styringskommité, HL7 Norge
-<br/>Direktoratet for e-helse
+<br/>Vali AS
 
 ## Prosjekt for R4
 
