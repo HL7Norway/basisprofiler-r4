@@ -2,10 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="no-basis-relatedperson-person-reference" />
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-relatedperson-person-reference" />
-  <version value="2.0.15" />
+  <version value="2.2.1" />
   <name value="NoBasisRelatedpersonPersonReference" />
+  <title value="no-basis-relatedperson-person-reference"/>
   <status value="active" />
-  <date value="2021-04-07" />
+  <date value="2024-06-09" />
   <description value="If a person reference is needed in RelatedPerson.patient element, this optional extension should be used." />
   <fhirVersion value="4.0.1" />
   <mapping>
