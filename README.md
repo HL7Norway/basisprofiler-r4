@@ -62,7 +62,7 @@ Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-p
 
 ## Kontaktpersoner
 
-[Thomas Tveit Rosenlund](mailto:thomas.tveit.rosenlund@ehelse.no)
+[Thomas Tveit Rosenlund](mailto:thomas.tveit.rosenlund@helsedir.no)
 <br/>Teknisk styringskommité, HL7 Norge
 <br/>Helsedirektoratet
 
