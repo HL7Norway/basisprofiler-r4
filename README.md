@@ -66,7 +66,7 @@ Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-p
 <br/>Teknisk styringskommité, HL7 Norge
 <br/>Helsedirektoratet
 
-[Espen Stranger Seland](mailto:Espen.Stranger.Seland@ehelse.no)
+[Espen Stranger Seland](mailto:ess@vali.no)
 <br/>Teknisk styringskommité, HL7 Norge
 <br/>Vali AS
 
