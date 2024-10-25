@@ -6,7 +6,7 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="http://hl7.no/fhir/StructureDefinition/no-basis-Appointment"/>
-  <version value="2.2.0"/>
+  <version value="2.2.1"/>
   <name value="NoBasisAppointment"/>
   <title value="no-basis-Appointment"/>
   <status value="active"/>
@@ -82,9 +82,9 @@
       <constraint>
         <key value="app-4"/>
         <severity value="error"/>
-        <human value="Cancelation reason is only used for appointments that have been cancelled, or no-show"/>
-        <expression value="Appointment.cancelationReason.exists() implies (Appointment.status='no-show' or Appointment.status='cancelled')"/>
-        <xpath value="not(exists(f:cancellationReason)) or f:status/@value=('no-show', 'cancelled')"/>
+        <human value="Cancelation reason is only used for appointments that have been cancelled, or noshow"/>
+        <expression value="Appointment.cancelationReason.exists() implies (Appointment.status='noshow' or Appointment.status='cancelled')"/>
+        <xpath value="not(exists(f:cancellationReason)) or f:status/@value=('noshow', 'cancelled')"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
       </constraint>
       <constraint>
