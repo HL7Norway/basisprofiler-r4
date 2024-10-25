@@ -41,9 +41,8 @@ Det arrangeres workshop i forbindelse med utarbeidelser av alle no-basis profile
 
 ## Versjonering
 
-Versjon: 2.2.0
-
-Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering).
+Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering).  
+Siste versjon publiseres på [SIMPLIFIER](https://simplifier.net/guide/no-basis-entities-individuals/introduction).
 
 ## Normering
 

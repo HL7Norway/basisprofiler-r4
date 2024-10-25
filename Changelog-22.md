@@ -11,6 +11,16 @@ Including bugfixes:
 * issue #99 Wrong canonical on NoBasisRelatedPersonReference
 * issue #97 Removed deprecated proposal for no-basis-Encounter
 
+### Bugfixes
+
+Date 2024-10-25
+version: 2.2.1
+
+* Bugfixes in README - names and affiliations #141
+* Must support in no-basis-Appointment #136 and #139
+* Invariant bugfixes "app-4 updated with correct status" #132 and #137
+* Removed version info from README
+
 ### 2.2.0 Changelog
 
 Release date: 2023-10-06
