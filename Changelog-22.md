@@ -25,6 +25,20 @@ Release date: 2023-10-06
 
 ### Bugfixes
 
+Date 2025-03-26
+version: 2.2.2
+
+* Bugfix version
+  * Must support i no-basis-Appointment [#136](https://github.com/HL7Norway/basisprofiler-r4/issues/136)
+  * Fix Changelog, missing entries for version 2.2.1 from october 2024
+
+Date 2025-10-25
+version: 2.2.1
+
+* Bugfix version
+  * Feil i invariant app-4 i no-basis-appointment fix issue [#132](https://github.com/HL7Norway/basisprofiler-r4/issues/132)
+  * Fix titles in NoBasisVirtualService og NoBasisRelatedpersonPersonReference [#134](https://github.com/HL7Norway/basisprofiler-r4/issues/134)
+
 Date: 2024-10-04
 version: 2.2.0
 
