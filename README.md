@@ -18,7 +18,7 @@ Vedtatte profiler publiseres på SIMPLIFER.net (status=active) og omfatter blant
 
 ### Dokumentasjon
 
-[Profilene er beskrevet i implementasjonsguide på SIMPLIFIER.net](https://simplifier.net/guide/no-basis-entities-individuals/introduction)
+[Profilene er beskrevet i implementasjonsguide på SIMPLIFIER.net](https://simplifier.net/guide/no-basis-entities-individuals?version=current)
 Conformance ressursene som som ligger til grunn for den publiserte versjonen av profilene på SIMPLIFIER er en nøyaktig kopi av ressursene i [Github prosjektet](https://github.com/HL7Norway/basisprofiler-r4).
 
 Implementasjonsguiden på SIMPLIFER er imidlertid ikke speilet tilbake til Github prosjektet, så denne eksisterer bare på SIMPLIFIER.
