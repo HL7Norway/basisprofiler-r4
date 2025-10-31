@@ -1,23 +1,31 @@
 {
-      "name": "HL7 Norway no-basis",
-      "category": "National Base",
-      "npm-name": "hl7.fhir.no.basis",
-      "description": "HL7 FHIR Base profiles for Norway",
-      "authority": "HL7",
-      "country": "no",
-      "language": [
-        "en"
-      ],
-      "canonical": "http://hl7.no/fhir/",
-      "editions": [
-        {
-          "name": "HL7 Norway no-basis",
-          "ig-version": "2.1.0",
-          "package": "hl7.fhir.no.basis#2.1.0",
-          "fhir-version": [
-            "4.0.1"
-          ],
-          "url": "https://simplifier.net/guide/no-basis-entities-individuals/introduction"
-        }
-      ]
+  "name" : "HL7 Norway no-basis",
+  "category" : "National Base",
+  "npm-name" : "hl7.fhir.no.basis",
+  "description" : "HL7 FHIR Base profiles for Norway",
+  "authority" : "HL7",
+  "product" : ["fhir"],
+  "country" : "no",
+  "language" : ["en"],
+  "canonical" : "http://hl7.no/fhir/",
+  "editions" : [
+    {
+      "name" : "HL7 Norway no-basis",
+      "ig-version" : "2.2.2",
+      "package" : "hl7.fhir.no.basis#2.2.2",
+      "fhir-version" : ["4.0.1"],
+      "url" : "https://simplifier.net/guide/no-basis-entities-individuals?version=current"
     }
+  ],
+  "analysis" : {
+    "content" : true,
+    "rest" : true,
+    "documents" : true,
+    "clinicalCore" : true,
+    "medsMgmt" : true,
+    "profiles" : 20,
+    "extensions" : 17,
+    "valuesets" : 7,
+    "codeSystems" : 4
+  }
+}
