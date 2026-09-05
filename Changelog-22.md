@@ -33,6 +33,29 @@ Release date: 2023-10-06
 * `no-basis-shortnotice` Added extension
 * `No Basis VirtualServiceType Value Set` Added valueset
 
+### Bugfixes
+
+Date 2025-03-26
+version: 2.2.2
+
+* Bugfix version
+  * Must support i no-basis-Appointment [#136](https://github.com/HL7Norway/basisprofiler-r4/issues/136)
+  * Fix Changelog, missing entries for version 2.2.1 from october 2024
+
+Date 2025-10-25
+version: 2.2.1
+
+* Bugfix version
+  * Feil i invariant app-4 i no-basis-appointment fix issue [#132](https://github.com/HL7Norway/basisprofiler-r4/issues/132)
+  * Fix titles in NoBasisVirtualService og NoBasisRelatedpersonPersonReference [#134](https://github.com/HL7Norway/basisprofiler-r4/issues/134)
+
+Date: 2024-10-04
+version: 2.2.0
+
+* Update to fix rendering of appointment and workflow information in the implementation guide
+  * Fix image rendering in `introWorkflow.md`
+  * Fix rendering of page for `no-basis-Appointment` (only `no-basis-AppointmentResponse` was rendered as part of IG)
+
 # no-basis v2.1
 
 * Based on HL7 FHIR version 4.0.1*

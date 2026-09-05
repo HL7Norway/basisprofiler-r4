@@ -3,7 +3,7 @@
 class "no-basis-Address" as address
 class "no-basis-propertyInformation:extension" as property
 class "no-basis-address-official:extension" as official
-class "no-basisurban-district:extension" as urbandistrict
+class "no-basis-urban-district:extension" as urbandistrict
 class "no-basis-municipalitycode:extension" as municipality
 
 'package "FHIR DataTypes" #DDDDDD {
@@ -29,7 +29,7 @@ property : leaseholdNumber:int[0..*]
 property : condominiumUnitNumber:int[0..*]
 property : municipality:Coding[0..*]
 
-official : valeBoolean:boolean[0..1]
+official : valueBoolean:boolean[0..1]
 
 urbandistrict : valueCoding:Coding[0..1]
 

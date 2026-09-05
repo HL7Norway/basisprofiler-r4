@@ -50,9 +50,7 @@ Siste versjon publiseres på [SIMPLIFIER](https://simplifier.net/guide/no-basis-
 
 ## Verktøy
 
-Vi anbefaler å bruke [Forge](https://fire.ly/forge/) for profilutvikling.  
-Vi anbefaler også lage seg en gratis-konto på [Simplifier.net](https://simplifier.net/) for visualisering.  
-Forge og SIMPLIFIER er kostbart å ta i bruk i komersiell sammenheng.  
+Vi anbefaler å bruke [FHIR Shorthand](https://build.fhir.org/ig/HL7/fhir-shorthand/). Mer informasjon om bruk av dette verktøyet på [FSHSchool](https://fshschool.org/) 
 
 [Andre verktøy og ressurser](https://hl7norway.github.io/best-practice/docs/resources.html)
 
@@ -66,10 +64,10 @@ Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-p
 <br/>Teknisk styringskommité, HL7 Norge
 <br/>Helsedirektoratet
 
-[Espen Stranger Seland](mailto:ess@vali.no)
+[Espen Stranger Seland](mailto:Espen.Stranger.Seland@helsedir.no)
 <br/>Teknisk styringskommité, HL7 Norge
-<br/>Vali AS
+<br/>Helsedirektoratet
 
 ## Prosjekt for R4
 
-Prosjekt: <https://github.com/HL7Norway/basisprofiler-r4/projects/1>
+Prosjekt:  [Basisprofiler-r4 prosjektet](https://github.com/orgs/HL7Norway/projects/7)
