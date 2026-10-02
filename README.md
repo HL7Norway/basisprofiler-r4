@@ -41,7 +41,8 @@ Det arrangeres workshop i forbindelse med utarbeidelser av alle no-basis profile
 
 ## Versjonering
 
-Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://github.com/HL7Norway/best-practice/blob/master/docs/implementationguide.md#versjonering).
+Basisprofiler R4 følger [beste praksis-prinsipper for versjonering](https://hl7norway.github.io/best-practice/docs/IG-og-dokumentasjon/ig-versioning.html).  
+Siste versjon publiseres på [SIMPLIFIER](https://simplifier.net/HL7Norwayno-basis/).
 
 ## Normering
 
@@ -59,13 +60,13 @@ Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-p
 
 ## Kontaktpersoner
 
-[Thomas Tveit Rosenlund](mailto:thomas.tveit.rosenlund@helsedir.no)  
-Teknisk styringskommité, HL7 Norge  
-Helsedirektoratet  
+[Thomas Tveit Rosenlund](mailto:thomas.tveit.rosenlund@helsedir.no)
+<br/>Teknisk styringskomité, HL7 Norge
+<br/>Helsedirektoratet
 
-[Espen Stranger Seland](mailto:ess@vali.no)  
-Teknisk styringskommité, HL7 Norge  
-Vali AS  
+[Espen Stranger Seland](mailto:Espen.Stranger.Seland@helsedir.no)
+<br/>Teknisk styringskommité, HL7 Norge
+<br/>Helsedirektoratet
 
 ## Prosjekt for R4
 
