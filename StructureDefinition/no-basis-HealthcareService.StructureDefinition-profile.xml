@@ -42,14 +42,11 @@
       <path value="HealthcareService.providedBy.identifier" />
       <short value="The logical reference of organization that provides this healthcare service." />
       <definition value="no-basis recommends the use of logical reference to an organization using ENH or RSH. To describe a top level organization. Departments within an organization could use a different reference scheme defined by the organization.&#xD;&#xA;&#xD;&#xA;no-basis recommends if an identifier is provided the identifier type or system should be provided." />
-    </element>
-    <element id="HealthcareService.providedBy.identifier.system">
-      <path value="HealthcareService.providedBy.identifier.system" />
       <constraint>
         <key value="no-basis-identifier-system" />
         <severity value="warning" />
         <human value="no-basis recommends the use of urn:oid:2.16.578.1.12.4.1.4.101 (ENH) or urn:oid:2.16.578.1.12.4.1.4.102 (RESH) for identifier.system" />
-        <expression value="$this.exists(value = 'urn:oid:2.16.578.1.12.4.1.4.101' or value = 'urn:oid:2.16.578.1.12.4.1.4.102')" />
+        <expression value="$this.exists(system = 'urn:oid:2.16.578.1.12.4.1.4.101' or system = 'urn:oid:2.16.578.1.12.4.1.4.102')" />
       </constraint>
     </element>
     <element id="HealthcareService.category">

@@ -25,6 +25,15 @@ Release date: 2023-10-06
 
 ### Bugfixes
 
+Date 2026-xxxx
+version: 2.2.3
+
+* Bugfix version 
+  * Invariants in no-basis-AppointmentResponse and no-basis-HealthCareService repoted in [#146](https://github.com/HL7Norway/basisprofiler-r4/issues/146)
+  * [#150](https://github.com/HL7Norway/basisprofiler-r4/issues/150)
+  * [#147](https://github.com/HL7Norway/basisprofiler-r4/issues/147)
+  * Minor fixes to README
+
 Date 2025-03-26
 version: 2.2.2
 

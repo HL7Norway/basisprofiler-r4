@@ -118,10 +118,10 @@
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
       <constraint>
-        <key value="inv-1"/>
+        <key value="no-basis-shortnotice-patient-actor"/>
         <severity value="error"/>
         <human value="The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'."/>
-        <expression value="extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"/>
+        <expression value="extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type = 'Patient'"/>
         <source value="http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse"/>
       </constraint>
       <isModifier value="false"/>
@@ -892,10 +892,10 @@
     <element id="AppointmentResponse">
       <path value="AppointmentResponse"/>
       <constraint>
-        <key value="inv-1"/>
+        <key value="no-basis-shortnotice-patient-actor"/>
         <severity value="error"/>
         <human value="The 'shortNotice' extension can only be used when the 'actor' is of type 'Patient'."/>
-        <expression value="extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type.value = 'Patient'"/>
+        <expression value="extension.where(url = 'http://hl7.no/fhir/StructureDefinition/no-basis-shortnotice').value.exists() and actor.type = 'Patient'"/>
         <source value="http://hl7.no/fhir/StructureDefinition/no-basis-AppointmentResponse"/>
       </constraint>
     </element>
