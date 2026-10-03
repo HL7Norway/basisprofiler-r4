@@ -1,0 +1,59 @@
+@startuml
+!include <archimate/Archimate>
+skinparam linetype ortho
+
+sprite $bProcess jar:archimate/business-process
+sprite $bRole jar:archimate/business-role
+sprite $bActor jar:archimate/business-actor
+sprite $bService jar:archimate/business-service
+
+rectangle "HL7 Norway" <<$bActor>> #Business  {
+Business_Actor(org, "Developer")
+Business_Process(develop, "Develop\nsource code")
+Business_Process(pr, "Make\nPull Request")
+Business_Process(test, "Test\nsource code")
+Business_Process(qa, "Manual QA")
+Business_Process(staging, "Stage to\nversion x.x.x")
+Business_Process(housekeeping, "Version\nhousekeeping")
+Business_Process(pullmaster, "Pull to\nmaster branch")
+Business_Process(publish, "Publish\n version x.x.x")
+
+Rel_Assignment_Right(org, develop)
+develop -right-> test
+test -right-> pr
+
+pr -right-> qa
+qa -right-> staging
+staging -right-> housekeeping
+housekeeping -right-> pullmaster
+pullmaster -right-> publish
+}
+
+rectangle "Github" <<$bService>> #Application  {
+   Application_DataObject(issue, "Issue\ndescription")
+   Application_DataObject(testreport, "Test\nReport")
+   Application_DataObject(devbranch, "Development\nBranch")
+   Application_DataObject(stagingbranch, "Staging Branch\nx.x.x")
+   Application_DataObject(masterbranch, "Publish/master\n Branch")
+   Application_Process(build, "Build\ndocumentation")
+   Application_DataObject(ig, "Implementation\nGuide vx.x.x")
+}
+
+'"HL7 Norway" -up[hidden]- "Helsedirektoratet"
+devbranch -right[hidden]-> issue
+
+testreport -left-> issue
+develop -down-> devbranch
+devbranch -right[hidden]- stagingbranch
+test -down-> testreport #line.dotted
+develop .down.> issue #line.dotted
+staging -down-> stagingbranch
+housekeeping .down.> stagingbranch #line.dotted
+stagingbranch -right[hidden]- masterbranch
+pullmaster .down.> masterbranch #line.dotted
+masterbranch -right-> build
+build -right-> ig
+publish -down-> ig
+'ballot -down[hidden]- description
+
+@enduml
