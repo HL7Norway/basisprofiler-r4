@@ -59,8 +59,8 @@
       <sliceName value="code" />
       <definition value="no-basis-Patient introduces iso 3166 codes&#xD;&#xA;&#xD;&#xA;Nation code representing the citizenship of patient." />
       <binding>
-        <strength value="example" />
-        <valueSet value="urn:iso:std:iso:3166" />
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-2"/>
       </binding>
     </element>
     <element id="Patient.identifier">
