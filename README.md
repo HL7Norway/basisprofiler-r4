@@ -65,7 +65,7 @@ Felles wiki finnes [her under best practice](https://github.com/HL7Norway/best-p
 <br/>Helsedirektoratet
 
 [Espen Stranger Seland](mailto:Espen.Stranger.Seland@helsedir.no)
-<br/>Teknisk styringskommité, HL7 Norge
+<br/>Teknisk styringskomité, HL7 Norge
 <br/>Helsedirektoratet
 
 ## Prosjekt for R4
