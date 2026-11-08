@@ -10,8 +10,13 @@ Destination fork: https://github.com/admeduardovieira/basisprofiler-r4
 |----|-------|----------|--------|------|----------------|
 | REA-basis-001 | No automated tests for FHIR profile validation | P3 | PROPOSING | Medium | `test/` (new) |
 | REA-basis-002 | No CI workflow configured | P3 | PROPOSING | Low | `.github/workflows/` (new) |
-| REA-basis-003 | No sushi-config.yaml or build file | P3 | PROPOSING | Low | `sushi-config.yaml` (new) |
-| REA-basis-004 | Validation scripts are manual curl commands | P3 | PROPOSING | Low | `Script/*.txt` |
+
+## Observations (not defects)
+
+| ID | Observation | Type | Rationale |
+|----|-------------|------|-----------|
+| REA-basis-003 | No sushi-config.yaml | Observation | Repository is deliberately static FHIR resources (JSON/XML), not a SUSHI project. Absence of sushi-config.yaml is an architectural choice, not a defect. |
+| REA-basis-004 | Manual curl validation scripts | Observation | Manual validation scripts are functional for a small project. Automation is optional improvement, not a defect fix. |
 
 ## Details of proposed corrections
 
@@ -24,16 +29,6 @@ Destination fork: https://github.com/admeduardovieira/basisprofiler-r4
 **Problem:** No `.github/workflows` directory.
 **Fix:** Add CI workflow to validate FHIR resources on push/PR.
 **Validation:** Confirm workflow triggers and passes.
-
-### REA-basis-003 — No sushi-config.yaml
-**Problem:** No build configuration file.
-**Fix:** Add sushi-config.yaml to manage profiles via SUSHI.
-**Validation:** Confirm SUSHI can process the configuration.
-
-### REA-basis-004 — Manual curl validation scripts
-**Problem:** Validation scripts are manual curl commands.
-**Fix:** Convert to automated validation scripts.
-**Validation:** Run scripts; confirm they validate resources without manual intervention.
 
 ## Not implemented
 None implemented in this execution; proposals for maintainers.

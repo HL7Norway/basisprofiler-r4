@@ -18,7 +18,7 @@ Repositório de perfis base FHIR R4 para a Noruega (HL7 Norway / no-basis). É u
 ### Tecnologias e dependências
 - FHIR R4 (recursos estáticos JSON/XML)
 - Nenhuma dependência de runtime declarada
-- Nenhum sushi-config.yaml (não é um projeto SUSHI)
+- Nenhum sushi-config.yaml (não é um projeto SUSHI — recursos estáticos mantidos manualmente)
 - Nenhum Dockerfile, nenhum workflow CI
 - Ferramentas recomendadas: FHIR Shorthand (FSH), validador FHIR
 
@@ -38,18 +38,12 @@ Nenhum teste automatizado encontrado. Não há pasta `test/`, nenhum script de v
 |----|--------|------------|--------|-------------|
 | REA-basis-001 | Sem testes automatizados para validação de perfis FHIR | P3 | CONFIRMADO | raiz do repo |
 | REA-basis-002 | Nenhum workflow CI configurado | P3 | CONFIRMADO | ausência de `.github/workflows` |
-| REA-basis-003 | Nenhum sushi-config.yaml ou arquivo de build | P3 | CONFIRMADO | raiz do repo |
-| REA-basis-004 | Scripts de validação são apenas comandos curl (não automatizados) | P3 | CONFIRMADO | `Script/*.txt` |
 
 ### Detalhes dos problemas confirmados
 
 **REA-basis-001 (P3, CONFIRMADO)**: Não há testes automatizados para validar os 28 StructureDefinitions, 4 CodeSystems e 1 SearchParameter contra a especificação FHIR R4.
 
 **REA-basis-002 (P3, CONFIRMADO)**: Não há pasta `.github/workflows` — nenhum CI para build, validação ou verificação de PR.
-
-**REA-basis-003 (P3, CONFIRMADO)**: Não há `sushi-config.yaml` nem qualquer arquivo de configuração de build. Os recursos são mantidos manualmente como JSON/XML estáticos.
-
-**REA-basis-004 (P3, CONFIRMADO)**: `Script/curl-commands.txt` e `Script/kommandolinje-validering.txt` contêm comandos de validação manuais via curl, não automatizados.
 
 ## C. Problemas recorrentes
 Nenhum issue recorrente público encontrado.
@@ -60,17 +54,19 @@ Todos os itens da seção B são problemas não documentados anteriormente.
 ## E. Performance
 Recursos FHIR estáticos; sem operações de runtime. Não há preocupações de performance.
 
-## F. Melhorias técnicas
-- Adicionar testes de validação FHIR (REA-basis-001)
-- Adicionar workflow CI para validação de recursos FHIR (REA-basis-002)
-- Adicionar sushi-config.yaml para gerenciamento via SUSHI (REA-basis-003)
-- Automatizar scripts de validação (REA-basis-004)
+## F. Melhorias técnicas (opcionais, não são defeitos)
+
+Os itens abaixo são oportunidades de melhoria, não defeitos confirmados, pois o repositório é deliberadamente um conjunto de recursos FHIR estáticos:
+
+- **REA-basis-003 (observação):** Ausência de `sushi-config.yaml` não é um defeito — o repositório não utiliza SUSHI. Os recursos são mantidos como JSON/XML estáticos por decisão arquitetural. Se o projeto migrar para SUSHI no futuro, um `sushi-config.yaml` seria necessário.
+- **REA-basis-004 (observação):** Scripts de validação via curl (`Script/curl-commands.txt`, `Script/kommandolinje-validering.txt`) são manuais mas funcionais para um projeto pequeno. Automatização seria uma melhoria opcional, não uma correção de defeito.
 
 ## G. Plano de execução
-Todas independentes e baixo risco.
+- REA-basis-001 e REA-basis-002 são independentes e de baixo risco.
+- REA-basis-003 e REA-basis-004 são observações opcionais, não requerem ação imediata.
 
 ## H. Resultado esperado
-Perfis FHIR validados automaticamente, CI para detecção precoce de problemas, build gerenciado.
+Perfis FHIR validados automaticamente, CI para detecção precoce de problemas.
 
 **Ferramentas usadas:** git, gh, PowerShell/terminal, inspeção estática.  
 **Limitação:** Não há código executável; apenas recursos estáticos.  

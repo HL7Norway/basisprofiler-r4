@@ -1,47 +1,40 @@
 # CORRECTIONS.md — basisprofiler-r4
 
-Project: HL7Norway/basisprofiler-r4
-Base branch analyzed: master
-Destination fork: https://github.com/admeduardovieira/basisprofiler-r4
+Проєкт: HL7Norway/basisprofiler-r4
+Базова гał diff гałку для аналізу: master
+Гał diff гałку для публікації: https://github.com/admeduardovieira/basisprofiler-r4
 
-## Corrections proposed
+## Propіковані виправлення
 
-| ID | Title | Severity | Status | Risk | Files involved |
-|----|-------|----------|--------|------|----------------|
-| REA-basis-001 | No automated tests for FHIR profile validation | P3 | PROPOSING | Medium | `test/` (new) |
-| REA-basis-002 | No CI workflow configured | P3 | PROPOSING | Low | `.github/workflows/` (new) |
-| REA-basis-003 | No sushi-config.yaml or build file | P3 | PROPOSING | Low | `sushi-config.yaml` (new) |
-| REA-basis-004 | Validation scripts are manual curl commands | P3 | PROPOSING | Low | `Script/*.txt` |
+| ID | Назва | Середність | Статус | Різик | Задіяні файли |
+|----|-------|------------|--------|-------|---------------|
+| REA-basis-001 | Немає автоматизованих тестів для валідації профілів FHIR | P3 | PROPOSING | Середній | test/ (новий) |
+| REA-basis-002 | Немає workflow CI налаштовано | P3 | PROPOSING | Низький | .github/workflows/ (новий) |
 
-## Details of proposed corrections
+## Застереження (не є дефектами)
 
-### REA-basis-001 — No automated tests
-**Problem:** No tests validate FHIR profiles against R4 spec.
-**Fix:** Add FHIR validation tests (e.g., using FHIR validator).
-**Validation:** Run tests against all StructureDefinitions; confirm no regressions.
+| ID | Застереження | Тип | ОбҠорення |
+|----|-------------|------|-----------|
+| REA-basis-003 | Немає sushi-config.yaml | Застереження | Репозиторій є свідомими статичними ресурсами FHIR (JSON/XML), а не проєктом SUSHI. Відсутність sushi-config.yaml є вибором архітектурним, а не дефектом. |
+| REA-basis-004 | Рукоміні скрипти валідації | Застереження | Рукоміні скрипти валідації є функціональними для малого проєкту. Автоматизація — це опціональне вдосконалення, а не виправлення дефекту. |
 
-### REA-basis-002 — No CI workflow
-**Problem:** No `.github/workflows` directory.
-**Fix:** Add CI workflow to validate FHIR resources on push/PR.
-**Validation:** Confirm workflow triggers and passes.
+## Деталі пропонованих виправлень
 
-### REA-basis-003 — No sushi-config.yaml
-**Problem:** No build configuration file.
-**Fix:** Add sushi-config.yaml to manage profiles via SUSHI.
-**Validation:** Confirm SUSHI can process the configuration.
+### REA-basis-001 — Немає автоматизованих тестів
+**Проблема:** Немає тестів, що валідують профілі FHIR за специфікацією R4.
+**Виправлення:** Додати тести валідації FHIR (наприклад, за допомогою валідатора FHIR).
+**Валідація:** Запустити тести проти всіх StructureDefinitions; підтвердити відсутність регресій.
 
-### REA-basis-004 — Manual curl validation scripts
-**Problem:** Validation scripts are manual curl commands.
-**Fix:** Convert to automated validation scripts.
-**Validation:** Run scripts; confirm they validate resources without manual intervention.
+### REA-basis-002 — Немає workflow CI
+**Проблема:** Немає каталогу .github/workflows.
+**Виправлення:** Додати workflow CI для валідації ресурсів FHIR при push/PR.
+**Валідація:** Підтвердити, що workflow запускається і проходить.
 
-## Not implemented
-None implemented in this execution; proposals for maintainers.
+## Не реалізовано
+Жодне не реалізоване в цьому виконанні; пропозиції для підтрижуючої.
 
-## Publication plan
-- Fork: `admeduardovieira/basisprofiler-r4` (created).
-- No code changes (only audit reports).
-- Commit identity: `admeduardovieira <admeduardovieira@users.noreply.github.com>`.
-- PRs to `HL7Norway/basisprofiler-r4` branch `master`.
-
-Переклад технічний, виконаний автоматизовано; рекомендується перегляд носієм мови перед використанням якнормативного посилання.
+## План публікації
+- Fork: admeduardovieira/basisprofiler-r4 (створено).
+- Жодних змін коду (лише звіти аудиту).
+- Ідентичність коміту: admeduardovieira <admeduardovieira@users.noreply.github.com>.
+- PR до HL7Norway/basisprofiler-r4 гał diff гałку master.
