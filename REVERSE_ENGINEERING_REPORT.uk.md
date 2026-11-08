@@ -5,7 +5,7 @@
 ## A. Загальний діагноз
 
 ### Виявлена архітектура
-Репозиторій базових профілів FHIR R4 для Норвегії (HL7 Norway / no-basis). Це koleкція статичних ресурсів FHIR у форматі JSON/XML, без шару додатків, без SUSHI, без автоматизованого збирання:
+Репозиторій базових профілів FHIR R4 для Норвегії (HL7 Norway / no-basis). Це колекція статичних ресурсів FHIR у форматі JSON/XML, без шару додатків, без SUSHI, без автоматизованого збирання:
 
 - `StructureDefinition/`: 28 профілів FHIR R4 (no-basis-Patient, no-basis-Organization, no-basis-Practitioner, no-basis-Medication, тощо)
 - `CodeSystem/`: 4 системи кодів
