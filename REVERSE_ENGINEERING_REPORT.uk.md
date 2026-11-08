@@ -1,6 +1,6 @@
 # REVERSE_ENGINEERING_REPORT — basisprofiler-r4
 
-Примітка: переклад технічний, виконаний з автоматичною допомогою; рекомендується перегляд rodsnym мовцем перед використанням як нормативного довідника.
+Примітка: переклад технічний, виконаний з автоматичною допомогою; рекомендується перегляд рідним мовцем перед використанням як нормативного довідника.
 
 ## A. Загальний діагноз
 
@@ -25,7 +25,7 @@
 - Рекомендовані інструменти: FHIR Shorthand (FSH), валідатор FHIR
 
 ### Стан обслуговування
-Останній коміт: декілька гілок функцій (Appointment, AuditEvent, Middlename, тощо). Гał diff гałку upstream: master. Репозиторій: https://github.com/HL7Norway/basisprofiler-r4. Профілі опубліковано на SIMPLIFIER.net (status=active) і є точною копією ресурсів у GitHub.
+Останній коміт: декілька гілок функцій (Appointment, AuditEvent, Middlename, тощо). Галуззова гілка upstream: master. Репозиторій: https://github.com/HL7Norway/basisprofiler-r4. Профілі опубліковано на SIMPLIFIER.net (status=active) і є точною копією ресурсів у GitHub.
 
 ### Існуючі механізми тестування
 Автоматизованих тестів не знайдено. Немає папки test/, ніякого скрипта автоматизованої валідації.
@@ -72,4 +72,4 @@
 
 **Інструменти, що використано:** git, gh, PowerShell/термінал, статичний огляд.  
 **Обмеження:** Немає виконавчого коду; лише статичні ресурси.  
-**Середовище:** Windows, PowerShell 5.1, C:\Users\User\audit-repos\basisprofiler-r4 (клон upstream, гał diff гałку master, коміт HEAD).
+**Середовище:** Windows, PowerShell 5.1, C:\Users\User\audit-repos\basisprofiler-r4 (клон upstream, галуззова гілка master, коміт HEAD).

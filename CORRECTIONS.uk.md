@@ -2,7 +2,7 @@
 
 Проєкт: HL7Norway/basisprofiler-r4
 Базова гał diff гałку для аналізу: master
-Гał diff гałку для публікації: https://github.com/admeduardovieira/basisprofiler-r4
+Галузкова гілка для публікації: https://github.com/admeduardovieira/basisprofiler-r4
 
 ## Propіковані виправлення
 
